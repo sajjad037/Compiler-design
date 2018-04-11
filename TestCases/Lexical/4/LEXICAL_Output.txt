@@ -1,0 +1,10 @@
+----------------------------------- Tokens ---------------------------------------
+S.#	                                       Type	               Value	Line#	
+----------------------------------------------------------------------------------
+  1	                          PUNCTUATION_COLON	                   :	    2	
+  2	                      PUNCTUATION_SEMICOLON	                   ;	   11	
+  3	                      OPERATOR_ASSIGN_EQUAL	                   =	   12	
+  4	                      PUNCTUATION_SEMICOLON	                   ;	   13	
+  5	                            PUNCTUATION_DOT	                   .	   14	
+  6	                          PUNCTUATION_COLON	                   :	   17	
+  7	                                      T_EOF	                   $	   17	

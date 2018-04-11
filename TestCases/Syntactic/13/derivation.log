@@ -1,0 +1,6 @@
+[SYNTAX] prog 
+[SYNTAX] classDecl_List funcDef_List 'program' funcBody ';' 
+[SYNTAX]  funcDef_List 'program' funcBody ';' 
+[SYNTAX]   'program' funcBody ';' 
+[SYNTAX]   'program' { varDecl_statement_List } ';' 
+[SYNTAX]   'program' {  } ';' 

@@ -1,0 +1,12 @@
+----------------------------------- Tokens ---------------------------------------
+S.#	                                       Type	               Value	Line#	
+----------------------------------------------------------------------------------
+  1	                               OPERATOR_DIV	                   /	    7	
+  2	                         RESERVE_WORD_CLASS	               class	   13	
+  3	                                 IDENTIFIER	                 Foo	   13	
+  4	         PUNCTUATION_CURLY_LEFT_PARENTHESIS	                   {	   13	
+  5	        PUNCTUATION_CURLY_RIGHT_PARENTHESIS	                   }	   17	
+  6	                      PUNCTUATION_SEMICOLON	                   ;	   17	
+  7	                       RESERVE_WORD_PROGRAM	             program	   28	
+  8	         PUNCTUATION_CURLY_LEFT_PARENTHESIS	                   {	   28	
+  9	      5	MULIPLE LINE COMMENTS ARE NOT ENDED	END OF FILE ENCOUNTERED	   98	

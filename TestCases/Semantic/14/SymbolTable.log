@@ -1,0 +1,78 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring    | symtabentry 
+=================================================================================================
+AST.ProgNode              |                      |              |                  | 
+  AST.ClassListNode       |                      |              |                  | 
+    AST.ClassNode         |                      |              |                  | 
+      AST.IdNode          | Rational             |              | Rational         | 
+      AST.InherList       |                      |              |                  | 
+      AST.VarDeclListNode |                      |              |                  | 
+        AST.VarDeclNode   |                      |              |                  | 
+          AST.TypeNode    | int                  |              |                  | 
+          AST.IdNode      | numerator            |              | numerator        | 
+          AST.DimListNode |                      |              |                  | 
+        AST.VarDeclNode   |                      |              |                  | 
+          AST.TypeNode    | int                  |              |                  | 
+          AST.IdNode      | denominator          |              | denominator      | 
+          AST.DimListNode |                      |              |                  | 
+        AST.VarDeclNode   |                      |              |                  | 
+          AST.TypeNode    | numerator            |              |                  | 
+          AST.IdNode      |                      |              |                  | 
+          AST.DimListNode |                      |              |                  | 
+      AST.FuncDeclListNod |                      |              |                  | 
+        AST.FuncDeclNode  |                      |              |                  | 
+          AST.TypeNode    | int                  |              |                  | 
+          AST.IdNode      | setNumerator         |              | setNumerator     | 
+          AST.ParamListNo |                      |              |                  | 
+            AST.VarDeclNo |                      |              |                  | 
+              AST.TypeNod | int                  |              |                  | 
+              AST.IdNode  | newNumerator         |              | newNumerator     | 
+              AST.DimList |                      |              |                  | 
+  AST.FuncDefListNode     |                      |              |                  | 
+    AST.FuncDefNode       |                      |              |                  | 
+      AST.FuncHeadNode    |                      |              |                  | 
+        AST.TypeNode      | int                  |              |                  | 
+        AST.IdNode        | setDenominator       |              | setDenominator   | 
+        AST.IdNode        |                      |              |                  | 
+        AST.ParamListNode |                      |              |                  | 
+          AST.VarDeclNode |                      |              |                  | 
+            AST.TypeNode  | int                  |              |                  | 
+            AST.IdNode    | newDenominator       |              | newDenominator   | 
+            AST.DimListNo |                      |              |                  | 
+      AST.StatBlockNode   |                      |              |                  | 
+        AST.AssignStatNod | =                    |              | null=null        | 
+          AST.VarNode     |                      |              |                  | 
+            AST.IdNode    | denominator          |              | denominator      | 
+          AST.ExprNode    |                      |              |                  | 
+            AST.ArithExpr |                      |              |                  | 
+              AST.VarNode |                      |              |                  | 
+                AST.VarEl |                      |              |                  | 
+                  AST.Dat |                      |              |                  | 
+                    AST.I | newDenominator       |              | newDenominator   | 
+                    AST.I |                      |              |                  | 
+  AST.StatBlockNode       |                      |              |                  | 
+    AST.VarDeclNode       |                      |              |                  | 
+      AST.TypeNode        | int                  |              |                  | 
+      AST.IdNode          | a                    |              | a                | 
+      AST.DimListNode     |                      |              |                  | 
+    AST.VarDeclNode       |                      |              |                  | 
+      AST.IdNode          | Rational             |              | Rational         | 
+      AST.IdNode          | r1                   |              | r1               | 
+      AST.DimListNode     |                      |              |                  | 
+    AST.AssignStatNode    | =                    |              | null=null        | 
+      AST.VarNode         |                      |              |                  | 
+        AST.IdNode        | a                    |              | a                | 
+      AST.ExprNode        |                      |              |                  | 
+        AST.ArithExprNode |                      |              |                  | 
+          AST.VarNode     |                      |              |                  | 
+            AST.VarElemen |                      |              |                  | 
+              AST.DataMem |                      |              |                  | 
+                AST.IdNod | r1                   |              | r1               | 
+                AST.Index |                      |              |                  | 
+              AST.FCallNo |                      |              |                  | 
+                AST.IdNod | setNumerator         |              | setNumerator     | 
+                AST.APara |                      |              |                  | 
+                  AST.Exp |                      |              |                  | 
+                    AST.A |                      |              |                  | 
+                      AST | 19                   |              |                  | 
+=================================================================================================

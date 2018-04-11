@@ -1,0 +1,37 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring    | symtabentry 
+=================================================================================================
+AST.ProgNode              |                      |              |                  | 
+  AST.ClassListNode       |                      |              |                  | 
+  AST.FuncDefListNode     |                      |              |                  | 
+    AST.FuncDefNode       |                      |              |                  | 
+      AST.FuncHeadNode    |                      |              |                  | 
+        AST.TypeNode      | Class                |              |                  | 
+        AST.IdNode        | foo1                 |              | foo1             | 
+        AST.IdNode        |                      |              |                  | 
+        AST.ParamListNode |                      |              |                  | 
+      AST.StatBlockNode   |                      |              |                  | 
+        AST.VarDeclNode   |                      |              |                  | 
+          AST.TypeNode    | int                  |              |                  | 
+          AST.IdNode      | id                   |              | id               | 
+          AST.DimListNode |                      |              |                  | 
+        AST.VarDeclNode   |                      |              |                  | 
+          AST.TypeNode    | int                  |              |                  | 
+          AST.IdNode      | id                   |              | id               | 
+          AST.DimListNode |                      |              |                  | 
+    AST.FuncDefNode       |                      |              |                  | 
+      AST.FuncHeadNode    |                      |              |                  | 
+        AST.TypeNode      | Class                |              |                  | 
+        AST.IdNode        | foo1                 |              | foo1             | 
+        AST.IdNode        |                      |              |                  | 
+        AST.ParamListNode |                      |              |                  | 
+      AST.StatBlockNode   |                      |              |                  | 
+    AST.FuncDefNode       |                      |              |                  | 
+      AST.FuncHeadNode    |                      |              |                  | 
+        AST.TypeNode      | int                  |              |                  | 
+        AST.IdNode        | func                 |              | func             | 
+        AST.IdNode        |                      |              |                  | 
+        AST.ParamListNode |                      |              |                  | 
+      AST.StatBlockNode   |                      |              |                  | 
+  AST.StatBlockNode       |                      |              |                  | 
+=================================================================================================

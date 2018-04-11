@@ -1,0 +1,8 @@
+[SYNTAX] INFO: classDecl_List -> EPSILON 
+[SYNTAX] INFO: funcDef_List -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_PROGRAM -> program 
+[SYNTAX] INFO: varDecl_statement_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: funcBody -> { varDecl_statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: prog -> classDecl_List funcDef_List 'program' funcBody ';' 

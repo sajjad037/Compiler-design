@@ -1,0 +1,28 @@
+----------------------------------- Tokens ---------------------------------------
+S.#	                                       Type	               Value	Line#	
+----------------------------------------------------------------------------------
+  1	                               OPERATOR_DIV	                   /	    7	
+  2	                            PUNCTUATION_DOT	                   .	    8	
+  3	                                      FLOAT	                12.0	   13	
+  4	                                 IDENTIFIER	                   e	   14	
+  5	                            PUNCTUATION_DOT	                   .	   15	
+  6	                                    INTEGER	                  12	   15	
+  7	                                      FLOAT	        1121.002e+12	   16	
+  8	                                      FLOAT	            1121.002	   17	
+  9	                         RESERVE_WORD_CLASS	               class	   23	
+ 10	                                 IDENTIFIER	                 Foo	   23	
+ 11	         PUNCTUATION_CURLY_LEFT_PARENTHESIS	                   {	   23	
+ 12	        PUNCTUATION_CURLY_RIGHT_PARENTHESIS	                   }	   27	
+ 13	                      PUNCTUATION_SEMICOLON	                   ;	   27	
+ 14	                       RESERVE_WORD_PROGRAM	             program	   38	
+ 15	         PUNCTUATION_CURLY_LEFT_PARENTHESIS	                   {	   38	
+ 16	                          PUNCTUATION_COLON	                   :	   97	
+ 17	                               OPERATOR_DIV	                   /	  103	
+ 18	                            PUNCTUATION_DOT	                   .	  103	
+ 19	                            PUNCTUATION_DOT	                   .	  103	
+ 20	                      PUNCTUATION_SEMICOLON	                   ;	  106	
+ 21	                      OPERATOR_ASSIGN_EQUAL	                   =	  107	
+ 22	                      PUNCTUATION_SEMICOLON	                   ;	  108	
+ 23	                            PUNCTUATION_DOT	                   .	  109	
+ 24	                          PUNCTUATION_COLON	                   :	  112	
+ 25	      5	MULIPLE LINE COMMENTS ARE NOT ENDED	END OF FILE ENCOUNTERED	  127	

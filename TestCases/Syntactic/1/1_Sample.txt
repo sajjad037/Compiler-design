@@ -1,0 +1,14 @@
+int Utility::findMax(int array[100]){
+	for( int idx = 99; idx > 0; idx = idx - 1 ){
+		if(array[idx] > maxValue) then {
+			maxValue = array[idx];
+		}
+		else{};
+	};
+	return (maxValue);
+};
+
+program {
+int sample[4][5];
+int idx;
+};

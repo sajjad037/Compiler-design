@@ -1,0 +1,38 @@
+
+
+
+
+			-----------   SYMBOL TABLES     -----------
+
+		
+
+
+
+SYMBOL TABLE:	GLOBAL
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   class2   	CLASS	class		null		N/A			N/A		F_C_class2_5	
+   func1   	FUNCTION	int::int[5][3][2],float[100]		null		N/A	2		F_F_func1_13	
+   program   	PROGRAM	program		null		N/A			N/A		F_P_program_31	
+
+
+SYMBOL TABLE:	GLOBAL :: class2
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   in532   	VARIABLE	int[5][3][2]		ARRAY	3			N/A		F_class2_V_in532_6	
+
+
+SYMBOL TABLE:	GLOBAL :: func1
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   int532   	PARAMETER	int[5][3][2]		ARRAY	3			N/A		F_func1_V_int532_13	
+   float100   	PARAMETER	float[100]		ARRAY	1			N/A		F_func1_V_float100_13	
+   a   	VARIABLE	int		SIMPLE		N/A			N/A		F_func1_V_a_15	
+   b   	VARIABLE	int		SIMPLE		N/A			N/A		F_func1_V_b_16	
+   c   	VARIABLE	int		SIMPLE		N/A			N/A		F_func1_V_c_17	
+
+
+SYMBOL TABLE:	GLOBAL :: program
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   in532   	VARIABLE	int[5][3][2]		ARRAY	3			N/A		F_P_V_in532_32	

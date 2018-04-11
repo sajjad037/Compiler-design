@@ -1,0 +1,10 @@
+[SYNTAX] INFO: classDecl_List -> EPSILON 
+[SYNTAX] INFO: funcDef_List -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_PROGRAM -> program 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: PUNCTUATION_DOT -> . 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indiceIdnestList_Tail -> EPSILON 
+[SYNTAX] INFO: indiceIdnestList_Tail  -> . id indiceIdnestList_Tail 
+[SYNTAX] INFO: OPERATOR_ASSIGN_EQUAL -> = 
+[SYNTAX] INFO: IDENTIFIER -> a 

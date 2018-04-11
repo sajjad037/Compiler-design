@@ -1,0 +1,72 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | 
+  AST.ClassListNode       |                      |              | 
+    AST.ClassNode         |                      |              | 
+      AST.IdNode          | class2               |              | class2
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | in532                | int          | in532
+          AST.DimListNode |                      |              | [5][3][2]
+            AST.NumNode   | 5                    |              | 5
+            AST.NumNode   | 3                    |              | 3
+            AST.NumNode   | 2                    |              | 2
+      AST.FuncDeclListNod |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+    AST.FuncDefNode       |                      |              | 
+      AST.FuncHeadNode    |                      |              | 
+        AST.TypeNode      | int                  |              | 
+        AST.IdNode        | func1                |              | func1
+        AST.IdNode        |                      |              | 
+        AST.ParamListNode |                      |              | 
+          AST.VarDeclNode |                      |              | 
+            AST.TypeNode  | int                  |              | 
+            AST.IdNode    | int532               |              | int532
+            AST.DimListNo |                      |              | [5][3][2]
+              AST.NumNode | 5                    |              | 5
+              AST.NumNode | 3                    |              | 3
+              AST.NumNode | 2                    |              | 2
+          AST.VarDeclNode |                      |              | 
+            AST.TypeNode  | float                |              | 
+            AST.IdNode    | float100             |              | float100
+            AST.DimListNo |                      |              | [100]
+              AST.NumNode | 100                  |              | 100
+      AST.StatBlockNode   |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | a                    | int          | a
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | b                    | int          | b
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | c                    | int          | c
+          AST.DimListNode |                      |              | 
+        AST.AssignStatNod | =                    |              | a=a+b*c
+          AST.VarNode     |                      |              | a
+            AST.IdNode    | a                    |              | a
+          AST.AddOpNode   | +                    |              | a+b*c
+            AST.DataMembe |                      |              | a
+              AST.IdNode  | a                    |              | a
+              AST.IndexLi |                      |              | 
+            AST.MultOpNod | *                    |              | b*c
+              AST.DataMem |                      |              | b
+                AST.IdNod | b                    |              | b
+                AST.Index |                      |              | 
+              AST.DataMem |                      |              | c
+                AST.IdNod | c                    |              | c
+                AST.Index |                      |              | 
+  AST.StatBlockNode       |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | in532                | int          | in532
+      AST.DimListNode     |                      |              | [5][3][2]
+        AST.NumNode       | 5                    |              | 5
+        AST.NumNode       | 3                    |              | 3
+        AST.NumNode       | 2                    |              | 2
+=================================================================================================

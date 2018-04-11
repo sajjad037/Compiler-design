@@ -1,0 +1,16 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring    | symtabentry 
+=================================================================================================
+AST.ProgNode              |                      |              |                  | 
+  AST.ClassListNode       |                      |              |                  | 
+  AST.FuncDefListNode     |                      |              |                  | 
+  AST.StatBlockNode       |                      |              |                  | 
+    AST.VarDeclNode       |                      |              |                  | 
+      AST.TypeNode        | int                  |              |                  | 
+      AST.IdNode          | A                    |              | A                | 
+      AST.DimListNode     |                      |              |                  | 
+    AST.VarDeclNode       |                      |              |                  | 
+      AST.TypeNode        | int                  |              |                  | 
+      AST.IdNode          | B                    |              | B                | 
+      AST.DimListNode     |                      |              |                  | 
+=================================================================================================
