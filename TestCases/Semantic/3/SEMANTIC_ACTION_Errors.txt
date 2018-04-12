@@ -1,0 +1,1 @@
+[SEMANTIC] ERROR: CLASS NAME REDEFINED:	A  at Line Number:	3 

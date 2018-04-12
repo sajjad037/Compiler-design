@@ -1,0 +1,2 @@
+[SEMANTIC] ERROR: DATA TYPE UNDEFINED:	foo1  at Line Number:	1 
+[SEMANTIC] ERROR: DATA TYPE UNDEFINED:	ad  at Line Number:	10 

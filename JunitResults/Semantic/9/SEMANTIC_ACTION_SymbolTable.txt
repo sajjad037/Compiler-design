@@ -1,0 +1,37 @@
+
+
+
+
+			-----------   SYMBOL TABLES     -----------
+
+		
+
+
+
+SYMBOL TABLE:	GLOBAL
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   Foo   	CLASS	class		null		N/A			N/A		F_C_Foo_1	
+   Foo1   	CLASS	class		null		N/A			N/A		F_C_Foo1_4	
+   program   	PROGRAM	program		null		N/A			N/A		F_P_program_7	
+
+
+SYMBOL TABLE:	GLOBAL :: Foo
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   i   	VARIABLE	int		SIMPLE		N/A			N/A		F_Foo_V_i_2	
+
+
+SYMBOL TABLE:	GLOBAL :: Foo1
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   i   	VARIABLE	int		SIMPLE		N/A			N/A		F_Foo1_V_i_5	
+
+
+SYMBOL TABLE:	GLOBAL :: program
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   i_int   	VARIABLE	int		SIMPLE		N/A			N/A		F_P_V_i_int_8	
+   f_float   	VARIABLE	float		SIMPLE		N/A			N/A		F_P_V_f_float_9	
+   foo   	VARIABLE	Foo		SIMPLE		N/A			N/A		F_P_V_foo_10	
+   foo1   	VARIABLE	Foo1		SIMPLE		N/A			N/A		F_P_V_foo1_11	

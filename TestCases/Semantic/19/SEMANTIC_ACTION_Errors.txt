@@ -1,0 +1,2 @@
+[SEMANTIC] ERROR: VARIABLE NAME REDEFINED:	newNumerator  at Line Number:	4 
+[SEMANTIC] ERROR: DATA TYPE UNDEFINED:	multiply  at Line Number:	13 

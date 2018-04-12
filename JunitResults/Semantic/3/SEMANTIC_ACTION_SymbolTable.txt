@@ -1,0 +1,33 @@
+
+
+
+
+			-----------   SYMBOL TABLES     -----------
+
+		
+
+
+
+SYMBOL TABLE:	GLOBAL
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   A   	CLASS	class		null		N/A			N/A		F_C_A_1	
+   A   	CLASS	class		null		N/A			N/A		F_C_A_3	
+   program   	PROGRAM	program		null		N/A			N/A		F_P_program_4	
+
+
+SYMBOL TABLE:	GLOBAL :: A
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   number   	VARIABLE	int		SIMPLE		N/A			N/A		F_A_V_number_1	
+   realNumber   	VARIABLE	float		SIMPLE		N/A			N/A		F_A_V_realNumber_1	
+
+
+SYMBOL TABLE:	GLOBAL :: A
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+
+
+SYMBOL TABLE:	GLOBAL :: program
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|

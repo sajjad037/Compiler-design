@@ -1,0 +1,1 @@
+[ERROR]	SYNTAX	Line # :     3	CLASS NAME REDEFINED:	A  at Line Number:	3	

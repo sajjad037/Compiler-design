@@ -8,7 +8,7 @@ public class VisitorBase {
 	public void visit(AParamNode node)       	{};
 	public void visit(ArithExprNode node)       {};
 	public void visit(AssignStatNode node)      {};
-	public void visit(AST node)       			{};
+	//public void visit(AST node)       			{};
 	public void visit(AstNode node)       		{};
 	public void visit(ClassListNode node)       {};
 	public void visit(ClassNode node)       	{};
@@ -46,21 +46,21 @@ public class VisitorBase {
 	public void visit(VarElementNode node)      {};
 	public void visit(VarNode node)      	 	{};
 	
-	public AstNode getIdNodeFrom(AstNode sourceNode, int occurrence)
-	{
-		AstNode astIdNode = new IdNode();
-		int count = 0;
-		for (AstNode child : sourceNode.getChildren()) {
-			if (child instanceof IdNode) {
-				++count;
-				if(occurrence == count)
-				{
-					astIdNode =  child;	
-				}				
-			}
-			getIdNodeFrom(child, occurrence);
-		}
-		
-		return astIdNode;
-	}
+//	public AstNode getIdNodeFrom(AstNode sourceNode, int occurrence)
+//	{
+//		AstNode astIdNode = new IdNode();
+//		int count = 0;
+//		for (AstNode child : sourceNode.getChildren()) {
+//			if (child instanceof IdNode) {
+//				++count;
+//				if(occurrence == count)
+//				{
+//					astIdNode =  child;	
+//				}				
+//			}
+//			getIdNodeFrom(child, occurrence);
+//		}
+//		
+//		return astIdNode;
+//	}
 }

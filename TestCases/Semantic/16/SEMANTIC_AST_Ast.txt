@@ -1,0 +1,61 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | 
+  AST.ClassListNode       |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+    AST.FuncDefNode       |                      |              | 
+      AST.FuncHeadNode    |                      |              | 
+        AST.TypeNode      | Class                |              | 
+        AST.IdNode        | foo1                 |              | 
+        AST.IdNode        |                      |              | 
+        AST.ParamListNode |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | id                   | int          | id
+          AST.DimListNode |                      |              | 
+    AST.FuncDefNode       |                      |              | 
+      AST.FuncHeadNode    |                      |              | 
+        AST.TypeNode      | Class                |              | 
+        AST.IdNode        | foo2                 |              | 
+        AST.IdNode        |                      |              | 
+        AST.ParamListNode |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | idx                  | int          | idx
+          AST.DimListNode |                      |              | 
+  AST.ProgramBlockNode    |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | ab                   | int          | ab
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | float                |              | 
+      AST.IdNode          | fl                   | float        | fl
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | float                |              | 
+      AST.IdNode          | value                | float        | value
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.IdNode          | foo1                 |              | foo1
+      AST.IdNode          | ad                   | foo1         | ad
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.IdNode          | foo2                 |              | foo2
+      AST.IdNode          | lop                  | foo2         | lop
+      AST.DimListNode     |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | ab=
+      AST.VarNode         |                      | int          | ab
+        AST.IdNode        | ab                   | int          | ab
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 10.0                 |              | 
+    AST.AssignStatNode    | =                    | typeerror    | fl=
+      AST.DataMemberNode  |                      | float        | fl
+        AST.IdNode        | fl                   | float        | fl
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 10                   |              | 
+=================================================================================================

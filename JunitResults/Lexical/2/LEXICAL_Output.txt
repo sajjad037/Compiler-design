@@ -1,0 +1,190 @@
+----------------------------------- Tokens ---------------------------------------
+S.#	                                       Type	               Value	Line#	
+----------------------------------------------------------------------------------
+  1	                                 IDENTIFIER	                   a	    2	
+  2	                                 IDENTIFIER	                   b	    2	
+  3	                                 IDENTIFIER	                   c	    2	
+  4	                                 IDENTIFIER	                   d	    2	
+  5	                                 IDENTIFIER	                   e	    2	
+  6	                                 IDENTIFIER	                   f	    2	
+  7	                                 IDENTIFIER	                   g	    2	
+  8	                                 IDENTIFIER	                   h	    2	
+  9	                                 IDENTIFIER	                   i	    2	
+ 10	                                 IDENTIFIER	                   j	    2	
+ 11	                                 IDENTIFIER	                  aa	    4	
+ 12	                                 IDENTIFIER	                 abc	    4	
+ 13	                                 IDENTIFIER	                 a01	    6	
+ 14	                                 IDENTIFIER	               a000a	    6	
+ 15	                                 IDENTIFIER	        asdfoo000111	    6	
+ 16	                                 IDENTIFIER	               aaAKD	    6	
+ 17	                                 IDENTIFIER	                  IF	    9	
+ 18	                                 IDENTIFIER	                ELSE	    9	
+ 19	                                 IDENTIFIER	                THEN	    9	
+ 20	                                 IDENTIFIER	                 FOR	    9	
+ 21	                                 IDENTIFIER	                 INT	    9	
+ 22	                                 IDENTIFIER	                 GET	    9	
+ 23	                                 IDENTIFIER	                 PUT	    9	
+ 24	                                 IDENTIFIER	               CLASS	    9	
+ 25	                                 IDENTIFIER	               FLOAT	    9	
+ 26	                                 IDENTIFIER	                 INT	    9	
+ 27	                                 IDENTIFIER	              RETURN	    9	
+ 28	                                 IDENTIFIER	                  iF	   10	
+ 29	                                 IDENTIFIER	                Else	   10	
+ 30	                                 IDENTIFIER	                TheN	   10	
+ 31	                                 IDENTIFIER	                 foR	   10	
+ 32	                                 IDENTIFIER	                 InT	   10	
+ 33	                                 IDENTIFIER	                 geT	   10	
+ 34	                                 IDENTIFIER	                 pUt	   10	
+ 35	                                 IDENTIFIER	               cLaSs	   10	
+ 36	                                 IDENTIFIER	               floaT	   10	
+ 37	                                 IDENTIFIER	                 inT	   10	
+ 38	                                 IDENTIFIER	              returN	   10	
+ 39	                                 IDENTIFIER	                 AND	   13	
+ 40	                                 IDENTIFIER	                 NOT	   13	
+ 41	                                 IDENTIFIER	                  OR	   13	
+ 42	                                 IDENTIFIER	                 anD	   14	
+ 43	                                 IDENTIFIER	                 noT	   14	
+ 44	                                 IDENTIFIER	                  oR	   14	
+ 45	                                 IDENTIFIER	                 ANd	   15	
+ 46	                                 IDENTIFIER	                 NOt	   15	
+ 47	                                 IDENTIFIER	                  Or	   15	
+ 48	                                 IDENTIFIER	                  a_	   19	
+ 49	                                 IDENTIFIER	               b_a0_	   21	
+ 50	                                 IDENTIFIER	                 ss_	   23	
+ 51	                                 IDENTIFIER	                a0_a	   25	
+ 52	                                 IDENTIFIER	             a_a_a_a	   27	
+ 53	                                 IDENTIFIER	           anvb_asdf	   29	
+ 54	                                 IDENTIFIER	       jakdshnf_0001	   31	
+ 55	                                 IDENTIFIER	           a00001_01	   33	
+ 56	                                 IDENTIFIER	                 sad	   35	
+ 57	                                 IDENTIFIER	          sadasszdsa	   36	
+ 58	                                 IDENTIFIER	       sadsadsa23232	   37	
+ 59	                                 IDENTIFIER	              sadsad	   38	
+ 60	                                 IDENTIFIER	               sads_	   39	
+ 61	                                 IDENTIFIER	            sdsad98_	   40	
+ 62	                                 IDENTIFIER	           sds_98797	   41	
+ 63	                                    INTEGER	                   0	   45	
+ 64	                                    INTEGER	                   1	   45	
+ 65	                                    INTEGER	                   2	   45	
+ 66	                                    INTEGER	                   3	   45	
+ 67	                                    INTEGER	                   4	   45	
+ 68	                                    INTEGER	                   5	   45	
+ 69	                                    INTEGER	                   6	   45	
+ 70	                                    INTEGER	                   7	   45	
+ 71	                                    INTEGER	                   8	   45	
+ 72	                                    INTEGER	                   9	   45	
+ 73	                                    INTEGER	                  10	   48	
+ 74	                                    INTEGER	                  12	   48	
+ 75	                                    INTEGER	                 123	   48	
+ 76	                                    INTEGER	                1234	   48	
+ 77	                                    INTEGER	               12399	   48	
+ 78	                                    INTEGER	              990099	   48	
+ 79	                                    INTEGER	          1000000001	   48	
+ 80	                                      FLOAT	                 0.0	   51	
+ 81	                                      FLOAT	                 0.1	   53	
+ 82	                                      FLOAT	               0.001	   53	
+ 83	                                      FLOAT	               0.002	   53	
+ 84	                                      FLOAT	            0.000101	   53	
+ 85	                                      FLOAT	               9.001	   55	
+ 86	                                      FLOAT	               11.01	   55	
+ 87	                                      FLOAT	          1000.00001	   55	
+ 88	                                      FLOAT	  999900.00000010001	   57	
+ 89	                                    INTEGER	                  10	   59	
+ 90	                          PUNCTUATION_COMMA	                   ,	   59	
+ 91	                                    INTEGER	                  20	   59	
+ 92	                          PUNCTUATION_COMMA	                   ,	   59	
+ 93	                                    INTEGER	                  30	   59	
+ 94	                          PUNCTUATION_COMMA	                   ,	   59	
+ 95	                                    INTEGER	                  40	   59	
+ 96	                          PUNCTUATION_COMMA	                   ,	   59	
+ 97	                                    INTEGER	                   0	   59	
+ 98	                          PUNCTUATION_COMMA	                   ,	   59	
+ 99	                                    INTEGER	                   1	   59	
+100	                          PUNCTUATION_COMMA	                   ,	   59	
+101	                                    INTEGER	                   0	   59	
+102	                          PUNCTUATION_COMMA	                   ,	   59	
+103	                                    INTEGER	                 200	   59	
+104	                          PUNCTUATION_COMMA	                   ,	   59	
+105	                                    INTEGER	                2000	   59	
+106	                          PUNCTUATION_COMMA	                   ,	   59	
+107	                                    INTEGER	                1230	   59	
+108	                          PUNCTUATION_COMMA	                   ,	   59	
+109	                          PUNCTUATION_COMMA	                   ,	   59	
+110	                                      FLOAT	               0.001	   59	
+111	                          PUNCTUATION_COMMA	                   ,	   59	
+112	                                      FLOAT	                0.12	   59	
+113	                          PUNCTUATION_COMMA	                   ,	   59	
+114	                                      FLOAT	              0.0002	   59	
+115	                          PUNCTUATION_COMMA	                   ,	   59	
+116	                                      FLOAT	               0.001	   59	
+117	                          PUNCTUATION_COMMA	                   ,	   59	
+118	                            PUNCTUATION_DOT	                   .	   59	
+119	                                    INTEGER	                   1	   59	
+120	                          PUNCTUATION_COMMA	                   ,	   59	
+121	                            PUNCTUATION_DOT	                   .	   59	
+122	                            PUNCTUATION_DOT	                   .	   59	
+123	                                    INTEGER	                  12	   59	
+124	                          PUNCTUATION_COMMA	                   ,	   59	
+125	                          PUNCTUATION_COMMA	                   ,	   59	
+126	                          PUNCTUATION_COMMA	                   ,	   59	
+127	                                      FLOAT	             1.00123	   59	
+128	                            PUNCTUATION_DOT	                   .	   61	
+129	                            RESERVE_WORD_IF	                  if	   65	
+130	                          RESERVE_WORD_THEN	                then	   65	
+131	                           RESERVE_WORD_FOR	                 for	   65	
+132	                          RESERVE_WORD_ELSE	                else	   65	
+133	                           RESERVE_WORD_INT	                 int	   65	
+134	                         RESERVE_WORD_FLOAT	               float	   65	
+135	                           RESERVE_WORD_GET	                 get	   65	
+136	                           RESERVE_WORD_PUT	                 put	   65	
+137	                        RESERVE_WORD_RETURN	              return	   65	
+138	                         OPERATOR_REL_EQUAL	                  ==	   68	
+139	                     OPERATOR_REL_NOT_EQUAL	                  <>	   68	
+140	                      OPERATOR_REL_LESSTHAN	                   <	   68	
+141	                   OPERATOR_REL_GREATERTHAN	                   >	   68	
+142	                OPERATOR_REL_LESSTHAN_EQUAL	                  <=	   68	
+143	             OPERATOR_REL_GREATERTHAN_EQUAL	                  >=	   68	
+144	                      OPERATOR_ASSIGN_EQUAL	                   =	   71	
+145	                               OPERATOR_AND	                 and	   74	
+146	                                OPERATOR_OR	                  or	   74	
+147	                               OPERATOR_NOT	                 not	   74	
+148	                               OPERATOR_ADD	                   +	   77	
+149	                               OPERATOR_SUB	                   -	   77	
+150	                               OPERATOR_MUL	                   *	   77	
+151	                               OPERATOR_DIV	                   /	   77	
+152	         PUNCTUATION_ROUND_LEFT_PARENTHESIS	                   (	   80	
+153	        PUNCTUATION_ROUND_RIGHT_PARENTHESIS	                   )	   80	
+154	         PUNCTUATION_CURLY_LEFT_PARENTHESIS	                   {	   80	
+155	        PUNCTUATION_CURLY_RIGHT_PARENTHESIS	                   }	   80	
+156	        PUNCTUATION_SQUARE_LEFT_PARENTHESIS	                   [	   80	
+157	       PUNCTUATION_SQUARE_RIGHT_PARENTHESIS	                   ]	   80	
+158	                      PUNCTUATION_SEMICOLON	                   ;	   80	
+159	                          PUNCTUATION_COMMA	                   ,	   80	
+160	                            PUNCTUATION_DOT	                   .	   80	
+161	                                    INTEGER	                   0	   83	
+162	                                    INTEGER	                   1	   83	
+163	                                    INTEGER	                   2	   83	
+164	                                    INTEGER	                   3	   83	
+165	                                    INTEGER	                   4	   83	
+166	                                    INTEGER	                   5	   83	
+167	                                    INTEGER	                   6	   83	
+168	                                    INTEGER	                   7	   83	
+169	                                    INTEGER	                   8	   83	
+170	                                    INTEGER	                   9	   83	
+171	                                    INTEGER	                  10	   86	
+172	                                    INTEGER	                  12	   86	
+173	                                    INTEGER	                 123	   86	
+174	                                    INTEGER	                1234	   86	
+175	                                    INTEGER	               12399	   86	
+176	                                    INTEGER	              990099	   86	
+177	                                    INTEGER	          1000000001	   86	
+178	                                      FLOAT	                 0.0	   89	
+179	                                      FLOAT	                 0.1	   91	
+180	                                      FLOAT	               0.001	   91	
+181	                                      FLOAT	               0.002	   91	
+182	                                      FLOAT	            0.000101	   91	
+183	                                      FLOAT	               9.001	   93	
+184	                                      FLOAT	               11.01	   93	
+185	                                      FLOAT	          1000.00001	   93	
+186	                                      FLOAT	  999900.00000010001	   95	
+187	                                      T_EOF	                   $	   95	

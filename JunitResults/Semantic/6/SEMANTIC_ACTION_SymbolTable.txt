@@ -1,0 +1,39 @@
+
+
+
+
+			-----------   SYMBOL TABLES     -----------
+
+		
+
+
+
+SYMBOL TABLE:	GLOBAL
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   foo1   	FUNCTION	Class::NILL		null		N/A			N/A		F_F_foo1_1	
+   foo1   	FUNCTION	Class::NILL		null		N/A			N/A		F_F_foo1_9	
+   func   	FUNCTION	int::NILL		null		N/A			N/A		F_F_func_21	
+   program   	PROGRAM	program		null		N/A			N/A		F_P_program_26	
+
+
+SYMBOL TABLE:	GLOBAL :: foo1
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   id   	VARIABLE	int		SIMPLE		N/A			N/A		F_foo1_V_id_4	
+   id   	VARIABLE	int		SIMPLE		N/A			N/A		F_foo1_V_id_5	
+
+
+SYMBOL TABLE:	GLOBAL :: foo1
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+
+
+SYMBOL TABLE:	GLOBAL :: func
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+
+
+SYMBOL TABLE:	GLOBAL :: program
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|

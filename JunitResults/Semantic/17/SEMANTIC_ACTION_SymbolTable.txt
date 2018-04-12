@@ -1,0 +1,28 @@
+
+
+
+
+			-----------   SYMBOL TABLES     -----------
+
+		
+
+
+
+SYMBOL TABLE:	GLOBAL
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   InheritedUtility   	CLASS	class		null		N/A			N/A		F_C_InheritedUtility_1	
+   program   	PROGRAM	program		null		N/A			N/A		F_P_program_5	
+
+
+SYMBOL TABLE:	GLOBAL :: InheritedUtility
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   member1   	VARIABLE	int		SIMPLE		N/A			N/A		F_InheritedUtility_V_member1_2	
+
+
+SYMBOL TABLE:	GLOBAL :: program
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   sample   	VARIABLE	int[4][5]		ARRAY	2			N/A		F_P_V_sample_6	
+   idx   	VARIABLE	int		SIMPLE		N/A			N/A		F_P_V_idx_7	

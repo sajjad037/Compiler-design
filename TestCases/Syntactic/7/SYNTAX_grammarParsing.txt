@@ -1,0 +1,869 @@
+[SYNTAX] INFO: classDecl_List -> EPSILON 
+[SYNTAX] INFO: funcDef_List -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_PROGRAM -> program 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: OPERATOR_ASSIGN_EQUAL -> = 
+[SYNTAX] INFO: IDENTIFIER -> array 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> idx 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> EPSILON 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: assignStatSemicolon -> variable assignOp expr ; 
+[SYNTAX] INFO: statement -> assignStatSemicolon 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: OPERATOR_ASSIGN_EQUAL -> = 
+[SYNTAX] INFO: IDENTIFIER -> array 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> idx 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> EPSILON 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: assignStatSemicolon -> variable assignOp expr ; 
+[SYNTAX] INFO: statement -> assignStatSemicolon 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: OPERATOR_ASSIGN_EQUAL -> = 
+[SYNTAX] INFO: IDENTIFIER -> array 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> idx 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> EPSILON 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: assignStatSemicolon -> variable assignOp expr ; 
+[SYNTAX] INFO: statement -> assignStatSemicolon 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> > 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> aa 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: statBlock -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: varDecl_statement_List -> remainingStatement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: funcBody -> { varDecl_statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: prog -> classDecl_List funcDef_List 'program' funcBody ';' 

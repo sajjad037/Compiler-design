@@ -1,0 +1,23 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | 
+  AST.ClassListNode       |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+    AST.FuncDefNode       |                      |              | 
+      AST.FuncHeadNode    |                      |              | 
+        AST.TypeNode      | Class                |              | 
+        AST.IdNode        | foo1                 |              | 
+        AST.IdNode        |                      |              | 
+        AST.ParamListNode |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | id                   | int          | id
+          AST.DimListNode |                      |              | 
+  AST.ProgramBlockNode    |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.IdNode          | foo                  |              | foo
+      AST.IdNode          | ad                   | foo          | ad
+      AST.DimListNode     |                      |              | 
+=================================================================================================

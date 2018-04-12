@@ -1,0 +1,28 @@
+[ERROR]	SYNTAX	Line # :     4	VARIABLE NAME REDEFINED:	numerator  at Line Number:	4	
+[ERROR]	SYNTAX	Line # :     5	IN LINE NUMBER:	5:	Expected One of these tokens:	id float int }	
+[WARNING]	SYNTAX	Line # :     5	SKIPPING TOKEN:	{	AT LINE NUMBER:	5	
+[ERROR]	SYNTAX	Line # :     5	VARIABLE NAME REDEFINED:	newNumerator  at Line Number:	5	
+[WARNING]	SYNTAX	Line # :     6	RESUME PARSING FROM  TOKEN:	numerator	AT LINE NUMBER:	6	
+[ERROR]	SYNTAX	Line # :     6	IN LINE NUMBER:	6:	Expected One of these token Type:	IDENTIFIER	
+[ERROR]	SYNTAX	Line # :     6	INVALID TOKEN MATCH: OPERATOR_ASSIGN_EQUAL	=	
+[ERROR]	SYNTAX	Line # :     6	IN LINE NUMBER:	6:	Expected One of these tokens:	[ ; sr (	
+[WARNING]	SYNTAX	Line # :     6	SKIPPING TOKEN:	=	AT LINE NUMBER:	6	
+[WARNING]	SYNTAX	Line # :     6	SKIPPING TOKEN:	newNumerator	AT LINE NUMBER:	6	
+[WARNING]	SYNTAX	Line # :     6	RESUME PARSING FROM  TOKEN:	;	AT LINE NUMBER:	6	
+[ERROR]	SYNTAX	Line # :     6	IN LINE NUMBER:	6:	Expected One of these tokens:	id float int }	
+[WARNING]	SYNTAX	Line # :     6	SKIPPING TOKEN:	{	AT LINE NUMBER:	6	
+[WARNING]	SYNTAX	Line # :     7	RESUME PARSING FROM  TOKEN:	numerator	AT LINE NUMBER:	7	
+[ERROR]	SYNTAX	Line # :     7	IN LINE NUMBER:	7:	Expected One of these token Type:	IDENTIFIER	
+[ERROR]	SYNTAX	Line # :     7	INVALID TOKEN MATCH: OPERATOR_ASSIGN_EQUAL	=	
+[ERROR]	SYNTAX	Line # :     7	IN LINE NUMBER:	7:	Expected One of these tokens:	[ ; sr (	
+[WARNING]	SYNTAX	Line # :     7	SKIPPING TOKEN:	=	AT LINE NUMBER:	7	
+[WARNING]	SYNTAX	Line # :     7	SKIPPING TOKEN:	newNumerator	AT LINE NUMBER:	7	
+[WARNING]	SYNTAX	Line # :     7	RESUME PARSING FROM  TOKEN:	;	AT LINE NUMBER:	7	
+[ERROR]	SYNTAX	Line # :    12	IN LINE NUMBER:	12:	Expected One of these tokens:	id float int program	
+[WARNING]	SYNTAX	Line # :    12	SKIPPING TOKEN:	}	AT LINE NUMBER:	12	
+[WARNING]	SYNTAX	Line # :    12	SKIPPING TOKEN:	;	AT LINE NUMBER:	12	
+[ERROR]	SYNTAX	Line # :    13	IN LINE NUMBER:	13:	Expected One of these tokens:	id float int program	
+[WARNING]	SYNTAX	Line # :    13	SKIPPING TOKEN:	}	AT LINE NUMBER:	13	
+[WARNING]	SYNTAX	Line # :    13	SKIPPING TOKEN:	;	AT LINE NUMBER:	13	
+[WARNING]	SYNTAX	Line # :    14	RESUME PARSING FROM  TOKEN:	program	AT LINE NUMBER:	14	
+[WARNING]	SYNTAX	Line # :    16	RESUME PARSING FROM  TOKEN:	program	AT LINE NUMBER:	16	

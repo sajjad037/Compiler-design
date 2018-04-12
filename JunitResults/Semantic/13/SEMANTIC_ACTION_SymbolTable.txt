@@ -1,0 +1,79 @@
+
+
+
+
+			-----------   SYMBOL TABLES     -----------
+
+		
+
+
+
+SYMBOL TABLE:	GLOBAL
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   FOO1   	CLASS	class		null		N/A			N/A		F_C_FOO1_1	
+   FOO2   	CLASS	class		null		N/A			N/A		F_C_FOO2_6	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   i   	VARIABLE	float		SIMPLE		N/A			N/A		F_FOO1_V_i_2	
+   abc   	VARIABLE	int[10][5]		ARRAY	2			N/A		F_FOO1_V_abc_3	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO2
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   value   	VARIABLE	float		SIMPLE		N/A			N/A		F_FOO2_V_value_7	
+   foo1   	VARIABLE	FOO1		SIMPLE		N/A			N/A		F_FOO2_V_foo1_8	
+   func   	FUNCTION	int::float,int,FOO1		null		N/A	3		F_FOO2_F_func_9	
+   funcdf   	FUNCTION	int::float		null		N/A	1		F_FOO2_F_funcdf_12	
+   func   	FUNCTION	int::float		null		N/A	1		F_FOO2_F_func_15	
+   func   	FUNCTION	int::float		null		N/A	1		F_FOO2_F_func_18	
+   func   	FUNCTION	int::NILL		null		N/A			N/A		F_FOO2_F_func_21	
+   func   	FUNCTION	int::int		null		N/A	1		F_FOO2_F_func_24	
+   func   	FUNCTION	int::int		null		N/A	1		F_FOO2_F_func_24	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO2 ::  :: func
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   abc   	PARAMETER	float		SIMPLE		N/A			N/A		F_FOO2_func_V_abc_9	
+   abc1   	PARAMETER	int		SIMPLE		N/A			N/A		F_FOO2_func_V_abc1_9	
+   abc2   	PARAMETER	FOO1		SIMPLE		N/A			N/A		F_FOO2_func_V_abc2_9	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO2 ::  :: funcdf
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   abc   	PARAMETER	float		SIMPLE		N/A			N/A		F_FOO2_funcdf_V_abc_12	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO2 ::  :: func
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   abc   	PARAMETER	float		SIMPLE		N/A			N/A		F_FOO2_func_V_abc_15	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO2 ::  :: func
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   abc   	PARAMETER	float		SIMPLE		N/A			N/A		F_FOO2_func_V_abc_18	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO2 ::  :: func
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+
+
+SYMBOL TABLE:	GLOBAL :: FOO2 ::  :: func
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   a   	PARAMETER	int		SIMPLE		N/A			N/A		F_FOO2_func_V_a_34	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO2 ::  :: func
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   a   	PARAMETER	int		SIMPLE		N/A			N/A		F_FOO2_func_V_a_34	

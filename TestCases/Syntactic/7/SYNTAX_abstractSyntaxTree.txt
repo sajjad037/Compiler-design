@@ -1,0 +1,387 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | 
+  AST.ClassListNode       |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.StatBlockNode       |                      |              | 
+    AST.IfStatNode        | if                   |              | 
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | >                    |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | a                    |              | 
+                  AST.Ind |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | maxValue             |              | 
+                  AST.Ind |                      |              | 
+                    AST.A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | aa                   |              | 
+                            A |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+    AST.IfStatNode        | if                   |              | 
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | >                    |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | a                    |              | 
+                  AST.Ind |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | maxValue             |              | 
+                  AST.Ind |                      |              | 
+                    AST.A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | aa                   |              | 
+                            A |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+    AST.IfStatNode        | if                   |              | 
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | >                    |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | a                    |              | 
+                  AST.Ind |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | maxValue             |              | 
+                  AST.Ind |                      |              | 
+                    AST.A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | aa                   |              | 
+                            A |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+    AST.IfStatNode        | if                   |              | 
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | >                    |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | a                    |              | 
+                  AST.Ind |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | maxValue             |              | 
+                  AST.Ind |                      |              | 
+                    AST.A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | aa                   |              | 
+                            A |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.AssignStatNod | =                    |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | maxValue             |              | 
+                AST.Index |                      |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | array                |              | 
+                    AST.I |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A | idx                  |              | 
+                              A |                      |              | 
+        AST.IfStatNode    | if                   |              | 
+          AST.ExprNode    |                      |              | 
+            AST.RelExprNo | >                    |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | a                    |              | 
+                      AST |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | maxValue             |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | aa                   |              | 
+                                A |                      |              | 
+          AST.StatBlockNo |                      |              | 
+            AST.IfStatNod | if                   |              | 
+              AST.ExprNod |                      |              | 
+                AST.RelEx | >                    |              | 
+                  AST.Ari |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A | a                    |              | 
+                          A |                      |              | 
+                  AST.Ari |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A | maxValue             |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A |                      |              | 
+                                    A | aa                   |              | 
+                                    A |                      |              | 
+              AST.StatBlo |                      |              | 
+              AST.StatBlo |                      |              | 
+          AST.StatBlockNo |                      |              | 
+            AST.IfStatNod | if                   |              | 
+              AST.ExprNod |                      |              | 
+                AST.RelEx | >                    |              | 
+                  AST.Ari |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A | a                    |              | 
+                          A |                      |              | 
+                  AST.Ari |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A | maxValue             |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A |                      |              | 
+                                    A | aa                   |              | 
+                                    A |                      |              | 
+              AST.StatBlo |                      |              | 
+              AST.StatBlo |                      |              | 
+                AST.IfSta | if                   |              | 
+                  AST.Exp |                      |              | 
+                    AST.R | >                    |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A | a                    |              | 
+                              A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A | maxValue             |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A |                      |              | 
+                                    A |                      |              | 
+                                      A |                      |              | 
+                                        A | aa                   |              | 
+                                        A |                      |              | 
+                  AST.Sta |                      |              | 
+                  AST.Sta |                      |              | 
+        AST.IfStatNode    | if                   |              | 
+          AST.ExprNode    |                      |              | 
+            AST.RelExprNo | >                    |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | a                    |              | 
+                      AST |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | maxValue             |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | aa                   |              | 
+                                A |                      |              | 
+          AST.StatBlockNo |                      |              | 
+          AST.StatBlockNo |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.AssignStatNod | =                    |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | maxValue             |              | 
+                AST.Index |                      |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | array                |              | 
+                    AST.I |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A | idx                  |              | 
+                              A |                      |              | 
+        AST.AssignStatNod | =                    |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | maxValue             |              | 
+                AST.Index |                      |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | array                |              | 
+                    AST.I |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A | idx                  |              | 
+                              A |                      |              | 
+        AST.IfStatNode    | if                   |              | 
+          AST.ExprNode    |                      |              | 
+            AST.RelExprNo | >                    |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | a                    |              | 
+                      AST |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | maxValue             |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | aa                   |              | 
+                                A |                      |              | 
+          AST.StatBlockNo |                      |              | 
+            AST.IfStatNod | if                   |              | 
+              AST.ExprNod |                      |              | 
+                AST.RelEx | >                    |              | 
+                  AST.Ari |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A | a                    |              | 
+                          A |                      |              | 
+                  AST.Ari |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A | maxValue             |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A |                      |              | 
+                                    A | aa                   |              | 
+                                    A |                      |              | 
+              AST.StatBlo |                      |              | 
+              AST.StatBlo |                      |              | 
+          AST.StatBlockNo |                      |              | 
+            AST.IfStatNod | if                   |              | 
+              AST.ExprNod |                      |              | 
+                AST.RelEx | >                    |              | 
+                  AST.Ari |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A | a                    |              | 
+                          A |                      |              | 
+                  AST.Ari |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A | maxValue             |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A |                      |              | 
+                                    A | aa                   |              | 
+                                    A |                      |              | 
+              AST.StatBlo |                      |              | 
+              AST.StatBlo |                      |              | 
+                AST.IfSta | if                   |              | 
+                  AST.Exp |                      |              | 
+                    AST.R | >                    |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A | a                    |              | 
+                              A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A | maxValue             |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A |                      |              | 
+                                    A |                      |              | 
+                                      A |                      |              | 
+                                        A | aa                   |              | 
+                                        A |                      |              | 
+                  AST.Sta |                      |              | 
+                  AST.Sta |                      |              | 
+        AST.IfStatNode    | if                   |              | 
+          AST.ExprNode    |                      |              | 
+            AST.RelExprNo | >                    |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | a                    |              | 
+                      AST |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | maxValue             |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | aa                   |              | 
+                                A |                      |              | 
+          AST.StatBlockNo |                      |              | 
+          AST.StatBlockNo |                      |              | 
+=================================================================================================

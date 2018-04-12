@@ -1,0 +1,81 @@
+
+
+
+
+			-----------   SYMBOL TABLES     -----------
+
+		
+
+
+
+SYMBOL TABLE:	GLOBAL
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   FOO1   	CLASS	class		null		N/A			N/A		F_C_FOO1_1	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   i   	VARIABLE	float		SIMPLE		N/A			N/A		F_FOO1_V_i_2	
+   func   	FUNCTION	int::int		null		N/A	1		F_FOO1_F_func_3	
+   FOO2   	CLASS	class		null		N/A			N/A		F_FOO1_C_FOO2_6	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1 ::  :: func
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   i   	PARAMETER	int		SIMPLE		N/A			N/A		F_FOO1_func_V_i_3	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1 ::  :: FOO2
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   i   	VARIABLE	float		SIMPLE		N/A			N/A		F_FOO1_FOO2_V_i_7	
+   m   	VARIABLE	int		SIMPLE		N/A			N/A		F_FOO1_FOO2_V_m_8	
+   foo1   	VARIABLE	FOO1		SIMPLE		N/A			N/A		F_FOO1_FOO2_V_foo1_9	
+   func   	FUNCTION	int::float		null		N/A	1		F_FOO1_FOO2_F_func_10	
+   FOO3   	CLASS	class		null		N/A			N/A		F_FOO1_FOO2_C_FOO3_13	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1 ::  :: FOO2 ::  :: func
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   i   	PARAMETER	float		SIMPLE		N/A			N/A		F_FOO1_FOO2_func_V_i_10	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1 ::  :: FOO2 ::  :: FOO3
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   m_foo2   	VARIABLE	FOO2		SIMPLE		N/A			N/A		F_FOO1_FOO2_FOO3_V_m_foo2_14	
+   func   	VARIABLE	int		SIMPLE		N/A			N/A		F_FOO1_FOO2_FOO3_V_func_15	
+   a   	VARIABLE	int		SIMPLE		N/A			N/A		F_FOO1_FOO2_FOO3_V_a_16	
+   func1   	FUNCTION	float::NILL		null		N/A			N/A		F_FOO1_FOO2_FOO3_F_func1_18	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1 ::  :: FOO2 ::  :: FOO3 ::  :: func1
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   func3   	FUNCTION	float::int,FOO1,float		null		N/A	3		F_FOO1_FOO2_FOO3_func1_F_func3_19	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1 ::  :: FOO2 ::  :: FOO3 ::  :: func1 ::  :: func3
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   i   	PARAMETER	int		SIMPLE		N/A			N/A		F_FOO1_FOO2_FOO3_func1_func3_V_i_19	
+   x   	PARAMETER	FOO1		SIMPLE		N/A			N/A		F_FOO1_FOO2_FOO3_func1_func3_V_x_19	
+   y   	PARAMETER	float		SIMPLE		N/A			N/A		F_FOO1_FOO2_FOO3_func1_func3_V_y_19	
+   samefunc   	FUNCTION	FOO1::float,FOO2[3]		null		N/A	2		F_FOO1_FOO2_FOO3_func1_func3_F_samefunc_20	
+   func1   	FUNCTION	::::NILL		null		N/A			N/A		F_FOO1_FOO2_FOO3_func1_func3_F_func1_23	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1 ::  :: FOO2 ::  :: FOO3 ::  :: func1 ::  :: func3 ::  :: samefunc
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   a   	PARAMETER	float		SIMPLE		N/A			N/A		F_FOO1_FOO2_FOO3_func1_func3_samefunc_V_a_20	
+   b   	PARAMETER	FOO2[3]		ARRAY	1			N/A		F_FOO1_FOO2_FOO3_func1_func3_samefunc_V_b_20	
+
+
+SYMBOL TABLE:	GLOBAL :: FOO1 ::  :: FOO2 ::  :: FOO3 ::  :: func1 ::  :: func3 ::  :: func1
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|

@@ -1,0 +1,47 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | 
+  AST.ClassListNode       |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+    AST.FuncDefNode       |                      |              | 
+      AST.FuncHeadNode    |                      |              | 
+        AST.TypeNode      | Class                |              | 
+        AST.IdNode        | foo1                 |              | 
+        AST.IdNode        |                      |              | 
+        AST.ParamListNode |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | id                   | int          | id
+          AST.DimListNode |                      |              | 
+    AST.FuncDefNode       |                      |              | 
+      AST.FuncHeadNode    |                      |              | 
+        AST.TypeNode      | Class                |              | 
+        AST.IdNode        | foo2                 |              | 
+        AST.IdNode        |                      |              | 
+        AST.ParamListNode |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | idx                  | int          | idx
+          AST.DimListNode |                      |              | 
+  AST.ProgramBlockNode    |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | ab                   | int          | ab
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.IdNode          | foo1                 |              | foo1
+      AST.IdNode          | ad                   | foo1         | ad
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.IdNode          | foo2                 |              | foo2
+      AST.IdNode          | lop                  | foo2         | lop
+      AST.DimListNode     |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | var=
+      AST.VarNode         |                      | Undefined    | var
+        AST.IdNode        | var                  | Undefined    | var
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 10                   |              | 
+=================================================================================================

@@ -1,0 +1,44 @@
+
+
+
+
+			-----------   SYMBOL TABLES     -----------
+
+		
+
+
+
+SYMBOL TABLE:	GLOBAL
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   Rational   	CLASS	class		null		N/A			N/A		F_C_Rational_1	
+
+
+SYMBOL TABLE:	GLOBAL :: Rational
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   numerator   	VARIABLE	int		SIMPLE		N/A			N/A		F_Rational_V_numerator_2	
+   denominator   	VARIABLE	int		SIMPLE		N/A			N/A		F_Rational_V_denominator_3	
+   setNumerator   	FUNCTION	int::int,int		null		N/A	2		F_Rational_F_setNumerator_4	
+   setDenominator   	FUNCTION	int::int		null		N/A	1		F_Rational_F_setDenominator_8	
+   multiply   	FUNCTION	Rational::Rational		null		N/A	1		F_Rational_F_multiply_13	
+
+
+SYMBOL TABLE:	GLOBAL :: Rational ::  :: setNumerator
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   newNumerator   	PARAMETER	int		SIMPLE		N/A			N/A		F_Rational_setNumerator_V_newNumerator_4	
+   newNumerator   	PARAMETER	int		SIMPLE		N/A			N/A		F_Rational_setNumerator_V_newNumerator_4	
+
+
+SYMBOL TABLE:	GLOBAL :: Rational ::  :: setDenominator
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   newDenominator   	PARAMETER	int		SIMPLE		N/A			N/A		F_Rational_setDenominator_V_newDenominator_8	
+
+
+SYMBOL TABLE:	GLOBAL :: Rational ::  :: multiply
+
+|___Name___|____ Type ____|____ Kind ____|____Structure____|___Array Dimension ___|___ NO OF PARAMS ___|_____ADDRESS____|
+   a   	PARAMETER	Rational		SIMPLE		N/A			N/A		F_Rational_multiply_V_a_13	
+   result   	VARIABLE	Rational		SIMPLE		N/A			N/A		F_Rational_multiply_V_result_15	

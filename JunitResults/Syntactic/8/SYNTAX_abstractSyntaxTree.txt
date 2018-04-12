@@ -1,0 +1,515 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | 
+  AST.ClassListNode       |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.StatBlockNode       |                      |              | 
+    AST.ForStatNode       | for                  |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | idx1                 |              | 
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 1                    |              | 
+      AST.RelExprNode     | <=                   |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | idx2                 |              | 
+                AST.Index |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 99                   |              | 
+      AST.AssignStatNode  | =                    |              | 
+        AST.VarNode       |                      |              | 
+          AST.VarElementN |                      |              | 
+            AST.DataMembe |                      |              | 
+              AST.IdNode  | idx3                 |              | 
+              AST.IndexLi |                      |              | 
+        AST.ExprNode      |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.AddOpNode | +                    |              | 
+              AST.TermNod |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | idx                  |              | 
+                        A |                      |              | 
+              AST.TermNod |                      |              | 
+                AST.NumNo | 1                    |              | 
+      AST.StatBlockNode   |                      |              | 
+    AST.ForStatNode       | for                  |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | idx1                 |              | 
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 1                    |              | 
+      AST.RelExprNode     | <=                   |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | idx2                 |              | 
+                AST.Index |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 99                   |              | 
+      AST.AssignStatNode  | =                    |              | 
+        AST.VarNode       |                      |              | 
+          AST.VarElementN |                      |              | 
+            AST.DataMembe |                      |              | 
+              AST.IdNode  | idx3                 |              | 
+              AST.IndexLi |                      |              | 
+        AST.ExprNode      |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.AddOpNode | +                    |              | 
+              AST.TermNod |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | idx                  |              | 
+                        A |                      |              | 
+              AST.TermNod |                      |              | 
+                AST.NumNo | 1                    |              | 
+      AST.StatBlockNode   |                      |              | 
+    AST.ForStatNode       | for                  |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | idx1                 |              | 
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 1                    |              | 
+      AST.RelExprNode     | <=                   |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | idx2                 |              | 
+                AST.Index |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 99                   |              | 
+      AST.AssignStatNode  | =                    |              | 
+        AST.VarNode       |                      |              | 
+          AST.VarElementN |                      |              | 
+            AST.DataMembe |                      |              | 
+              AST.IdNode  | idx3                 |              | 
+              AST.IndexLi |                      |              | 
+        AST.ExprNode      |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.AddOpNode | +                    |              | 
+              AST.TermNod |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | idx                  |              | 
+                        A |                      |              | 
+              AST.TermNod |                      |              | 
+                AST.NumNo | 1                    |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.AssignStatNod | =                    |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | a                    |              | 
+                AST.Index |                      |              | 
+                  AST.Ari |                      |              | 
+                    AST.N | 1                    |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | b                    |              | 
+                    AST.I |                      |              | 
+                      AST |                      |              | 
+                        A | 1                    |              | 
+        AST.IfStatNode    | if                   |              | 
+          AST.ExprNode    |                      |              | 
+            AST.RelExprNo | <                    |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | array                |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | idx                  |              | 
+                                A |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | maxValue             |              | 
+                      AST |                      |              | 
+          AST.StatBlockNo |                      |              | 
+            AST.AssignSta | =                    |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | maxValue             |              | 
+                    AST.I |                      |              | 
+              AST.ExprNod |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | array                |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A | idx                  |              | 
+                                  A |                      |              | 
+          AST.StatBlockNo |                      |              | 
+        AST.ReturnStatNod | return               |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | minValue             |              | 
+                    AST.I |                      |              | 
+    AST.ForStatNode       | for                  |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | idx1                 |              | 
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 1                    |              | 
+      AST.RelExprNode     | <=                   |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | idx2                 |              | 
+                AST.Index |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 99                   |              | 
+      AST.AssignStatNode  | =                    |              | 
+        AST.VarNode       |                      |              | 
+          AST.VarElementN |                      |              | 
+            AST.DataMembe |                      |              | 
+              AST.IdNode  | idx3                 |              | 
+              AST.IndexLi |                      |              | 
+        AST.ExprNode      |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.AddOpNode | +                    |              | 
+              AST.TermNod |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | idx                  |              | 
+                        A |                      |              | 
+              AST.TermNod |                      |              | 
+                AST.NumNo | 1                    |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.ForStatNode   | for                  |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | idx1                 |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.NumNode | 1                    |              | 
+          AST.RelExprNode | <=                   |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | idx2                 |              | 
+                    AST.I |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.NumNode | 99                   |              | 
+          AST.AssignStatN | =                    |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | idx3                 |              | 
+                  AST.Ind |                      |              | 
+            AST.ExprNode  |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.AddOp | +                    |              | 
+                  AST.Ter |                      |              | 
+                    AST.A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | idx                  |              | 
+                            A |                      |              | 
+                  AST.Ter |                      |              | 
+                    AST.N | 1                    |              | 
+          AST.StatBlockNo |                      |              | 
+        AST.ForStatNode   | for                  |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | idx1                 |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.NumNode | 1                    |              | 
+          AST.RelExprNode | <=                   |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | idx2                 |              | 
+                    AST.I |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.NumNode | 99                   |              | 
+          AST.AssignStatN | =                    |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | idx3                 |              | 
+                  AST.Ind |                      |              | 
+            AST.ExprNode  |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.AddOp | +                    |              | 
+                  AST.Ter |                      |              | 
+                    AST.A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | idx                  |              | 
+                            A |                      |              | 
+                  AST.Ter |                      |              | 
+                    AST.N | 1                    |              | 
+          AST.StatBlockNo |                      |              | 
+        AST.ForStatNode   | for                  |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | idx1                 |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.NumNode | 1                    |              | 
+          AST.RelExprNode | <=                   |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | idx2                 |              | 
+                    AST.I |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.NumNode | 99                   |              | 
+          AST.AssignStatN | =                    |              | 
+            AST.VarNode   |                      |              | 
+              AST.VarElem |                      |              | 
+                AST.DataM |                      |              | 
+                  AST.IdN | idx3                 |              | 
+                  AST.Ind |                      |              | 
+            AST.ExprNode  |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.AddOp | +                    |              | 
+                  AST.Ter |                      |              | 
+                    AST.A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | idx                  |              | 
+                            A |                      |              | 
+                  AST.Ter |                      |              | 
+                    AST.N | 1                    |              | 
+          AST.StatBlockNo |                      |              | 
+    AST.ForStatNode       | for                  |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | idx1                 |              | 
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 1                    |              | 
+      AST.RelExprNode     | <=                   |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | idx2                 |              | 
+                AST.Index |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 99                   |              | 
+      AST.AssignStatNode  | =                    |              | 
+        AST.VarNode       |                      |              | 
+          AST.VarElementN |                      |              | 
+            AST.DataMembe |                      |              | 
+              AST.IdNode  | idx3                 |              | 
+              AST.IndexLi |                      |              | 
+        AST.ExprNode      |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.AddOpNode | +                    |              | 
+              AST.TermNod |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | idx                  |              | 
+                        A |                      |              | 
+              AST.TermNod |                      |              | 
+                AST.NumNo | 1                    |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.AssignStatNod | =                    |              | 
+          AST.VarNode     |                      |              | 
+            AST.VarElemen |                      |              | 
+              AST.DataMem |                      |              | 
+                AST.IdNod | a                    |              | 
+                AST.Index |                      |              | 
+                  AST.Ari |                      |              | 
+                    AST.N | 1                    |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | b                    |              | 
+                    AST.I |                      |              | 
+                      AST |                      |              | 
+                        A | 1                    |              | 
+        AST.IfStatNode    | if                   |              | 
+          AST.ExprNode    |                      |              | 
+            AST.RelExprNo | <                    |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | array                |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | idx                  |              | 
+                                A |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | maxValue             |              | 
+                      AST |                      |              | 
+          AST.StatBlockNo |                      |              | 
+            AST.AssignSta | =                    |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | maxValue             |              | 
+                    AST.I |                      |              | 
+              AST.ExprNod |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | array                |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A | idx                  |              | 
+                                  A |                      |              | 
+          AST.StatBlockNo |                      |              | 
+            AST.ForStatNo | for                  |              | 
+              AST.TypeNod | int                  |              | 
+              AST.IdNode  | idx1                 |              | 
+              AST.ExprNod |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Num | 1                    |              | 
+              AST.RelExpr | <=                   |              | 
+                AST.Arith |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | idx2                 |              | 
+                        A |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Num | 99                   |              | 
+              AST.AssignS | =                    |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | idx3                 |              | 
+                      AST |                      |              | 
+                AST.ExprN |                      |              | 
+                  AST.Ari |                      |              | 
+                    AST.A | +                    |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | idx                  |              | 
+                                A |                      |              | 
+                      AST |                      |              | 
+                        A | 1                    |              | 
+              AST.StatBlo |                      |              | 
+                AST.Assig | =                    |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | a                    |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | 1                    |              | 
+                  AST.Exp |                      |              | 
+                    AST.A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | b                    |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | 1                    |              | 
+                AST.IfSta | if                   |              | 
+                  AST.Exp |                      |              | 
+                    AST.R | <                    |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A | array                |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A |                      |              | 
+                                    A |                      |              | 
+                                      A |                      |              | 
+                                        A | idx                  |              | 
+                                        A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A | maxValue             |              | 
+                              A |                      |              | 
+                  AST.Sta |                      |              | 
+                    AST.A | =                    |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | maxValue             |              | 
+                            A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | array                |              | 
+                                A |                      |              | 
+                                  A |                      |              | 
+                                    A |                      |              | 
+                                      A |                      |              | 
+                                        A |                      |              | 
+                                          A | idx                  |              | 
+                                          A |                      |              | 
+                  AST.Sta |                      |              | 
+                AST.Retur | return               |              | 
+                  AST.Exp |                      |              | 
+                    AST.A |                      |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A | minValue             |              | 
+                            A |                      |              | 
+        AST.ReturnStatNod | return               |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | minValue             |              | 
+                    AST.I |                      |              | 
+=================================================================================================

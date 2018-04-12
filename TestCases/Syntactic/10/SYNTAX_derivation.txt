@@ -1,0 +1,8 @@
+[SYNTAX] prog 
+[SYNTAX] classDecl_List funcDef_List 'program' funcBody ';' 
+[SYNTAX]  funcDef_List 'program' funcBody ';' 
+[SYNTAX]  funcDef funcDef_List 'program' funcBody ';' 
+[SYNTAX]  funcHead funcBody ; funcDef_List 'program' funcBody ';' 
+[SYNTAX]  type id funcHead_Optional ( fParams ) funcBody ; funcDef_List 'program' funcBody ';' 
+[SYNTAX]  ABC id funcHead_Optional ( fParams ) funcBody ; funcDef_List 'program' funcBody ';' 
+[SYNTAX]  ABC abc funcHead_Optional ( fParams ) funcBody ; funcDef_List 'program' funcBody ';' 

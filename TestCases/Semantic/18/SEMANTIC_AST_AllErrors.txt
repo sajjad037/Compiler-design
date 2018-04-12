@@ -1,0 +1,15 @@
+[ERROR]	SYNTAX	Line # :     3	IN LINE NUMBER:	3:	Expected One of these tokens:	id float int }	
+[WARNING]	SYNTAX	Line # :     3	SKIPPING TOKEN:	;	AT LINE NUMBER:	3	
+[WARNING]	SYNTAX	Line # :     4	RESUME PARSING FROM  TOKEN:	}	AT LINE NUMBER:	4	
+[ERROR]	SYNTAX	Line # :    10	IN LINE NUMBER:	10:	Expected One of these tokens:	id float int }	
+[WARNING]	SYNTAX	Line # :    10	SKIPPING TOKEN:	;	AT LINE NUMBER:	10	
+[WARNING]	SYNTAX	Line # :    11	RESUME PARSING FROM  TOKEN:	}	AT LINE NUMBER:	11	
+[ERROR]	SYNTAX	Line # :    18	IN LINE NUMBER:	18:	Expected One of these tokens:	id float int }	
+[WARNING]	SYNTAX	Line # :    18	SKIPPING TOKEN:	;	AT LINE NUMBER:	18	
+[WARNING]	SYNTAX	Line # :    19	RESUME PARSING FROM  TOKEN:	float	AT LINE NUMBER:	19	
+[ERROR]	SYNTAX	Line # :    19	IN LINE NUMBER:	19:	Expected One of these tokens:	id float int }	
+[WARNING]	SYNTAX	Line # :    19	SKIPPING TOKEN:	;	AT LINE NUMBER:	19	
+[WARNING]	SYNTAX	Line # :    20	RESUME PARSING FROM  TOKEN:	FOO1	AT LINE NUMBER:	20	
+[ERROR]	SYNTAX	Line # :    20	IN LINE NUMBER:	20:	Expected One of these tokens:	id float int }	
+[WARNING]	SYNTAX	Line # :    20	SKIPPING TOKEN:	;	AT LINE NUMBER:	20	
+[WARNING]	SYNTAX	Line # :    21	RESUME PARSING FROM  TOKEN:	}	AT LINE NUMBER:	21	

@@ -1,0 +1,317 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | 
+  AST.ClassListNode       |                      |              | 
+    AST.ClassNode         |                      |              | 
+      AST.IdNode          | Foo                  |              | 
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | var1                 |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | float                |              | 
+          AST.IdNode      | var2                 |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | var3                 |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 10                   |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | float                |              | 
+          AST.IdNode      | var4                 |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 2                    |              | 
+            AST.NumNode   | 3                    |              | 
+            AST.NumNode   | 4                    |              | 
+            AST.NumNode   | 6                    |              | 
+            AST.NumNode   | 7                    |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | Utility              |              | 
+          AST.IdNode      | utility              |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | a                    |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | float                |              | 
+          AST.IdNode      | b                    |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | c                    |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 10                   |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | float                |              | 
+          AST.IdNode      | d                    |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 20                   |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | Utility              |              | 
+          AST.IdNode      | utility              |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | value                |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | id                   |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | maxValue             |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | maxValue             |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | maxValue             |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 100                  |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 10                   |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 10                   |              | 
+            AST.NumNode   | 20                   |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 10                   |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 10                   |              | 
+            AST.NumNode   | 11                   |              | 
+            AST.NumNode   | 10                   |              | 
+            AST.NumNode   | 11                   |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   | 10                   |              | 
+            AST.NumNode   | 12                   |              | 
+            AST.NumNode   | 11                   |              | 
+            AST.NumNode   | 10                   |              | 
+            AST.NumNode   | 11                   |              | 
+            AST.NumNode   | 11                   |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | left                 |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   |                      |              | 
+            AST.NumNode   |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   |                      |              | 
+            AST.NumNode   | 10                   |              | 
+            AST.NumNode   | 10                   |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | a                    |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   |                      |              | 
+        AST.VarDeclNode   |                      |              | 
+          AST.TypeNode    | maxValue             |              | 
+          AST.IdNode      |                      |              | 
+          AST.DimListNode |                      |              | 
+            AST.NumNode   |                      |              | 
+      AST.FuncDeclListNod |                      |              | 
+        AST.FuncDeclNode  |                      |              | 
+          AST.TypeNode    | int                  |              | 
+          AST.IdNode      | FindMax              |              | 
+          AST.ParamListNo |                      |              | 
+            AST.VarDeclNo |                      |              | 
+              AST.TypeNod | int                  |              | 
+              AST.IdNode  | f1                   |              | 
+              AST.DimList |                      |              | 
+            AST.VarDeclNo |                      |              | 
+              AST.TypeNod | Foo                  |              | 
+              AST.IdNode  | foo                  |              | 
+              AST.DimList |                      |              | 
+                AST.NumNo | 1                    |              | 
+            AST.VarDeclNo |                      |              | 
+              AST.TypeNod | Foo                  |              | 
+              AST.IdNode  | foo                  |              | 
+              AST.DimList |                      |              | 
+            AST.VarDeclNo |                      |              | 
+              AST.TypeNod | float                |              | 
+              AST.IdNode  | b                    |              | 
+              AST.DimList |                      |              | 
+                AST.NumNo | 2                    |              | 
+                AST.NumNo | 2                    |              | 
+            AST.VarDeclNo |                      |              | 
+              AST.TypeNod | int                  |              | 
+              AST.IdNode  | a                    |              | 
+              AST.DimList |                      |              | 
+                AST.NumNo | 1                    |              | 
+            AST.VarDeclNo |                      |              | 
+              AST.TypeNod | float                |              | 
+              AST.IdNode  | f2                   |              | 
+              AST.DimList |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+    AST.FuncDefNode       |                      |              | 
+      AST.FuncHeadNode    |                      |              | 
+        AST.TypeNode      | a                    |              | 
+        AST.IdNode        |                      |              | 
+        AST.IdNode        |                      |              | 
+        AST.ParamListNode |                      |              | 
+          AST.VarDeclNode |                      |              | 
+            AST.TypeNode  | a                    |              | 
+            AST.IdNode    |                      |              | 
+            AST.DimListNo |                      |              | 
+              AST.NumNode |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+    AST.FuncDefNode       |                      |              | 
+      AST.FuncHeadNode    |                      |              | 
+        AST.TypeNode      | a                    |              | 
+        AST.IdNode        |                      |              | 
+        AST.IdNode        |                      |              | 
+        AST.ParamListNode |                      |              | 
+          AST.VarDeclNode |                      |              | 
+            AST.TypeNode  | int                  |              | 
+            AST.IdNode    | idx1                 |              | 
+            AST.DimListNo |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+    AST.FuncDefNode       |                      |              | 
+      AST.FuncHeadNode    |                      |              | 
+        AST.TypeNode      | int                  |              | 
+        AST.IdNode        | idx1                 |              | 
+        AST.IdNode        |                      |              | 
+        AST.ParamListNode |                      |              | 
+          AST.VarDeclNode |                      |              | 
+            AST.TypeNode  | idx                  |              | 
+            AST.IdNode    |                      |              | 
+            AST.DimListNo |                      |              | 
+      AST.StatBlockNode   |                      |              | 
+        AST.AssignStatNod | =                    |              | 
+          AST.VarNode     |                      |              | 
+            AST.IdNode    | a                    |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | b                    |              | 
+                    AST.I |                      |              | 
+                      AST |                      |              | 
+                        A | 1                    |              | 
+        AST.IfStatNode    | if                   |              | 
+          AST.ExprNode    |                      |              | 
+            AST.RelExprNo | <                    |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | array                |              | 
+                      AST |                      |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A | idx                  |              | 
+                                A |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.VarNo |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.D |                      |              | 
+                      AST | maxValue             |              | 
+                      AST |                      |              | 
+          AST.StatBlockNo |                      |              | 
+            AST.AssignSta | =                    |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | maxValue             |              | 
+                    AST.I |                      |              | 
+              AST.ExprNod |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Var |                      |              | 
+                    AST.V |                      |              | 
+                      AST |                      |              | 
+                        A | array                |              | 
+                        A |                      |              | 
+                          A |                      |              | 
+                            A |                      |              | 
+                              A |                      |              | 
+                                A |                      |              | 
+                                  A | idx                  |              | 
+                                  A |                      |              | 
+          AST.StatBlockNo |                      |              | 
+        AST.ReturnStatNod | return               |              | 
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.VarNode |                      |              | 
+                AST.VarEl |                      |              | 
+                  AST.Dat |                      |              | 
+                    AST.I | minValue             |              | 
+                    AST.I |                      |              | 
+  AST.StatBlockNode       |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | var1                 |              | 
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | float                |              | 
+      AST.IdNode          | var2                 |              | 
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | var3                 |              | 
+      AST.DimListNode     |                      |              | 
+        AST.NumNode       | 10                   |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | float                |              | 
+      AST.IdNode          | var4                 |              | 
+      AST.DimListNode     |                      |              | 
+        AST.NumNode       | 2                    |              | 
+        AST.NumNode       | 3                    |              | 
+        AST.NumNode       | 4                    |              | 
+        AST.NumNode       | 6                    |              | 
+        AST.NumNode       | 7                    |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | findMax              |              | 
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.IdNode          | Utility              |              | 
+      AST.IdNode          | utility              |              | 
+      AST.DimListNode     |                      |              | 
+=================================================================================================

@@ -1,7 +1,0 @@
-[SYNTAX] prog 
-[SYNTAX] classDecl_List funcDef_List 'program' funcBody ';' 
-[SYNTAX] ClassDecl classDecl_List funcDef_List 'program' funcBody ';' 
-[SYNTAX] class id classDecl_Optional { varDecl_FuncDecl_List } ; classDecl_List funcDef_List 'program' funcBody ';' 
-[SYNTAX] class InheritedUtility classDecl_Optional { varDecl_FuncDecl_List } ; classDecl_List funcDef_List 'program' funcBody ';' 
-[SYNTAX] class InheritedUtility : id classDecl_Listtow { varDecl_FuncDecl_List } ; classDecl_List funcDef_List 'program' funcBody ';' 
-[SYNTAX] class InheritedUtility : InheritedUtility classDecl_Listtow { varDecl_FuncDecl_List } ; classDecl_List funcDef_List 'program' funcBody ';' 

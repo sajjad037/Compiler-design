@@ -24,7 +24,7 @@ public class SemanticAnalysis {
 		ConstructAssignmentAndExpressionStatements CSVisitor = new ConstructAssignmentAndExpressionStatements(); 
 		prog.accept(CSVisitor);
 		setTreeAfterCSVisitor(prog.toString());
-		//System.out.println(getTreeAfterCSVisitor());
+//		//System.out.println(getTreeAfterCSVisitor());
 		System.out.println("==TREE VISITED WITH STRING CONSTRUCTION VISITOR=======");
 		
 		
@@ -109,11 +109,4 @@ public class SemanticAnalysis {
 	private void setSymbolTableStr(String symbolTableStr) {
 		this.symbolTableStr = symbolTableStr;
 	}
-
-	
-	
-	
-	
-	
-	
 }

@@ -1,0 +1,123 @@
+[SYNTAX] INFO: RESERVE_WORD_CLASS -> class 
+[SYNTAX] INFO: IDENTIFIER -> Rational 
+[SYNTAX] INFO: classDecl_Optional -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> numerator 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> denominator 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> setNumerator 
+[SYNTAX] INFO: funcHead_Optional -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> newNumerator 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: fParamsTail_List -> EPSILON 
+[SYNTAX] INFO: fParams -> type id arraySize_List fParamsTail_List 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: type -> id	->	numerator 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> EPSILON 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecFunDef1 -> ( fParams ) funcBody ; funcDefList 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: classDecl -> class id classDecl_Optional { varDecl_FuncDecl_List } ; 
+[SYNTAX] INFO: classDecl_List -> EPSILON 
+[SYNTAX] INFO: classDecl_List -> classDecl classDecl_List 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> setDenominator 
+[SYNTAX] INFO: funcHead_Optional -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> newDenominator 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: fParamsTail_List -> EPSILON 
+[SYNTAX] INFO: fParams -> type id arraySize_List fParamsTail_List 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: funcHead -> type id funcHead_Optional ( fParams ) 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: IDENTIFIER -> denominator 
+[SYNTAX] INFO: indiceIdnestList_Tail -> EPSILON 
+[SYNTAX] INFO: OPERATOR_ASSIGN_EQUAL -> = 
+[SYNTAX] INFO: IDENTIFIER -> newDenominator 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> EPSILON 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: varDeclStatement_Tail  -> indiceIdnestList_Tail assignOp expr ; statement_List 
+[SYNTAX] INFO: varDecl_statement_List -> id varDeclStatement_Tail 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: funcBody -> { varDecl_statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: funcDef -> funcHead funcBody ; 
+[SYNTAX] INFO: funcDef_List -> EPSILON 
+[SYNTAX] INFO: funcDef_List -> funcDef funcDef_List 
+[SYNTAX] INFO: RESERVE_WORD_PROGRAM -> program 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: IDENTIFIER -> Rational 
+[SYNTAX] INFO: IDENTIFIER -> r1 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indiceIdnestList_Tail -> EPSILON 
+[SYNTAX] INFO: OPERATOR_ASSIGN_EQUAL -> = 
+[SYNTAX] INFO: IDENTIFIER -> r1 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_DOT -> . 
+[SYNTAX] INFO: IDENTIFIER -> setDenominator 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: intNum -> INTEGER 
+[SYNTAX] INFO: factor -> intNum 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> EPSILON 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: aParamsTail_List -> EPSILON 
+[SYNTAX] INFO: aParams -> expr aParamsTail_List 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO:  idnest_Tail -> ( aParams ) 
+[SYNTAX] INFO: idnest_ -> . id idnest_Tail 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> idnest_ idnest_List_Tail 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> EPSILON 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] WARNING: REACHED END OF FILE 

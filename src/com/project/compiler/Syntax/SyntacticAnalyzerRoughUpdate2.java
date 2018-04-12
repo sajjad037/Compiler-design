@@ -31,6 +31,7 @@ import com.project.compiler.Ast.MultOpNode;
 import com.project.compiler.Ast.NotNode;
 import com.project.compiler.Ast.NumNode;
 import com.project.compiler.Ast.ParamListNode;
+import com.project.compiler.Ast.ProgramBlockNode;
 import com.project.compiler.Ast.PutStatNode;
 import com.project.compiler.Ast.RelExprNode;
 import com.project.compiler.Ast.ReturnStatNode;
@@ -204,7 +205,7 @@ public class SyntacticAnalyzerRoughUpdate2 {
 		AstNode classNode = new ClassNode();
 		AstNode classlist = new ClassListNode();
 		AstNode statBlockNode = new StatBlockNode();
-		AstNode statBlockNode = new StatBlockNode();
+		AstNode programBlockNode = new ProgramBlockNode();
 			
 		semantics.progDecl(); //**
 			 if (classDecl_List(classNode, classlist) 
@@ -220,11 +221,17 @@ public class SyntacticAnalyzerRoughUpdate2 {
 					 semantics.moonCode.add("\t\t" + "hlt");
 					 print(SYNTAX, "prog -> classDecl_List funcDef_List 'program' funcBody ';'");
 					 //prog = new ProgNode(classlist, funcDefListNode, statBlockNode);
-					 prog.setProgNode(classlist, funcDefListNode, statBlockNode);
+					 for (AstNode astNode : statBlockNode.getChildren()) {
+						 programBlockNode.addChild(astNode);
+						}
+					 prog.setProgNode(classlist, funcDefListNode, programBlockNode);
 				 return true;
 				} else
 				{
-					prog.setProgNode(classlist, funcDefListNode, statBlockNode);
+					for (AstNode astNode : statBlockNode.getChildren()) {
+						 programBlockNode.addChild(astNode);
+						}
+					prog.setProgNode(classlist, funcDefListNode, programBlockNode);
 					return false;
 				}
 			 }

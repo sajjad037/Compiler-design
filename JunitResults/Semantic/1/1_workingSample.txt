@@ -1,0 +1,8 @@
+class InheritedUtility {
+int member1;
+};
+
+program {
+int sample[4][5];
+int idx;
+};

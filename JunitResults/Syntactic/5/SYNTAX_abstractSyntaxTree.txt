@@ -1,0 +1,20 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | 
+  AST.ClassListNode       |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.StatBlockNode       |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | int                  |              | 
+      AST.IdNode          | a                    |              | 
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.TypeNode        | float                |              | 
+      AST.IdNode          | b                    |              | 
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | 
+      AST.IdNode          | Char                 |              | 
+      AST.IdNode          | A                    |              | 
+      AST.DimListNode     |                      |              | 
+=================================================================================================

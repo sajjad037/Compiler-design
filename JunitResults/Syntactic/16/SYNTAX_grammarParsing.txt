@@ -1,0 +1,630 @@
+[SYNTAX] INFO: RESERVE_WORD_CLASS -> class 
+[SYNTAX] INFO: IDENTIFIER -> Foo 
+[SYNTAX] INFO: classDecl_Optional -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> var1 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> float 
+[SYNTAX] INFO: IDENTIFIER -> var2 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> var3 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> float 
+[SYNTAX] INFO: IDENTIFIER -> var4 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 2 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 3 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 4 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 6 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 7 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	Utility 
+[SYNTAX] INFO: IDENTIFIER -> utility 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> FindMax 
+[SYNTAX] INFO: funcHead_Optional -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> f1 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_COMMA -> , 
+[SYNTAX] INFO: numericType -> float 
+[SYNTAX] INFO: IDENTIFIER -> f2 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: fParamsTail -> , type id arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_COMMA -> , 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 1 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: fParamsTail -> , type id arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_COMMA -> , 
+[SYNTAX] INFO: numericType -> float 
+[SYNTAX] INFO: IDENTIFIER -> b 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 2 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 2 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: fParamsTail -> , type id arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_COMMA -> , 
+[SYNTAX] INFO: type -> id	->	Foo 
+[SYNTAX] INFO: IDENTIFIER -> foo 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: fParamsTail -> , type id arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_COMMA -> , 
+[SYNTAX] INFO: type -> id	->	Foo 
+[SYNTAX] INFO: IDENTIFIER -> foo 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 1 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: fParamsTail -> , type id arraySize_List 
+[SYNTAX] INFO: fParamsTail_List -> EPSILON 
+[SYNTAX] INFO: fParamsTail_List -> fParamsTail fParamsTail_List 
+[SYNTAX] INFO: fParamsTail_List -> fParamsTail fParamsTail_List 
+[SYNTAX] INFO: fParamsTail_List -> fParamsTail fParamsTail_List 
+[SYNTAX] INFO: fParamsTail_List -> fParamsTail fParamsTail_List 
+[SYNTAX] INFO: fParamsTail_List -> fParamsTail fParamsTail_List 
+[SYNTAX] INFO: fParams -> type id arraySize_List fParamsTail_List 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> float 
+[SYNTAX] INFO: IDENTIFIER -> b 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> c 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> float 
+[SYNTAX] INFO: IDENTIFIER -> d 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 20 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	Utility 
+[SYNTAX] INFO: IDENTIFIER -> utility 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	value 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	id 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	maxValue 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	maxValue 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 100 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 20 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 11 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 11 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 12 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 11 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 11 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 11 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	left 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: type -> id	->	maxValue 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> EPSILON 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecFunDef1 -> ( fParams ) funcBody ; funcDefList 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: varDecl_FunctDef_Tail -> arraySizeList ; varDecl_FuncDecl_List 
+[SYNTAX] INFO: varDecl_FuncDecl_List -> type id varDecl_FunctDef_Tail 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: classDecl -> class id classDecl_Optional { varDecl_FuncDecl_List } ; 
+[SYNTAX] INFO: classDecl_List -> EPSILON 
+[SYNTAX] INFO: classDecl_List -> classDecl classDecl_List 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: funcHead_Optional -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: fParamsTail_List -> EPSILON 
+[SYNTAX] INFO: fParams -> type id arraySize_List fParamsTail_List 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: funcHead -> type id funcHead_Optional ( fParams ) 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: varDecl_statement_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: funcBody -> { varDecl_statement_List } 
+[SYNTAX] INFO: funcDef -> funcHead funcBody ; 
+[SYNTAX] INFO: type -> id	->	a 
+[SYNTAX] INFO: funcHead_Optional -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> idx1 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: fParamsTail_List -> EPSILON 
+[SYNTAX] INFO: fParams -> type id arraySize_List fParamsTail_List 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: funcHead -> type id funcHead_Optional ( fParams ) 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: varDecl_statement_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: funcBody -> { varDecl_statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: funcDef -> funcHead funcBody ; 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> idx1 
+[SYNTAX] INFO: funcHead_Optional -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: type -> id	->	idx 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: fParamsTail_List -> EPSILON 
+[SYNTAX] INFO: fParams -> type id arraySize_List fParamsTail_List 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: funcHead -> type id funcHead_Optional ( fParams ) 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: IDENTIFIER -> a 
+[SYNTAX] INFO: indiceIdnestList_Tail -> EPSILON 
+[SYNTAX] INFO: OPERATOR_ASSIGN_EQUAL -> = 
+[SYNTAX] INFO: IDENTIFIER -> b 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: intNum -> INTEGER 
+[SYNTAX] INFO: factor -> intNum 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> EPSILON 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: RESERVE_WORD_IF -> if 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> array 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> idx 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: relOp -> < 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> relOp arithExpr 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: RESERVE_WORD_THEN -> then 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: IDENTIFIER -> maxValue 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: OPERATOR_ASSIGN_EQUAL -> = 
+[SYNTAX] INFO: IDENTIFIER -> array 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: IDENTIFIER -> idx 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: indice -> [ arithExpr ] 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: indice_List  -> indice indice_List 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> EPSILON 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: assignStatSemicolon -> variable assignOp expr ; 
+[SYNTAX] INFO: statement -> assignStatSemicolon 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: RESERVE_WORD_ELSE -> else 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: statBlock -> { statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> if ( expr ) then statBlock else statBlock ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: RESERVE_WORD_RETURN -> return 
+[SYNTAX] INFO: PUNCTUATION_ROUND_LEFT_PARENTHESIS -> ( 
+[SYNTAX] INFO: IDENTIFIER -> minValue 
+[SYNTAX] INFO: indice_List -> EPSILON 
+[SYNTAX] INFO: idnest_List_Tail -> EPSILON 
+[SYNTAX] INFO: variable_Tail -> indice_List idnest_List_Tail 
+[SYNTAX] INFO: variable -> id variable_Tail 
+[SYNTAX] INFO: functionCall   -> variable 
+[SYNTAX] INFO: factor -> functionCall 
+[SYNTAX] INFO: term_Tail -> EPSILON 
+[SYNTAX] INFO: term -> factor term_Tail 
+[SYNTAX] INFO: arithExpr_Tail -> EPSILON 
+[SYNTAX] INFO: arithExpr -> term arithExpr_Tail 
+[SYNTAX] INFO: exp_Tail -> EPSILON 
+[SYNTAX] INFO: expr -> arithExpr exp_Tail 
+[SYNTAX] INFO: PUNCTUATION_ROUND_RIGHT_PARENTHESIS -> ) 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: remainingStatement -> return ( expr ) ; 
+[SYNTAX] INFO: statement -> remainingStatement 
+[SYNTAX] INFO: statement_List -> EPSILON 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: statement_List -> statement statement_List 
+[SYNTAX] INFO: varDeclStatement_Tail  -> indiceIdnestList_Tail assignOp expr ; statement_List 
+[SYNTAX] INFO: varDecl_statement_List -> id varDeclStatement_Tail 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: funcBody -> { varDecl_statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: funcDef -> funcHead funcBody ; 
+[SYNTAX] INFO: funcDef_List -> EPSILON 
+[SYNTAX] INFO: funcDef_List -> funcDef funcDef_List 
+[SYNTAX] INFO: funcDef_List -> funcDef funcDef_List 
+[SYNTAX] INFO: funcDef_List -> funcDef funcDef_List 
+[SYNTAX] INFO: RESERVE_WORD_PROGRAM -> program 
+[SYNTAX] INFO: PUNCTUATION_CURLY_LEFT_PARENTHESIS -> { 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> var1 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> float 
+[SYNTAX] INFO: IDENTIFIER -> var2 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> var3 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 10 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> float 
+[SYNTAX] INFO: IDENTIFIER -> var4 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 2 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 3 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 4 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 6 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_LEFT_PARENTHESIS -> [ 
+[SYNTAX] INFO: INTEGER -> 7 
+[SYNTAX] INFO: PUNCTUATION_SQUARE_RIGHT_PARENTHESIS -> ] 
+[SYNTAX] INFO: arraySize -> [ intValue ] 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: arraySize_List -> arraySize arraySize_List 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: numericType -> int 
+[SYNTAX] INFO: IDENTIFIER -> findMax 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: IDENTIFIER -> Utility 
+[SYNTAX] INFO: IDENTIFIER -> utility 
+[SYNTAX] INFO: arraySize_List -> EPSILON 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: varDecl_statement_List -> EPSILON 
+[SYNTAX] INFO: varDeclStatement_Tail  -> id arraySize_List ; varDecl_statement_List 
+[SYNTAX] INFO: varDecl_statement_List -> id varDeclStatement_Tail 
+[SYNTAX] INFO: varDecl_statement_List -> numericType id arraySize_List ; varDecl_statement_List 
+[SYNTAX] INFO: varDecl_statement_List -> numericType id arraySize_List ; varDecl_statement_List 
+[SYNTAX] INFO: varDecl_statement_List -> numericType id arraySize_List ; varDecl_statement_List 
+[SYNTAX] INFO: varDecl_statement_List -> numericType id arraySize_List ; varDecl_statement_List 
+[SYNTAX] INFO: varDecl_statement_List -> numericType id arraySize_List ; varDecl_statement_List 
+[SYNTAX] INFO: PUNCTUATION_CURLY_RIGHT_PARENTHESIS -> } 
+[SYNTAX] INFO: funcBody -> { varDecl_statement_List } 
+[SYNTAX] INFO: PUNCTUATION_SEMICOLON -> ; 
+[SYNTAX] INFO: prog -> classDecl_List funcDef_List 'program' funcBody ';' 

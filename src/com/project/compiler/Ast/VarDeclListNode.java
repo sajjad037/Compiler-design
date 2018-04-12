@@ -31,8 +31,6 @@ public class VarDeclListNode extends AstNode {
 	 * visited.
 	 */
 	public void accept(VisitorBase visitor) {
-		for (AstNode child : this.getChildren())
-			child.accept(visitor);
 		visitor.visit(this);
 	}
 

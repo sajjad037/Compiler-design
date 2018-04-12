@@ -1,0 +1,13 @@
+[ERROR]	SYNTAX	Line # :     5	IN LINE NUMBER:	5:	Expected One of these tokens:	id float int }	
+[WARNING]	SYNTAX	Line # :     5	SKIPPING TOKEN:	{	AT LINE NUMBER:	5	
+[WARNING]	SYNTAX	Line # :     6	RESUME PARSING FROM  TOKEN:	numerator	AT LINE NUMBER:	6	
+[ERROR]	SYNTAX	Line # :     6	IN LINE NUMBER:	6:	Expected One of these token Type:	IDENTIFIER	
+[ERROR]	SYNTAX	Line # :     6	INVALID TOKEN MATCH: OPERATOR_ASSIGN_EQUAL	=	
+[ERROR]	SYNTAX	Line # :     6	IN LINE NUMBER:	6:	Expected One of these tokens:	[ ; sr (	
+[WARNING]	SYNTAX	Line # :     6	SKIPPING TOKEN:	=	AT LINE NUMBER:	6	
+[WARNING]	SYNTAX	Line # :     6	SKIPPING TOKEN:	newNumerator	AT LINE NUMBER:	6	
+[WARNING]	SYNTAX	Line # :     6	RESUME PARSING FROM  TOKEN:	;	AT LINE NUMBER:	6	
+[ERROR]	SYNTAX	Line # :    12	IN LINE NUMBER:	12:	Expected One of these tokens:	id float int program	
+[WARNING]	SYNTAX	Line # :    12	SKIPPING TOKEN:	}	AT LINE NUMBER:	12	
+[WARNING]	SYNTAX	Line # :    12	SKIPPING TOKEN:	;	AT LINE NUMBER:	12	
+[WARNING]	SYNTAX	Line # :    14	RESUME PARSING FROM  TOKEN:	program	AT LINE NUMBER:	14	

@@ -1,0 +1,3 @@
+[ERROR]	SYNTAX	Line # :    14	IDENTIFIER UNDECLARED:	intMax  at Line Number:	14	
+[ERROR]	SYNTAX	Line # :    17	IDENTIFIER UNDECLARED:	floatMin  at Line Number:	17	
+[ERROR]	SYNTAX	Line # :    20	IDENTIFIER UNDECLARED:	min  at Line Number:	20	
