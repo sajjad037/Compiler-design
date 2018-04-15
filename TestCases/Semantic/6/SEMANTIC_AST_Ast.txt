@@ -1,37 +1,37 @@
-=================================================================================================
-Node type                 | data                 | type         | subtreestring 
-=================================================================================================
-AST.ProgNode              |                      |              | 
-  AST.ClassListNode       |                      |              | 
-  AST.FuncDefListNode     |                      |              | 
-    AST.FuncDefNode       |                      |              | 
-      AST.FuncHeadNode    |                      |              | 
-        AST.TypeNode      | Class                |              | 
-        AST.IdNode        | foo1                 |              | 
-        AST.IdNode        |                      |              | 
-        AST.ParamListNode |                      |              | 
-      AST.StatBlockNode   |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | id                   | int          | id
-          AST.DimListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | id                   | int          | id
-          AST.DimListNode |                      |              | 
-    AST.FuncDefNode       |                      |              | 
-      AST.FuncHeadNode    |                      |              | 
-        AST.TypeNode      | Class                |              | 
-        AST.IdNode        | foo1                 |              | 
-        AST.IdNode        |                      |              | 
-        AST.ParamListNode |                      |              | 
-      AST.StatBlockNode   |                      |              | 
-    AST.FuncDefNode       |                      |              | 
-      AST.FuncHeadNode    |                      |              | 
-        AST.TypeNode      | int                  |              | 
-        AST.IdNode        | func                 |              | 
-        AST.IdNode        |                      |              | 
-        AST.ParamListNode |                      |              | 
-      AST.StatBlockNode   |                      |              | 
-  AST.ProgramBlockNode    |                      |              | 
-=================================================================================================
+=====================================================================
+AstNode type                 | data      | type      | subtreestring
+=====================================================================
+com.project.compiler.Ast.ProgNode |           |           |              
+  com.project.compiler.Ast.ClassListNo |           |           |              
+  com.project.compiler.Ast.FuncDefListNo |           |           |              
+    com.project.compiler.Ast.FuncDef |           |           |              
+      com.project.compiler.Ast.FuncHe |           |           |              
+        com.project.compiler.Ast. | Class     |           |              
+        com.project.compiler.As | foo1      |           |              
+        com.project.compiler.As |           |           |              
+        com.project.compiler.Ast.Param |           |           |              
+      com.project.compiler.Ast.StatBlo |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | id        | int       | id           
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | id        | int       | id           
+          com.project.compiler.Ast.D |           |           |              
+    com.project.compiler.Ast.FuncDef |           |           |              
+      com.project.compiler.Ast.FuncHe |           |           |              
+        com.project.compiler.Ast. | Class     |           |              
+        com.project.compiler.As | foo1      |           |              
+        com.project.compiler.As |           |           |              
+        com.project.compiler.Ast.Param |           |           |              
+      com.project.compiler.Ast.StatBlo |           |           |              
+    com.project.compiler.Ast.FuncDef |           |           |              
+      com.project.compiler.Ast.FuncHe |           |           |              
+        com.project.compiler.Ast. | int       |           |              
+        com.project.compiler.As | func      |           |              
+        com.project.compiler.As |           |           |              
+        com.project.compiler.Ast.Param |           |           |              
+      com.project.compiler.Ast.StatBlo |           |           |              
+  com.project.compiler.Ast.ProgramBlockNo |           |           |              
+=====================================================================

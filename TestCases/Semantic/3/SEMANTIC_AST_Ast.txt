@@ -1,26 +1,26 @@
-=================================================================================================
-Node type                 | data                 | type         | subtreestring 
-=================================================================================================
-AST.ProgNode              |                      |              | 
-  AST.ClassListNode       |                      |              | 
-    AST.ClassNode         |                      |              | 
-      AST.IdNode          | A                    |              | A
-      AST.InherList       |                      |              | 
-      AST.VarDeclListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | number               | int          | 
-          AST.DimListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | float                |              | 
-          AST.IdNode      | realNumber           | float        | 
-          AST.DimListNode |                      |              | 
-      AST.FuncDeclListNod |                      |              | 
-    AST.ClassNode         |                      |              | 
-      AST.IdNode          | A                    |              | A
-      AST.InherList       |                      |              | 
-      AST.VarDeclListNode |                      |              | 
-      AST.FuncDeclListNod |                      |              | 
-  AST.FuncDefListNode     |                      |              | 
-  AST.ProgramBlockNode    |                      |              | 
-=================================================================================================
+=====================================================================
+AstNode type                 | data      | type      | subtreestring
+=====================================================================
+com.project.compiler.Ast.ProgNode |           |           |              
+  com.project.compiler.Ast.ClassListNo |           |           |              
+    com.project.compiler.Ast.Class |           |           |              
+      com.project.compiler.Ast. | A         |           | A            
+      com.project.compiler.Ast.Inh |           |           |              
+      com.project.compiler.Ast.VarDeclLi |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | number    | int       |              
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | float     |           |              
+          com.project.compiler. | realNumber | float     |              
+          com.project.compiler.Ast.D |           |           |              
+      com.project.compiler.Ast.FuncDeclLi |           |           |              
+    com.project.compiler.Ast.Class |           |           |              
+      com.project.compiler.Ast. | A         |           | A            
+      com.project.compiler.Ast.Inh |           |           |              
+      com.project.compiler.Ast.VarDeclLi |           |           |              
+      com.project.compiler.Ast.FuncDeclLi |           |           |              
+  com.project.compiler.Ast.FuncDefListNo |           |           |              
+  com.project.compiler.Ast.ProgramBlockNo |           |           |              
+=====================================================================

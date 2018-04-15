@@ -1,16 +1,16 @@
-=================================================================================================
-Node type                 | data                 | type         | subtreestring 
-=================================================================================================
-AST.ProgNode              |                      |              | 
-  AST.ClassListNode       |                      |              | 
-  AST.FuncDefListNode     |                      |              | 
-  AST.ProgramBlockNode    |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | int                  |              | 
-      AST.IdNode          | a                    | int          | a
-      AST.DimListNode     |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | float                |              | 
-      AST.IdNode          | b                    | float        | b
-      AST.DimListNode     |                      |              | 
-=================================================================================================
+=====================================================================
+AstNode type                 | data      | type      | subtreestring
+=====================================================================
+com.project.compiler.Ast.ProgNode |           |           |              
+  com.project.compiler.Ast.ClassListNo |           |           |              
+  com.project.compiler.Ast.FuncDefListNo |           |           |              
+  com.project.compiler.Ast.ProgramBlockNo |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | int       |           |              
+      com.project.compiler.Ast. | a         | int       | a            
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | float     |           |              
+      com.project.compiler.Ast. | b         | float     | b            
+      com.project.compiler.Ast.DimLi |           |           |              
+=====================================================================

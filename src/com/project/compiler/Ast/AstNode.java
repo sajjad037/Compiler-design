@@ -5,8 +5,9 @@ import java.util.List;
 
 import com.project.compiler.Config.Enums.NodeType;
 import com.project.compiler.Model.Token;
-import com.project.compiler.Semantic.SymTab;
-import com.project.compiler.Semantic.SymTabEntry;
+import com.project.compiler.Model.VariablesData;
+import com.project.compiler.SymbolTable.SymTab;
+import com.project.compiler.SymbolTable.SymTabEntry;
 import com.project.compiler.Visitor.VisitorBase;
 
 
@@ -20,9 +21,10 @@ public abstract class AstNode {
 	
 	
 	private ArrayList<AstNode> childerns = new ArrayList<AstNode>();
+	private ArrayList<VariablesData> variables = new ArrayList<VariablesData>();
 	private AstNode parent = null;
-	private String data = null;
-	private static int nodelevel = 0;
+	public String data = null;
+	public static int nodelevel = 0;
 
 	private boolean hasChildern;
 	private Token dataToken;
@@ -34,8 +36,8 @@ public abstract class AstNode {
 	// during the implementation of the visitors
 	// These could be added using a decorator pattern
 	// triggered by a visitor
-	private String type = null;
-	private String subtreeString = new String();
+	public String type = null;
+	public String subtreeString = new String();
 	public SymTab symtab = null;
 	public SymTabEntry symtabentry = null;
     public  String localRegister      = new String(); 
@@ -403,6 +405,29 @@ public abstract class AstNode {
 	public void removeParent() {
 		this.parent = null;
 	}
+	
+	/**
+	 * @return the variables
+	 */
+	public ArrayList<VariablesData> getVariables() {
+		return variables;
+	}
+
+	/**
+	 * @param variables the variables to set
+	 */
+	public void setVariables(ArrayList<VariablesData> variables) {
+		this.variables = variables;
+	}
+	
+	/**
+	 * @param variables the variables to set
+	 */
+	public void addVariables(VariablesData variables) {
+		this.variables.add(variables);
+	}
+
+	
 
 //	public void print() {
 //		System.out.println("===================================================================================");
@@ -412,6 +437,7 @@ public abstract class AstNode {
 //		System.out.println("===================================================================================");
 //
 //	}
+
 
 	public String toString() {
 		StringBuilder sb = new StringBuilder();

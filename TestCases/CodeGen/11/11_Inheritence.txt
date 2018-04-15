@@ -1,0 +1,16 @@
+class A : B {
+int a1;
+int a2[2][2];
+C a3;
+}
+class B {
+int b1;
+int b2;
+}
+class C {
+int c1;
+int c2;
+}
+program {
+A a;
+}

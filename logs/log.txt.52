@@ -1,0 +1,8 @@
+Apr 14, 2018 4:43:41 PM com.project.compiler.JunitTests.TestCasesSemanticFileMatch commonExecution
+INFO: .. Executing Unit Test Case testCaseVariableDefinitionError ..
+Apr 14, 2018 4:43:41 PM com.project.compiler.JunitTests.TestCasesSemanticFileMatch commonExecution
+INFO: Unit test Cases statu: true
+Apr 14, 2018 4:43:41 PM com.project.compiler.JunitTests.TestCasesSemanticFileMatch commonExecution
+INFO: .. Executing Unit Test Case testCaseDuplicateClassDeclError ..
+Apr 14, 2018 4:43:41 PM com.project.compiler.JunitTests.TestCasesSemanticFileMatch commonExecution
+INFO: Unit test Cases statu: true

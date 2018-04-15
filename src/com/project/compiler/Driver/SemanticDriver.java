@@ -17,6 +17,8 @@ import com.project.compiler.Syntax.SyntacticAnalyzerRoughUpdate2;
 import com.project.compiler.Utilities.FileStorage;
 import com.project.compiler.Utilities.LoggerConfiguration;
 import com.project.compiler.Utilities.PrintUtil;
+import com.project.compiler.Visitor.ASTPrinterVisitor;
+
 
 
 /**
@@ -171,7 +173,10 @@ public class SemanticDriver extends baseDriver {
 		semanticAnalysis.starVisiting(prog);
 		
 		//Saving AST or Table  		
-		fileStorage.saveTxtFile(abstractSyntaxTreePath, prog.toString());
+		ASTPrinterVisitor astPVisitor = new ASTPrinterVisitor();
+		prog.accept(astPVisitor);	
+		//fileStorage.saveTxtFile(abstractSyntaxTreePath, prog.toString());
+		fileStorage.saveTxtFile(abstractSyntaxTreePath, astPVisitor.getOutPutString());
 		LOGGER.info("Abstract Syntax Tree is save to: "+abstractSyntaxTreePath);
 		
 		//Saving AST Symbol Table  		

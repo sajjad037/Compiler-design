@@ -1,47 +1,47 @@
-=================================================================================================
-Node type                 | data                 | type         | subtreestring 
-=================================================================================================
-AST.ProgNode              |                      |              | 
-  AST.ClassListNode       |                      |              | 
-  AST.FuncDefListNode     |                      |              | 
-    AST.FuncDefNode       |                      |              | 
-      AST.FuncHeadNode    |                      |              | 
-        AST.TypeNode      | Class                |              | 
-        AST.IdNode        | foo1                 |              | 
-        AST.IdNode        |                      |              | 
-        AST.ParamListNode |                      |              | 
-      AST.StatBlockNode   |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | id                   | int          | id
-          AST.DimListNode |                      |              | 
-    AST.FuncDefNode       |                      |              | 
-      AST.FuncHeadNode    |                      |              | 
-        AST.TypeNode      | Class                |              | 
-        AST.IdNode        | foo2                 |              | 
-        AST.IdNode        |                      |              | 
-        AST.ParamListNode |                      |              | 
-      AST.StatBlockNode   |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | idx                  | int          | idx
-          AST.DimListNode |                      |              | 
-  AST.ProgramBlockNode    |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | int                  |              | 
-      AST.IdNode          | ab                   | int          | ab
-      AST.DimListNode     |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.IdNode          | foo1                 |              | foo1
-      AST.IdNode          | ad                   | foo1         | ad
-      AST.DimListNode     |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.IdNode          | foo2                 |              | foo2
-      AST.IdNode          | lop                  | foo2         | lop
-      AST.DimListNode     |                      |              | 
-    AST.AssignStatNode    | =                    | typeerror    | var=
-      AST.VarNode         |                      | Undefined    | var
-        AST.IdNode        | var                  | Undefined    | var
-      AST.ArithExprNode   |                      |              | 
-        AST.NumNode       | 10                   |              | 
-=================================================================================================
+=====================================================================
+AstNode type                 | data      | type      | subtreestring
+=====================================================================
+com.project.compiler.Ast.ProgNode |           |           |              
+  com.project.compiler.Ast.ClassListNo |           |           |              
+  com.project.compiler.Ast.FuncDefListNo |           |           |              
+    com.project.compiler.Ast.FuncDef |           |           |              
+      com.project.compiler.Ast.FuncHe |           |           |              
+        com.project.compiler.Ast. | Class     |           |              
+        com.project.compiler.As | foo1      |           |              
+        com.project.compiler.As |           |           |              
+        com.project.compiler.Ast.Param |           |           |              
+      com.project.compiler.Ast.StatBlo |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | id        | int       | id           
+          com.project.compiler.Ast.D |           |           |              
+    com.project.compiler.Ast.FuncDef |           |           |              
+      com.project.compiler.Ast.FuncHe |           |           |              
+        com.project.compiler.Ast. | Class     |           |              
+        com.project.compiler.As | foo2      |           |              
+        com.project.compiler.As |           |           |              
+        com.project.compiler.Ast.Param |           |           |              
+      com.project.compiler.Ast.StatBlo |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | idx       | int       | idx          
+          com.project.compiler.Ast.D |           |           |              
+  com.project.compiler.Ast.ProgramBlockNo |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | int       |           |              
+      com.project.compiler.Ast. | ab        | int       | ab           
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast. | foo1      |           | foo1         
+      com.project.compiler.Ast. | ad        | foo1      | ad           
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast. | foo2      |           | foo2         
+      com.project.compiler.Ast. | lop       | foo2      | lop          
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.AssignStat | =         | typeerror | var=         
+      com.project.compiler.Ast.V |           | Undefined | var          
+        com.project.compiler.As | var       | Undefined | var          
+      com.project.compiler.Ast.ArithEx |           |           |              
+        com.project.compiler.Ast | 10        |           |              
+=====================================================================

@@ -4,11 +4,12 @@ import com.project.compiler.Ast.*;
 
 public class VisitorBase {
 
+	//public void visit(AST node)       			{};
+	
 	public void visit(AddOpNode node)       	{};
 	public void visit(AParamNode node)       	{};
 	public void visit(ArithExprNode node)       {};
 	public void visit(AssignStatNode node)      {};
-	//public void visit(AST node)       			{};
 	public void visit(AstNode node)       		{};
 	public void visit(ClassListNode node)       {};
 	public void visit(ClassNode node)       	{};

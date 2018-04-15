@@ -3,8 +3,8 @@ package com.project.compiler.Semantic;
 import java.util.ArrayList;
 
 import com.project.compiler.Ast.AstNode;
+import com.project.compiler.SymbolTable.SymTabCreationVisitor;
 import com.project.compiler.Visitor.ConstructAssignmentAndExpressionStatements;
-import com.project.compiler.Visitor.SymbolTableCreation;
 import com.project.compiler.Visitor.TypeChecking;
 
 
@@ -14,9 +14,9 @@ public class SemanticAnalysis {
 	
 	private ArrayList<Errors> errorList = new ArrayList<Errors>();
 	private StringBuilder errorsLog = new StringBuilder();
-	private String treeAfterCSVisitor = "";
-	private String treeAfterTCVisitor = "";
-	private String symbolTableStr = "";
+	private String treeAfterCSVisitor = new String();
+	private String treeAfterTCVisitor = new String();
+	private String symbolTableStr = new String();
 	
 	public void starVisiting(AstNode prog)
 	{
@@ -36,7 +36,7 @@ public class SemanticAnalysis {
 		System.out.println("==TREE VISITED WITH TYPE CHECKING VISITOR=======");
 		
 		System.out.println("==VISITING TREE WITH SYMBOL TABLE VISITOR======");
-		SymbolTableCreation STCVisitor = new SymbolTableCreation(); 
+		SymTabCreationVisitor STCVisitor = new SymTabCreationVisitor(); 
 		//prog.accept(STCVisitor);
 		//setSymbolTableStr(prog.symtab.toString());
 		System.out.println("==TREE VISITED WITH SYMBOL TABLE VISITOR=======");

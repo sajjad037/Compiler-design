@@ -1,241 +1,241 @@
-=================================================================================================
-Node type                 | data                 | type         | subtreestring 
-=================================================================================================
-AST.ProgNode              |                      |              | 
-  AST.ClassListNode       |                      |              | 
-    AST.ClassNode         |                      |              | 
-      AST.IdNode          | class1               |              | class1
-      AST.InherList       |                      |              | 
-      AST.VarDeclListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | float                |              | 
-          AST.IdNode      | float1               | float        | 
-          AST.DimListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | int1                 | int          | 
-          AST.DimListNode |                      |              | 
-      AST.FuncDeclListNod |                      |              | 
-    AST.ClassNode         |                      |              | 
-      AST.IdNode          | class2               |              | class2
-      AST.InherList       |                      |              | 
-      AST.VarDeclListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | in532                | int          | 
-          AST.DimListNode |                      |              | 
-            AST.NumNode   | 5                    |              | 
-            AST.NumNode   | 3                    |              | 
-            AST.NumNode   | 2                    |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | float                |              | 
-          AST.IdNode      | float10              | float        | 
-          AST.DimListNode |                      |              | 
-            AST.NumNode   | 10                   |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | float                |              | 
-          AST.IdNode      | float100             | float        | 
-          AST.DimListNode |                      |              | 
-            AST.NumNode   | 100                  |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | float                |              | 
-          AST.IdNode      | float1               | float        | 
-          AST.DimListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | int1                 | int          | 
-          AST.DimListNode |                      |              | 
-      AST.FuncDeclListNod |                      |              | 
-  AST.FuncDefListNode     |                      |              | 
-    AST.FuncDefNode       |                      |              | 
-      AST.FuncHeadNode    |                      |              | 
-        AST.TypeNode      | int                  |              | 
-        AST.IdNode        | func1                |              | 
-        AST.IdNode        |                      |              | 
-        AST.ParamListNode |                      |              | 
-          AST.VarDeclNode |                      |              | 
-            AST.TypeNode  | int                  |              | 
-            AST.IdNode    | int532               |              | 
-            AST.DimListNo |                      |              | 
-              AST.NumNode | 5                    |              | 
-              AST.NumNode | 3                    |              | 
-              AST.NumNode | 2                    |              | 
-          AST.VarDeclNode |                      |              | 
-            AST.TypeNode  | float                |              | 
-            AST.IdNode    | float100             |              | 
-            AST.DimListNo |                      |              | 
-              AST.NumNode | 100                  |              | 
-      AST.StatBlockNode   |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | float                |              | 
-          AST.IdNode      | float100             | float        | float100
-          AST.DimListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | a                    | int          | a
-          AST.DimListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | c                    | int          | c
-          AST.DimListNode |                      |              | 
-        AST.AssignStatNod | =                    | typeerror    | a=a+b*c
-          AST.VarNode     |                      | int          | a
-            AST.IdNode    | a                    | int          | a
-          AST.AddOpNode   | +                    | typeerror    | a+b*c
-            AST.DataMembe |                      | int          | a
-              AST.IdNode  | a                    | int          | a
-              AST.IndexLi |                      |              | 
-            AST.MultOpNod | *                    | typeerror    | b*c
-              AST.DataMem |                      | Undefined    | b
-                AST.IdNod | b                    | Undefined    | b
-                AST.Index |                      |              | 
-              AST.DataMem |                      | int          | c
-                AST.IdNod | c                    | int          | c
-                AST.Index |                      |              | 
-    AST.FuncDefNode       |                      |              | 
-      AST.FuncHeadNode    |                      |              | 
-        AST.TypeNode      | float                |              | 
-        AST.IdNode        | func2                |              | 
-        AST.IdNode        |                      |              | 
-        AST.ParamListNode |                      |              | 
-          AST.VarDeclNode |                      |              | 
-            AST.TypeNode  | float                |              | 
-            AST.IdNode    | float1               |              | 
-            AST.DimListNo |                      |              | 
-          AST.VarDeclNode |                      |              | 
-            AST.TypeNode  | int                  |              | 
-            AST.IdNode    | int1                 |              | 
-            AST.DimListNo |                      |              | 
-      AST.StatBlockNode   |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | int532               | int          | int532
-          AST.DimListNode |                      |              | [5][3][2]
-            AST.NumNode   | 5                    |              | 5
-            AST.NumNode   | 3                    |              | 3
-            AST.NumNode   | 2                    |              | 2
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | float                |              | 
-          AST.IdNode      | float100             | float        | float100
-          AST.DimListNode |                      |              | [100]
-            AST.NumNode   | 100                  |              | 100
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | a                    | int          | a
-          AST.DimListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | x                    | int          | x
-          AST.DimListNode |                      |              | 
-        AST.AssignStatNod | =                    | typeerror    | a=a+b*c
-          AST.VarNode     |                      | int          | a
-            AST.IdNode    | a                    | int          | a
-          AST.AddOpNode   | +                    | typeerror    | a+b*c
-            AST.DataMembe |                      | int          | a
-              AST.IdNode  | a                    | int          | a
-              AST.IndexLi |                      |              | 
-            AST.MultOpNod | *                    | Undefined    | b*c
-              AST.DataMem |                      | Undefined    | b
-                AST.IdNod | b                    | Undefined    | b
-                AST.Index |                      |              | 
-              AST.DataMem |                      | Undefined    | c
-                AST.IdNod | c                    | Undefined    | c
-                AST.Index |                      |              | 
-        AST.AssignStatNod | =                    | typeerror    | x=a+b*c
-          AST.DataMemberN |                      | int          | x
-            AST.IdNode    | x                    | int          | x
-            AST.IndexList |                      |              | 
-          AST.AddOpNode   | +                    | typeerror    | a+b*c
-            AST.DataMembe |                      | int          | a
-              AST.IdNode  | a                    | int          | a
-              AST.IndexLi |                      |              | 
-            AST.MultOpNod | *                    | Undefined    | b*c
-              AST.DataMem |                      | Undefined    | b
-                AST.IdNod | b                    | Undefined    | b
-                AST.Index |                      |              | 
-              AST.DataMem |                      | Undefined    | c
-                AST.IdNod | c                    | Undefined    | c
-                AST.Index |                      |              | 
-  AST.ProgramBlockNode    |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | int                  |              | 
-      AST.IdNode          | intprogram           | int          | intprogram
-      AST.DimListNode     |                      |              | [5][3][2]
-        AST.NumNode       | 5                    |              | 5
-        AST.NumNode       | 3                    |              | 3
-        AST.NumNode       | 2                    |              | 2
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | float                |              | 
-      AST.IdNode          | float10              | float        | float10
-      AST.DimListNode     |                      |              | [10]
-        AST.NumNode       | 10                   |              | 10
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | float                |              | 
-      AST.IdNode          | float100             | float        | float100
-      AST.DimListNode     |                      |              | [100]
-        AST.NumNode       | 100                  |              | 100
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | float                |              | 
-      AST.IdNode          | float1               | float        | float1
-      AST.DimListNode     |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | int                  |              | 
-      AST.IdNode          | int1                 | int          | int1
-      AST.DimListNode     |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | int                  |              | 
-      AST.IdNode          | a                    | int          | a
-      AST.DimListNode     |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | int                  |              | 
-      AST.IdNode          | x                    | int          | x
-      AST.DimListNode     |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | int                  |              | 
-      AST.IdNode          | a                    | int          | a
-      AST.DimListNode     |                      |              | 
-    AST.AssignStatNode    | =                    | typeerror    | a=a+b*c
-      AST.VarNode         |                      | int          | a
-        AST.IdNode        | a                    | int          | a
-      AST.AddOpNode       | +                    | typeerror    | a+b*c
-        AST.DataMemberNod |                      | int          | a
-          AST.IdNode      | a                    | int          | a
-          AST.IndexListNo |                      |              | 
-        AST.MultOpNode    | *                    | Undefined    | b*c
-          AST.DataMemberN |                      | Undefined    | b
-            AST.IdNode    | b                    | Undefined    | b
-            AST.IndexList |                      |              | 
-          AST.DataMemberN |                      | Undefined    | c
-            AST.IdNode    | c                    | Undefined    | c
-            AST.IndexList |                      |              | 
-    AST.AssignStatNode    | =                    | typeerror    | x=a+b*c
-      AST.DataMemberNode  |                      | int          | x
-        AST.IdNode        | x                    | int          | x
-        AST.IndexListNode |                      |              | 
-      AST.AddOpNode       | +                    | typeerror    | a+b*c
-        AST.DataMemberNod |                      | int          | a
-          AST.IdNode      | a                    | int          | a
-          AST.IndexListNo |                      |              | 
-        AST.MultOpNode    | *                    | Undefined    | b*c
-          AST.DataMemberN |                      | Undefined    | b
-            AST.IdNode    | b                    | Undefined    | b
-            AST.IndexList |                      |              | 
-          AST.DataMemberN |                      | Undefined    | c
-            AST.IdNode    | c                    | Undefined    | c
-            AST.IndexList |                      |              | 
-    AST.AssignStatNode    | =                    | typeerror    | a=x+z*y
-      AST.DataMemberNode  |                      | int          | a
-        AST.IdNode        | a                    | int          | a
-        AST.IndexListNode |                      |              | 
-      AST.AddOpNode       | +                    | typeerror    | x+z*y
-        AST.DataMemberNod |                      | int          | x
-          AST.IdNode      | x                    | int          | x
-          AST.IndexListNo |                      |              | 
-        AST.MultOpNode    | *                    | Undefined    | z*y
-          AST.DataMemberN |                      | Undefined    | z
-            AST.IdNode    | z                    | Undefined    | z
-            AST.IndexList |                      |              | 
-          AST.DataMemberN |                      | Undefined    | y
-            AST.IdNode    | y                    | Undefined    | y
-            AST.IndexList |                      |              | 
-=================================================================================================
+=====================================================================
+AstNode type                 | data      | type      | subtreestring
+=====================================================================
+com.project.compiler.Ast.ProgNode |           |           |              
+  com.project.compiler.Ast.ClassListNo |           |           |              
+    com.project.compiler.Ast.Class |           |           |              
+      com.project.compiler.Ast. | class1    |           | class1       
+      com.project.compiler.Ast.Inh |           |           |              
+      com.project.compiler.Ast.VarDeclLi |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | float     |           |              
+          com.project.compiler. | float1    | float     |              
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | int1      | int       |              
+          com.project.compiler.Ast.D |           |           |              
+      com.project.compiler.Ast.FuncDeclLi |           |           |              
+    com.project.compiler.Ast.Class |           |           |              
+      com.project.compiler.Ast. | class2    |           | class2       
+      com.project.compiler.Ast.Inh |           |           |              
+      com.project.compiler.Ast.VarDeclLi |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | in532     | int       |              
+          com.project.compiler.Ast.D |           |           |              
+            com.project.compiler | 5         |           |              
+            com.project.compiler | 3         |           |              
+            com.project.compiler | 2         |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | float     |           |              
+          com.project.compiler. | float10   | float     |              
+          com.project.compiler.Ast.D |           |           |              
+            com.project.compiler | 10        |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | float     |           |              
+          com.project.compiler. | float100  | float     |              
+          com.project.compiler.Ast.D |           |           |              
+            com.project.compiler | 100       |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | float     |           |              
+          com.project.compiler. | float1    | float     |              
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | int1      | int       |              
+          com.project.compiler.Ast.D |           |           |              
+      com.project.compiler.Ast.FuncDeclLi |           |           |              
+  com.project.compiler.Ast.FuncDefListNo |           |           |              
+    com.project.compiler.Ast.FuncDef |           |           |              
+      com.project.compiler.Ast.FuncHe |           |           |              
+        com.project.compiler.Ast. | int       |           |              
+        com.project.compiler.As | func1     |           |              
+        com.project.compiler.As |           |           |              
+        com.project.compiler.Ast.Param |           |           |              
+          com.project.compiler.Ast.V |           |           |              
+            com.project.compiler. | int       |           |              
+            com.project.compile | int532    |           |              
+            com.project.compiler.Ast |           |           |              
+              com.project.compil | 5         |           |              
+              com.project.compil | 3         |           |              
+              com.project.compil | 2         |           |              
+          com.project.compiler.Ast.V |           |           |              
+            com.project.compiler. | float     |           |              
+            com.project.compile | float100  |           |              
+            com.project.compiler.Ast |           |           |              
+              com.project.compil | 100       |           |              
+      com.project.compiler.Ast.StatBlo |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | float     |           |              
+          com.project.compiler. | float100  | float     | float100     
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | a         | int       | a            
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | c         | int       | c            
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Assign | =         | typeerror | a=a+b*c      
+          com.project.compiler.A |           | int       | a            
+            com.project.compile | a         | int       | a            
+          com.project.compiler.Ast | +         | typeerror | a+b*c        
+            com.project.compiler.Ast.Da |           | int       | a            
+              com.project.compi | a         | int       | a            
+              com.project.compiler.Ast |           |           |              
+            com.project.compiler.As | *         | typeerror | b*c          
+              com.project.compiler.Ast. |           | Undefined | b            
+                com.project.com | b         | Undefined | b            
+                com.project.compiler.A |           |           |              
+              com.project.compiler.Ast. |           | int       | c            
+                com.project.com | c         | int       | c            
+                com.project.compiler.A |           |           |              
+    com.project.compiler.Ast.FuncDef |           |           |              
+      com.project.compiler.Ast.FuncHe |           |           |              
+        com.project.compiler.Ast. | float     |           |              
+        com.project.compiler.As | func2     |           |              
+        com.project.compiler.As |           |           |              
+        com.project.compiler.Ast.Param |           |           |              
+          com.project.compiler.Ast.V |           |           |              
+            com.project.compiler. | float     |           |              
+            com.project.compile | float1    |           |              
+            com.project.compiler.Ast |           |           |              
+          com.project.compiler.Ast.V |           |           |              
+            com.project.compiler. | int       |           |              
+            com.project.compile | int1      |           |              
+            com.project.compiler.Ast |           |           |              
+      com.project.compiler.Ast.StatBlo |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | int532    | int       | int532       
+          com.project.compiler.Ast.D |           |           | [5][3][2]    
+            com.project.compiler | 5         |           | 5            
+            com.project.compiler | 3         |           | 3            
+            com.project.compiler | 2         |           | 2            
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | float     |           |              
+          com.project.compiler. | float100  | float     | float100     
+          com.project.compiler.Ast.D |           |           | [100]        
+            com.project.compiler | 100       |           | 100          
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | a         | int       | a            
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | x         | int       | x            
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Assign | =         | typeerror | a=a+b*c      
+          com.project.compiler.A |           | int       | a            
+            com.project.compile | a         | int       | a            
+          com.project.compiler.Ast | +         | typeerror | a+b*c        
+            com.project.compiler.Ast.Da |           | int       | a            
+              com.project.compi | a         | int       | a            
+              com.project.compiler.Ast |           |           |              
+            com.project.compiler.As | *         | Undefined | b*c          
+              com.project.compiler.Ast. |           | Undefined | b            
+                com.project.com | b         | Undefined | b            
+                com.project.compiler.A |           |           |              
+              com.project.compiler.Ast. |           | Undefined | c            
+                com.project.com | c         | Undefined | c            
+                com.project.compiler.A |           |           |              
+        com.project.compiler.Ast.Assign | =         | typeerror | x=a+b*c      
+          com.project.compiler.Ast.Data |           | int       | x            
+            com.project.compile | x         | int       | x            
+            com.project.compiler.Ast.I |           |           |              
+          com.project.compiler.Ast | +         | typeerror | a+b*c        
+            com.project.compiler.Ast.Da |           | int       | a            
+              com.project.compi | a         | int       | a            
+              com.project.compiler.Ast |           |           |              
+            com.project.compiler.As | *         | Undefined | b*c          
+              com.project.compiler.Ast. |           | Undefined | b            
+                com.project.com | b         | Undefined | b            
+                com.project.compiler.A |           |           |              
+              com.project.compiler.Ast. |           | Undefined | c            
+                com.project.com | c         | Undefined | c            
+                com.project.compiler.A |           |           |              
+  com.project.compiler.Ast.ProgramBlockNo |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | int       |           |              
+      com.project.compiler.Ast. | intprogram | int       | intprogram   
+      com.project.compiler.Ast.DimLi |           |           | [5][3][2]    
+        com.project.compiler.Ast | 5         |           | 5            
+        com.project.compiler.Ast | 3         |           | 3            
+        com.project.compiler.Ast | 2         |           | 2            
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | float     |           |              
+      com.project.compiler.Ast. | float10   | float     | float10      
+      com.project.compiler.Ast.DimLi |           |           | [10]         
+        com.project.compiler.Ast | 10        |           | 10           
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | float     |           |              
+      com.project.compiler.Ast. | float100  | float     | float100     
+      com.project.compiler.Ast.DimLi |           |           | [100]        
+        com.project.compiler.Ast | 100       |           | 100          
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | float     |           |              
+      com.project.compiler.Ast. | float1    | float     | float1       
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | int       |           |              
+      com.project.compiler.Ast. | int1      | int       | int1         
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | int       |           |              
+      com.project.compiler.Ast. | a         | int       | a            
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | int       |           |              
+      com.project.compiler.Ast. | x         | int       | x            
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | int       |           |              
+      com.project.compiler.Ast. | a         | int       | a            
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.AssignStat | =         | typeerror | a=a+b*c      
+      com.project.compiler.Ast.V |           | int       | a            
+        com.project.compiler.As | a         | int       | a            
+      com.project.compiler.Ast.Add | +         | typeerror | a+b*c        
+        com.project.compiler.Ast.DataMe |           | int       | a            
+          com.project.compiler. | a         | int       | a            
+          com.project.compiler.Ast.Ind |           |           |              
+        com.project.compiler.Ast.Mu | *         | Undefined | b*c          
+          com.project.compiler.Ast.Data |           | Undefined | b            
+            com.project.compile | b         | Undefined | b            
+            com.project.compiler.Ast.I |           |           |              
+          com.project.compiler.Ast.Data |           | Undefined | c            
+            com.project.compile | c         | Undefined | c            
+            com.project.compiler.Ast.I |           |           |              
+    com.project.compiler.Ast.AssignStat | =         | typeerror | x=a+b*c      
+      com.project.compiler.Ast.DataMemb |           | int       | x            
+        com.project.compiler.As | x         | int       | x            
+        com.project.compiler.Ast.Index |           |           |              
+      com.project.compiler.Ast.Add | +         | typeerror | a+b*c        
+        com.project.compiler.Ast.DataMe |           | int       | a            
+          com.project.compiler. | a         | int       | a            
+          com.project.compiler.Ast.Ind |           |           |              
+        com.project.compiler.Ast.Mu | *         | Undefined | b*c          
+          com.project.compiler.Ast.Data |           | Undefined | b            
+            com.project.compile | b         | Undefined | b            
+            com.project.compiler.Ast.I |           |           |              
+          com.project.compiler.Ast.Data |           | Undefined | c            
+            com.project.compile | c         | Undefined | c            
+            com.project.compiler.Ast.I |           |           |              
+    com.project.compiler.Ast.AssignStat | =         | typeerror | a=x+z*y      
+      com.project.compiler.Ast.DataMemb |           | int       | a            
+        com.project.compiler.As | a         | int       | a            
+        com.project.compiler.Ast.Index |           |           |              
+      com.project.compiler.Ast.Add | +         | typeerror | x+z*y        
+        com.project.compiler.Ast.DataMe |           | int       | x            
+          com.project.compiler. | x         | int       | x            
+          com.project.compiler.Ast.Ind |           |           |              
+        com.project.compiler.Ast.Mu | *         | Undefined | z*y          
+          com.project.compiler.Ast.Data |           | Undefined | z            
+            com.project.compile | z         | Undefined | z            
+            com.project.compiler.Ast.I |           |           |              
+          com.project.compiler.Ast.Data |           | Undefined | y            
+            com.project.compile | y         | Undefined | y            
+            com.project.compiler.Ast.I |           |           |              
+=====================================================================

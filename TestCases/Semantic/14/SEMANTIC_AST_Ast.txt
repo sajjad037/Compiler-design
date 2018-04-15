@@ -1,71 +1,71 @@
-=================================================================================================
-Node type                 | data                 | type         | subtreestring 
-=================================================================================================
-AST.ProgNode              |                      |              | 
-  AST.ClassListNode       |                      |              | 
-    AST.ClassNode         |                      |              | 
-      AST.IdNode          | Rational             |              | Rational
-      AST.InherList       |                      |              | 
-      AST.VarDeclListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | numerator            | int          | 
-          AST.DimListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | denominator          | int          | 
-          AST.DimListNode |                      |              | 
-        AST.VarDeclNode   |                      |              | 
-          AST.TypeNode    | numerator            |              | 
-          AST.IdNode      |                      | numerator    | 
-          AST.DimListNode |                      |              | 
-      AST.FuncDeclListNod |                      |              | 
-        AST.FuncDeclNode  |                      |              | 
-          AST.TypeNode    | int                  |              | 
-          AST.IdNode      | setNumerator         |              | 
-          AST.ParamListNo |                      |              | 
-            AST.VarDeclNo |                      |              | 
-              AST.TypeNod | int                  |              | 
-              AST.IdNode  | newNumerator         |              | 
-              AST.DimList |                      |              | 
-  AST.FuncDefListNode     |                      |              | 
-    AST.FuncDefNode       |                      |              | 
-      AST.FuncHeadNode    |                      |              | 
-        AST.TypeNode      | int                  |              | 
-        AST.IdNode        | setDenominator       |              | 
-        AST.IdNode        |                      |              | 
-        AST.ParamListNode |                      |              | 
-          AST.VarDeclNode |                      |              | 
-            AST.TypeNode  | int                  |              | 
-            AST.IdNode    | newDenominator       |              | 
-            AST.DimListNo |                      |              | 
-      AST.StatBlockNode   |                      |              | 
-        AST.AssignStatNod | =                    | Undefined    | denominator=newDenominator
-          AST.VarNode     |                      | Undefined    | denominator
-            AST.IdNode    | denominator          | Undefined    | denominator
-          AST.DataMemberN |                      | Undefined    | newDenominator
-            AST.IdNode    | newDenominator       | Undefined    | newDenominator
-            AST.IndexList |                      |              | 
-  AST.ProgramBlockNode    |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.TypeNode        | int                  |              | 
-      AST.IdNode          | a                    | int          | a
-      AST.DimListNode     |                      |              | 
-    AST.VarDeclNode       |                      |              | 
-      AST.IdNode          | Rational             |              | Rational
-      AST.IdNode          | r1                   | Rational     | r1
-      AST.DimListNode     |                      |              | 
-    AST.AssignStatNode    | =                    | typeerror    | a=
-      AST.VarNode         |                      | int          | a
-        AST.IdNode        | a                    | int          | a
-      AST.VarElementNode  |                      |              | 
-        AST.DataMemberNod |                      |              | 
-          AST.IdNode      | r1                   |              | 
-          AST.IndexListNo |                      |              | 
-        AST.FCallNode     |                      |              | 
-          AST.IdNode      | setNumerator         |              | 
-          AST.AParamNode  |                      |              | 
-            AST.ExprNode  |                      |              | 
-              AST.ArithEx |                      |              | 
-                AST.NumNo | 19                   |              | 
-=================================================================================================
+=====================================================================
+AstNode type                 | data      | type      | subtreestring
+=====================================================================
+com.project.compiler.Ast.ProgNode |           |           |              
+  com.project.compiler.Ast.ClassListNo |           |           |              
+    com.project.compiler.Ast.Class |           |           |              
+      com.project.compiler.Ast. | Rational  |           | Rational     
+      com.project.compiler.Ast.Inh |           |           |              
+      com.project.compiler.Ast.VarDeclLi |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | numerator | int       |              
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | denominator | int       |              
+          com.project.compiler.Ast.D |           |           |              
+        com.project.compiler.Ast.Var |           |           |              
+          com.project.compiler.As | numerator |           |              
+          com.project.compiler. |           | numerator |              
+          com.project.compiler.Ast.D |           |           |              
+      com.project.compiler.Ast.FuncDeclLi |           |           |              
+        com.project.compiler.Ast.Func |           |           |              
+          com.project.compiler.As | int       |           |              
+          com.project.compiler. | setNumerator |           |              
+          com.project.compiler.Ast.Par |           |           |              
+            com.project.compiler.Ast |           |           |              
+              com.project.compile | int       |           |              
+              com.project.compi | newNumerator |           |              
+              com.project.compiler.A |           |           |              
+  com.project.compiler.Ast.FuncDefListNo |           |           |              
+    com.project.compiler.Ast.FuncDef |           |           |              
+      com.project.compiler.Ast.FuncHe |           |           |              
+        com.project.compiler.Ast. | int       |           |              
+        com.project.compiler.As | setDenominator |           |              
+        com.project.compiler.As |           |           |              
+        com.project.compiler.Ast.Param |           |           |              
+          com.project.compiler.Ast.V |           |           |              
+            com.project.compiler. | int       |           |              
+            com.project.compile | newDenominator |           |              
+            com.project.compiler.Ast |           |           |              
+      com.project.compiler.Ast.StatBlo |           |           |              
+        com.project.compiler.Ast.Assign | =         | Undefined | denominator=newDenominator
+          com.project.compiler.A |           | Undefined | denominator  
+            com.project.compile | denominator | Undefined | denominator  
+          com.project.compiler.Ast.Data |           | Undefined | newDenominator
+            com.project.compile | newDenominator | Undefined | newDenominator
+            com.project.compiler.Ast.I |           |           |              
+  com.project.compiler.Ast.ProgramBlockNo |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast.Ty | int       |           |              
+      com.project.compiler.Ast. | a         | int       | a            
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.VarDecl |           |           |              
+      com.project.compiler.Ast. | Rational  |           | Rational     
+      com.project.compiler.Ast. | r1        | Rational  | r1           
+      com.project.compiler.Ast.DimLi |           |           |              
+    com.project.compiler.Ast.AssignStat | =         | typeerror | a=           
+      com.project.compiler.Ast.V |           | int       | a            
+        com.project.compiler.As | a         | int       | a            
+      com.project.compiler.Ast.VarEleme |           |           |              
+        com.project.compiler.Ast.DataMe |           |           |              
+          com.project.compiler. | r1        |           |              
+          com.project.compiler.Ast.Ind |           |           |              
+        com.project.compiler.Ast.F |           |           |              
+          com.project.compiler. | setNumerator |           |              
+          com.project.compiler.Ast. |           |           |              
+            com.project.compiler. |           |           |              
+              com.project.compiler.Ast |           |           |              
+                com.project.comp | 19        |           |              
+=====================================================================

@@ -2,24 +2,45 @@ package com.project.compiler.Visitor;
 
 import java.util.ArrayList;
 
+import com.project.compiler.Ast.AParamNode;
 import com.project.compiler.Ast.AddOpNode;
+import com.project.compiler.Ast.ArithExprNode;
 import com.project.compiler.Ast.AssignStatNode;
 import com.project.compiler.Ast.AstNode;
 import com.project.compiler.Ast.ClassListNode;
 import com.project.compiler.Ast.ClassNode;
 import com.project.compiler.Ast.DataMemberNode;
 import com.project.compiler.Ast.DimListNode;
+import com.project.compiler.Ast.ExprNode;
+import com.project.compiler.Ast.FCallNode;
+import com.project.compiler.Ast.FactorNode;
+import com.project.compiler.Ast.ForStatNode;
+import com.project.compiler.Ast.FuncDeclListNode;
+import com.project.compiler.Ast.FuncDeclNode;
 import com.project.compiler.Ast.FuncDefListNode;
 import com.project.compiler.Ast.FuncDefNode;
+import com.project.compiler.Ast.FuncHeadNode;
+import com.project.compiler.Ast.GetStatNode;
 import com.project.compiler.Ast.IdNode;
+import com.project.compiler.Ast.IfStatNode;
+import com.project.compiler.Ast.IndexListNode;
+import com.project.compiler.Ast.InherList;
 import com.project.compiler.Ast.MultOpNode;
+import com.project.compiler.Ast.NotNode;
 import com.project.compiler.Ast.NumNode;
+import com.project.compiler.Ast.ParamListNode;
 import com.project.compiler.Ast.ProgNode;
 import com.project.compiler.Ast.ProgramBlockNode;
 import com.project.compiler.Ast.PutStatNode;
+import com.project.compiler.Ast.RelExprNode;
+import com.project.compiler.Ast.ReturnStatNode;
+import com.project.compiler.Ast.SignNode;
 import com.project.compiler.Ast.StatBlockNode;
+import com.project.compiler.Ast.TermNode;
 import com.project.compiler.Ast.TypeNode;
+import com.project.compiler.Ast.VarDeclListNode;
 import com.project.compiler.Ast.VarDeclNode;
+import com.project.compiler.Ast.VarElementNode;
 import com.project.compiler.Ast.VarNode;
 import com.project.compiler.Model.Token;
 import com.project.compiler.Model.VariablesData;
@@ -86,7 +107,7 @@ public class TypeChecking extends VisitorBase {
 					+ node.getChildren().get(1).getData());
 		}
 	}
-	
+
 	public void visit(VarNode node) {
 		System.out.println("TypeCheckingVisitor Visiting VarNode");
 		for (AstNode child : node.getChildren())
@@ -94,45 +115,39 @@ public class TypeChecking extends VisitorBase {
 
 		if (node.getChildren().get(0) instanceof IdNode) {
 			String str = getVaraibleType(node.getChildren().get(0).getDataToken());
-			if(!str.equals(""))
-			{
+			if (!str.equals("")) {
 				node.getChildren().get(0).setType(str);
 				node.setType(str);
-			}
-			else
-			{
+			} else {
 				str = addUndefinedVaraible(node.getChildren().get(0).getDataToken());
 				node.getChildren().get(0).setType(str);
 				node.setType(str);
 			}
-			
+
 		}
-		
+
 	};
-	
+
 	public void visit(DataMemberNode node) {
 		System.out.println("TypeCheckingVisitor Visiting DataMemberNode");
-		
+
 		for (AstNode child : node.getChildren())
 			child.accept(this);
 
 		if (node.getChildren().get(0) instanceof IdNode) {
 			String str = getVaraibleType(node.getChildren().get(0).getDataToken());
-			if(!str.equals(""))
-			{
+			if (!str.equals("")) {
 				node.getChildren().get(0).setType(str);
 				node.setType(str);
-			}
-			else
-			{
+			} else {
 				str = addUndefinedVaraible(node.getChildren().get(0).getDataToken());
 				node.getChildren().get(0).setType(str);
 				node.setType(str);
-				
+
 			}
-			
+
 		}
-		
+
 	};
 
 	// Below are the visit methods for node types for which this visitor does
@@ -149,6 +164,9 @@ public class TypeChecking extends VisitorBase {
 		variables = new ArrayList<VariablesData>();
 		for (AstNode child : node.getChildren())
 			child.accept(this);
+
+		// Variable List to node
+		node.setVariables(variables);
 
 		// Check for Duplicate
 
@@ -173,6 +191,7 @@ public class TypeChecking extends VisitorBase {
 			child.accept(this);
 
 		// Variable List to node
+		node.setVariables(variables);
 
 		// Check for duplicate declaration
 
@@ -205,6 +224,13 @@ public class TypeChecking extends VisitorBase {
 		variables = new ArrayList<VariablesData>();
 		for (AstNode child : node.getChildren())
 			child.accept(this);
+
+		// Variable List to node
+		node.setVariables(variables);
+
+		// Check for duplicate declaration
+
+		// Check for undefined
 	};
 
 	public void visit(PutStatNode node) {
@@ -233,13 +259,118 @@ public class TypeChecking extends VisitorBase {
 		variables.add(new VariablesData(nameToken.getValue(), typeToken.getValue(), nameToken, typeToken));
 	};
 
-	public String addUndefinedVaraible(Token nameToken) {
+	public void visit(AParamNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(ArithExprNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(ExprNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(FactorNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(FCallNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(ForStatNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(FuncDeclListNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(FuncDeclNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(FuncHeadNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(GetStatNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(IfStatNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(IndexListNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(InherList node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(NotNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(ParamListNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(RelExprNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(ReturnStatNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(SignNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(TermNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(VarDeclListNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	public void visit(VarElementNode node) {
+		for (AstNode child : node.getChildren())
+			child.accept(this);
+	};
+
+	private String addUndefinedVaraible(Token nameToken) {
 		String type = "Undefined";
 		variables.add(new VariablesData(nameToken.getValue(), type, nameToken));
 		return type;
 	}
 
-	public String getVaraibleType(Token variableToken) {
+	private String getVaraibleType(Token variableToken) {
 		for (VariablesData variablesData : variables) {
 			if (variablesData.getNameToken().getValue().equals(variableToken.getValue())) {
 				return variablesData.getType();

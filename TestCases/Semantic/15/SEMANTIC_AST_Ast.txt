@@ -1,8 +1,8 @@
-=================================================================================================
-Node type                 | data                 | type         | subtreestring 
-=================================================================================================
-AST.ProgNode              |                      |              | 
-  AST.ClassListNode       |                      |              | 
-  AST.FuncDefListNode     |                      |              | 
-  AST.ProgramBlockNode    |                      |              | 
-=================================================================================================
+=====================================================================
+AstNode type                 | data      | type      | subtreestring
+=====================================================================
+com.project.compiler.Ast.ProgNode |           |           |              
+  com.project.compiler.Ast.ClassListNo |           |           |              
+  com.project.compiler.Ast.FuncDefListNo |           |           |              
+  com.project.compiler.Ast.ProgramBlockNo |           |           |              
+=====================================================================
