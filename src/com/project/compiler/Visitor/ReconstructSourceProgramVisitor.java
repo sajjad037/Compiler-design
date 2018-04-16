@@ -201,16 +201,18 @@ public class ReconstructSourceProgramVisitor extends VisitorBase {
 
 	};
 
-	public void visit(DimListNode p_node) {
-		// propagate accepting the same visitor to all the children
-		// this effectively achieves Depth-First AST Traversal
-		for (AstNode child : p_node.getChildren())
+	public void visit(DimListNode node) {
+		// First, propagate accepting the same visitor to all the children
+		// This effectively achieves Depth-First AST Traversal
+		for (AstNode child : node.getChildren())
 			child.accept(this);
-		for (AstNode child : p_node.getChildren()) {
-			p_node.subtreeString += "[" + child.subtreeString + "]";
+		// Then, do the processing of this nodes' visitor
+		StringBuilder sb = new StringBuilder();
+		for (AstNode child : node.getChildren()) {
+			sb.append(String.format("[%s]", child.getData()));
 		}
-
-	};
+		node.setSubtreeString(sb.toString());
+	}
 
 	public void visit(IdNode p_node) {
 		// propagate accepting the same visitor to all the children
@@ -230,34 +232,64 @@ public class ReconstructSourceProgramVisitor extends VisitorBase {
 		p_node.setSubtreeString(p_node.getData());
 	}
 
-	public void visit(AddOpNode p_node) {
-		// propagate accepting the same visitor to all the children
-		// this effectively achieves Depth-First AST Traversal
-		for (AstNode child : p_node.getChildren())
+	public void visit(AddOpNode node) {
+		// First, propagate accepting the same visitor to all the children
+		// This effectively achieves Depth-First AST Traversal
+		for (AstNode child : node.getChildren())
 			child.accept(this);
 		// Then, do the processing of this nodes' visitor
-		p_node.setSubtreeString(p_node.getChildren().get(0).getSubtreeString() + p_node.getData()
-				+ p_node.getChildren().get(1).getSubtreeString());
+		StringBuilder sb = new StringBuilder();
+
+		if (node.getChildren().size() > 0) {
+			sb.append(node.getChildren().get(0).getSubtreeString());
+		}
+		if (node.getData() != null) {
+			sb.append(node.getData());
+		}
+		if (node.getChildren().size() > 1) {
+			sb.append(node.getChildren().get(1).getSubtreeString());
+		}
+		node.setSubtreeString(sb.toString());
 	}
 
-	public void visit(MultOpNode p_node) {
-		// propagate accepting the same visitor to all the children
-		// this effectively achieves Depth-First AST Traversal
-		for (AstNode child : p_node.getChildren())
+	public void visit(MultOpNode node) {
+		// First, propagate accepting the same visitor to all the children
+		// This effectively achieves Depth-First AST Traversal
+		for (AstNode child : node.getChildren())
 			child.accept(this);
 		// Then, do the processing of this nodes' visitor
-		p_node.setSubtreeString(p_node.getChildren().get(0).getSubtreeString() + p_node.getData()
-				+ p_node.getChildren().get(1).getSubtreeString());
+		StringBuilder sb = new StringBuilder();
+
+		if (node.getChildren().size() > 0) {
+			sb.append(node.getChildren().get(0).getSubtreeString());
+		}
+		if (node.getData() != null) {
+			sb.append(node.getData());
+		}
+		if (node.getChildren().size() > 1) {
+			sb.append(node.getChildren().get(1).getSubtreeString());
+		}
+		node.setSubtreeString(sb.toString());
 	}
 
-	public void visit(AssignStatNode p_node) {
-		// propagate accepting the same visitor to all the children
-		// this effectively achieves Depth-First AST Traversal
-		for (AstNode child : p_node.getChildren())
+	public void visit(AssignStatNode node) {
+		// First, propagate accepting the same visitor to all the children
+		// This effectively achieves Depth-First AST Traversal
+		for (AstNode child : node.getChildren())
 			child.accept(this);
 		// Then, do the processing of this nodes' visitor
-		p_node.setSubtreeString(p_node.getChildren().get(0).getSubtreeString() + p_node.getData()
-				+ p_node.getChildren().get(1).getSubtreeString() + ";");
+		StringBuilder sb = new StringBuilder();
+
+		if (node.getChildren().size() > 0) {
+			sb.append(node.getChildren().get(0).getSubtreeString());
+		}
+		if (node.getData() != null) {
+			sb.append(node.getData());
+		}
+		if (node.getChildren().size() > 1) {
+			sb.append(node.getChildren().get(1).getSubtreeString());
+		}
+		node.setSubtreeString(sb.toString());
 	}
 
 	// Below are the visit methods for node types for which this visitor does
@@ -305,9 +337,22 @@ public class ReconstructSourceProgramVisitor extends VisitorBase {
 			child.accept(this);
 	};
 
-	public void visit(DataMemberNode p_node) {
-		for (AstNode child : p_node.getChildren())
+	public void visit(DataMemberNode node) {
+		for (AstNode child : node.getChildren())
 			child.accept(this);
+
+		// node.setSubtreeString(node.getChildren().get(0).getSubtreeString() +
+		// node.getChildren().get(1).getSubtreeString());
+
+		StringBuilder sb = new StringBuilder();
+
+		if (node.getChildren().size() > 0) {
+			sb.append(node.getChildren().get(0).getSubtreeString());
+		}
+		if (node.getChildren().size() > 1) {
+			sb.append(node.getChildren().get(1).getSubtreeString());
+		}
+		node.setSubtreeString(sb.toString());
 	};
 
 	public void visit(ExprNode p_node) {
@@ -360,10 +405,18 @@ public class ReconstructSourceProgramVisitor extends VisitorBase {
 			child.accept(this);
 	};
 
-	public void visit(IndexListNode p_node) {
-		for (AstNode child : p_node.getChildren())
+	public void visit(IndexListNode node) {
+		// First, propagate accepting the same visitor to all the children
+		// This effectively achieves Depth-First AST Traversal
+		for (AstNode child : node.getChildren())
 			child.accept(this);
-	};
+		// Then, do the processing of this nodes' visitor
+		StringBuilder sb = new StringBuilder();
+		for (AstNode child : node.getChildren()) {
+			sb.append(String.format("[%s]", child.getData()));
+		}
+		node.setSubtreeString(sb.toString());
+	}
 
 	public void visit(InherList p_node) {
 		for (AstNode child : p_node.getChildren())
@@ -400,9 +453,16 @@ public class ReconstructSourceProgramVisitor extends VisitorBase {
 			child.accept(this);
 	};
 
-	public void visit(VarNode p_node) {
-		for (AstNode child : p_node.getChildren())
+	public void visit(VarNode node) {
+		for (AstNode child : node.getChildren())
 			child.accept(this);
+	
+		StringBuilder sb = new StringBuilder();
+		for (AstNode child : node.getChildren()) {
+			sb.append(child.getData());
+		}
+		// node.setSubtreeString(node.getChildren().get(0).getSubtreeString());
+		node.setSubtreeString(sb.toString());
 	};
 
 	public String getOutPutString() {

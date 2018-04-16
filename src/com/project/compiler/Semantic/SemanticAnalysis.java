@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import com.project.compiler.Ast.AstNode;
 import com.project.compiler.SymbolTable.SymTabCreationVisitor;
 import com.project.compiler.Visitor.ConstructAssignmentAndExpressionStatements;
-import com.project.compiler.Visitor.TypeChecking;
+import com.project.compiler.Visitor.TypeCheckingVisitor;
 
 
 
@@ -29,7 +29,7 @@ public class SemanticAnalysis {
 		
 		
 		System.out.println("==VISITING TREE WITH TYPE CHECKING VISITOR======");
-		TypeChecking TCVisitor = new TypeChecking(); 
+		TypeCheckingVisitor TCVisitor = new TypeCheckingVisitor(); 
 		prog.accept(TCVisitor);
 		setTreeAfterTCVisitor(prog.toString());
 		//System.out.println(getTreeAfterTCVisitor());

@@ -1,0 +1,14 @@
+[ERROR]	SEMANTIC	Line # :     5	AssignStatNode type error: null(int) and (null)
+	
+[ERROR]	SEMANTIC	Line # :     6	AddOpNode type error:  null(Undefined) and null(int)
+	
+[ERROR]	SEMANTIC	Line # :     6	AssignStatNode type error: null(Undefined) and +(typeerror)
+	
+[ERROR]	SEMANTIC	Line # :    10	AddOpNode type error:  null(Undefined) and null(int)
+	
+[ERROR]	SEMANTIC	Line # :    10	AssignStatNode type error: null(Undefined) and +(typeerror)
+	
+[ERROR]	SEMANTIC	Line # :    12	AddOpNode type error:  null(Undefined) and null(int)
+	
+[ERROR]	SEMANTIC	Line # :    12	AssignStatNode type error: null(Undefined) and +(typeerror)
+	

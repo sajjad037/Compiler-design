@@ -41,7 +41,7 @@ public class SemanticAnalysis2 {
 	 */
 	private void errorOrWarning(String tag, String msg, int lineNumber){
 		errorsLog.append(String.format("[%s] %s: %s \r\n", ModuleType.SEMANTIC.toString(), tag, msg));
-		errorList.add(new Errors(lineNumber, msg, tag, ModuleType.SYNTAX));
+		errorList.add(new Errors(lineNumber, msg, tag, ModuleType.SEMANTIC));
 	}
 
 	// Start of Global Table

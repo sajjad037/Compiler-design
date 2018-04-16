@@ -1,0 +1,4 @@
+[ERROR]	SEMANTIC	Line # :     5	AssignStatNode type error: null(int) and (null)
+	
+[ERROR]	SEMANTIC	Line # :    14	AssignStatNode type error: null(int) and (null)
+	

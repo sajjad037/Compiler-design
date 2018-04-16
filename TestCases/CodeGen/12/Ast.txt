@@ -1,0 +1,324 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | program{  int i;  int j;  int a;  int s;  int m;  int d;  int sign;  int or_op;  int and_op;  int not_op_i;  int not_op_j;  i=  j=  a=i+j  s=i-j  m=i*j  d=i/j  put();  put();  put();  put();  put();  put();  sign=  put();  sign=  put();  i=  j=  or_op=iorj  and_op=iandj  not_op_i=  not_op_j=  put();  put();  put();  put();  put();  put();  put();  put();  put();  put();}
+  AST.ClassListNode       |                      |              | 
+    AST.ClassNode         |                      |              | class Foo{      }
+      AST.IdNode          | Foo                  |              | Foo
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+      AST.FuncDeclListNod |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.ProgramBlockNode    |                      |              | program{  int i;  int j;  int a;  int s;  int m;  int d;  int sign;  int or_op;  int and_op;  int not_op_i;  int not_op_j;  i=  j=  a=i+j  s=i-j  m=i*j  d=i/j  put();  put();  put();  put();  put();  put();  sign=  put();  sign=  put();  i=  j=  or_op=iorj  and_op=iandj  not_op_i=  not_op_j=  put();  put();  put();  put();  put();  put();  put();  put();  put();  put();}
+    AST.VarDeclNode       |                      |              | int i;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | i                    | int          | i
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int j;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | j                    | int          | j
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int a;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | a                    | int          | a
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int s;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | s                    | int          | s
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int m;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | m                    | int          | m
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int d;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | d                    | int          | d
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int sign;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | sign                 | int          | sign
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int or_op;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | or_op                | int          | or_op
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int and_op;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | and_op               | int          | and_op
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int not_op_i;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | not_op_i             | int          | not_op_i
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int not_op_j;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | not_op_j             | int          | not_op_j
+      AST.DimListNode     |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | i=
+      AST.VarNode         |                      | int          | i
+        AST.IdNode        | i                    | int          | i
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 10                   | int          | 10
+    AST.AssignStatNode    | =                    | typeerror    | j=
+      AST.DataMemberNode  |                      | int          | j
+        AST.IdNode        | j                    | int          | j
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 5                    | int          | 5
+    AST.AssignStatNode    | =                    | int          | a=i+j
+      AST.DataMemberNode  |                      | int          | a
+        AST.IdNode        | a                    | int          | a
+        AST.IndexListNode |                      |              | 
+      AST.AddOpNode       | +                    | int          | i+j
+        AST.DataMemberNod |                      | int          | i
+          AST.IdNode      | i                    | int          | i
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | int          | j
+          AST.IdNode      | j                    | int          | j
+          AST.IndexListNo |                      |              | 
+    AST.AssignStatNode    | =                    | int          | s=i-j
+      AST.DataMemberNode  |                      | int          | s
+        AST.IdNode        | s                    | int          | s
+        AST.IndexListNode |                      |              | 
+      AST.AddOpNode       | -                    | int          | i-j
+        AST.DataMemberNod |                      | int          | i
+          AST.IdNode      | i                    | int          | i
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | int          | j
+          AST.IdNode      | j                    | int          | j
+          AST.IndexListNo |                      |              | 
+    AST.AssignStatNode    | =                    | int          | m=i*j
+      AST.DataMemberNode  |                      | int          | m
+        AST.IdNode        | m                    | int          | m
+        AST.IndexListNode |                      |              | 
+      AST.MultOpNode      | *                    | int          | i*j
+        AST.DataMemberNod |                      | int          | i
+          AST.IdNode      | i                    | int          | i
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | int          | j
+          AST.IdNode      | j                    | int          | j
+          AST.IndexListNo |                      |              | 
+    AST.AssignStatNode    | =                    | int          | d=i/j
+      AST.DataMemberNode  |                      | int          | d
+        AST.IdNode        | d                    | int          | d
+        AST.IndexListNode |                      |              | 
+      AST.MultOpNode      | /                    | int          | i/j
+        AST.DataMemberNod |                      | int          | i
+          AST.IdNode      | i                    | int          | i
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | int          | j
+          AST.IdNode      | j                    | int          | j
+          AST.IndexListNo |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | i
+            AST.IdNode    | i                    | int          | i
+            AST.IndexList |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | j
+            AST.IdNode    | j                    | int          | j
+            AST.IndexList |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | a
+            AST.IdNode    | a                    | int          | a
+            AST.IndexList |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | s
+            AST.IdNode    | s                    | int          | s
+            AST.IndexList |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | m
+            AST.IdNode    | m                    | int          | m
+            AST.IndexList |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | d
+            AST.IdNode    | d                    | int          | d
+            AST.IndexList |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | sign=
+      AST.DataMemberNode  |                      | int          | sign
+        AST.IdNode        | sign                 | int          | sign
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.SignNode      | +                    |              | 
+          AST.FactorNode  |                      |              | 
+            AST.DataMembe |                      | int          | i
+              AST.IdNode  | i                    | int          | i
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | sign
+            AST.IdNode    | sign                 | int          | sign
+            AST.IndexList |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | sign=
+      AST.DataMemberNode  |                      | int          | sign
+        AST.IdNode        | sign                 | int          | sign
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.SignNode      | -                    |              | 
+          AST.FactorNode  |                      |              | 
+            AST.DataMembe |                      | int          | i
+              AST.IdNode  | i                    | int          | i
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | sign
+            AST.IdNode    | sign                 | int          | sign
+            AST.IndexList |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | i=
+      AST.DataMemberNode  |                      | int          | i
+        AST.IdNode        | i                    | int          | i
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 0                    | int          | 0
+    AST.AssignStatNode    | =                    | typeerror    | j=
+      AST.DataMemberNode  |                      | int          | j
+        AST.IdNode        | j                    | int          | j
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 1                    | int          | 1
+    AST.AssignStatNode    | =                    | int          | or_op=iorj
+      AST.DataMemberNode  |                      | int          | or_op
+        AST.IdNode        | or_op                | int          | or_op
+        AST.IndexListNode |                      |              | 
+      AST.AddOpNode       | or                   | int          | iorj
+        AST.DataMemberNod |                      | int          | i
+          AST.IdNode      | i                    | int          | i
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | int          | j
+          AST.IdNode      | j                    | int          | j
+          AST.IndexListNo |                      |              | 
+    AST.AssignStatNode    | =                    | int          | and_op=iandj
+      AST.DataMemberNode  |                      | int          | and_op
+        AST.IdNode        | and_op               | int          | and_op
+        AST.IndexListNode |                      |              | 
+      AST.MultOpNode      | and                  | int          | iandj
+        AST.DataMemberNod |                      | int          | i
+          AST.IdNode      | i                    | int          | i
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | int          | j
+          AST.IdNode      | j                    | int          | j
+          AST.IndexListNo |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | not_op_i=
+      AST.DataMemberNode  |                      | int          | not_op_i
+        AST.IdNode        | not_op_i             | int          | not_op_i
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NotNode       | not                  |              | 
+          AST.FactorNode  |                      |              | 
+            AST.DataMembe |                      | int          | i
+              AST.IdNode  | i                    | int          | i
+              AST.IndexLi |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | not_op_j=
+      AST.DataMemberNode  |                      | int          | not_op_j
+        AST.IdNode        | not_op_j             | int          | not_op_j
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NotNode       | not                  |              | 
+          AST.FactorNode  |                      |              | 
+            AST.DataMembe |                      | int          | j
+              AST.IdNode  | j                    | int          | j
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | or_op
+            AST.IdNode    | or_op                | int          | or_op
+            AST.IndexList |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | and_op
+            AST.IdNode    | and_op               | int          | and_op
+            AST.IndexList |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | not_op_i
+            AST.IdNode    | not_op_i             | int          | not_op_i
+            AST.IndexList |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | not_op_j
+            AST.IdNode    | not_op_j             | int          | not_op_j
+            AST.IndexList |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | <                    |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | i
+              AST.IdNode  | i                    | int          | i
+              AST.IndexLi |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | j
+              AST.IdNode  | j                    | int          | j
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | <=                   |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | i
+              AST.IdNode  | i                    | int          | i
+              AST.IndexLi |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | j
+              AST.IdNode  | j                    | int          | j
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | <>                   |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | i
+              AST.IdNode  | i                    | int          | i
+              AST.IndexLi |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | j
+              AST.IdNode  | j                    | int          | j
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | ==                   |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | i
+              AST.IdNode  | i                    | int          | i
+              AST.IndexLi |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | j
+              AST.IdNode  | j                    | int          | j
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | >                    |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | i
+              AST.IdNode  | i                    | int          | i
+              AST.IndexLi |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | j
+              AST.IdNode  | j                    | int          | j
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.RelExprNode   | >=                   |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | i
+              AST.IdNode  | i                    | int          | i
+              AST.IndexLi |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.DataMembe |                      | int          | j
+              AST.IdNode  | j                    | int          | j
+              AST.IndexLi |                      |              | 
+=================================================================================================

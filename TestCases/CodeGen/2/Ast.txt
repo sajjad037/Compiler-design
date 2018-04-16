@@ -1,0 +1,104 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | program{  int a;  int b;  int c;  int d;  int e;  int f;  int g;  int h;  Expexp;  a=  b=  c=  d=  e=  f=  g=  h=}
+  AST.ClassListNode       |                      |              | 
+    AST.ClassNode         |                      |              | class Exp{      }
+      AST.IdNode          | Exp                  |              | Exp
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | int left;
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | left                 | int          | left
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | int right;
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | right                | int          | right
+          AST.DimListNode |                      |              | 
+      AST.FuncDeclListNod |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.ProgramBlockNode    |                      |              | program{  int a;  int b;  int c;  int d;  int e;  int f;  int g;  int h;  Expexp;  a=  b=  c=  d=  e=  f=  g=  h=}
+    AST.VarDeclNode       |                      |              | int a;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | a                    | int          | a
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int b;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | b                    | int          | b
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int c;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | c                    | int          | c
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int d;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | d                    | int          | d
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int e;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | e                    | int          | e
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int f;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | f                    | int          | f
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int g;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | g                    | int          | g
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int h;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | h                    | int          | h
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | Expexp;
+      AST.IdNode          | Exp                  |              | Exp
+      AST.IdNode          | exp                  | Exp          | exp
+      AST.DimListNode     |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | a=
+      AST.VarNode         |                      | int          | a
+        AST.IdNode        | a                    | int          | a
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 5                    | int          | 5
+    AST.AssignStatNode    | =                    | typeerror    | b=
+      AST.DataMemberNode  |                      | int          | b
+        AST.IdNode        | b                    | int          | b
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 10                   | int          | 10
+    AST.AssignStatNode    | =                    | typeerror    | c=
+      AST.DataMemberNode  |                      | int          | c
+        AST.IdNode        | c                    | int          | c
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 15                   | int          | 15
+    AST.AssignStatNode    | =                    | typeerror    | d=
+      AST.DataMemberNode  |                      | int          | d
+        AST.IdNode        | d                    | int          | d
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 25                   | int          | 25
+    AST.AssignStatNode    | =                    | typeerror    | e=
+      AST.DataMemberNode  |                      | int          | e
+        AST.IdNode        | e                    | int          | e
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 5                    | int          | 5
+    AST.AssignStatNode    | =                    | typeerror    | f=
+      AST.DataMemberNode  |                      | int          | f
+        AST.IdNode        | f                    | int          | f
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 10                   | int          | 10
+    AST.AssignStatNode    | =                    | typeerror    | g=
+      AST.DataMemberNode  |                      | int          | g
+        AST.IdNode        | g                    | int          | g
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 15                   | int          | 15
+    AST.AssignStatNode    | =                    | typeerror    | h=
+      AST.DataMemberNode  |                      | int          | h
+        AST.IdNode        | h                    | int          | h
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 25                   | int          | 25
+=================================================================================================

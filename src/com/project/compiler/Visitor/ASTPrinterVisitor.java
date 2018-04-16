@@ -19,8 +19,12 @@ public class ASTPrinterVisitor extends VisitorBase {
 			outputstring += "  ";
 
 		String toprint = String.format("%-25s", p_node.getClass().getName().replace("com.project.compiler.Ast", "AST"));
-		for (int i = 0; i < AstNode.nodelevel; i++)
-			toprint = toprint.substring(0, toprint.length() - 2);
+//		for (int i = 0; i < AstNode.nodelevel; i++)
+//			toprint = toprint.substring(0, toprint.length() - 2);
+		for (int i = 0; i < AstNode.nodelevel; i++) {
+			if (toprint.length() > 2)
+				toprint = toprint.substring(0, toprint.length() - 2);
+		}
 		toprint += String.format("%-23s",
 				(p_node.getData() == null || p_node.getData().isEmpty()) ? " | " : " | " + p_node.getData());
 		toprint += String.format("%-15s",

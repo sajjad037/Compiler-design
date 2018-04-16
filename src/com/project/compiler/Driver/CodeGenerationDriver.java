@@ -34,33 +34,26 @@ public class CodeGenerationDriver extends baseDriver {
 	private static final Logger LOGGER = new LoggerConfiguration().configuredLogger(Logger.getLogger(className));
 	private static String genericPath = "TestCases\\CodeGen\\%d\\%s";
 	private static LexicalAnalyzer lexicalAnalyzer = null;
+	SyntacticAnalyzerRoughUpdate2 sParser = null;
 	private static FileStorage fileStorage= new FileStorage();
 	private static ArrayList<Errors> errorList = new ArrayList<Errors>();
+	private static boolean sementicActionApporch = false;
 
 	private static String[] testCases = { 
-			String.format(genericPath, 1, "1_profExample.txt"),
-//			String.format(genericPath, 1, "1_workingSample.txt"),			
-//			String.format(genericPath, 1, "1_UndefinedID.txt"),
-			String.format(genericPath, 2, "2_UndeclaredVariableDecl.txt"), 
-			String.format(genericPath, 3, "3_DuplicateClassDeclError.txt"),
-			String.format(genericPath, 4, "4_VariableError.txt"), 
-			String.format(genericPath, 5, "5_UndefinedMember.txt"),
-			String.format(genericPath, 6, "6_DuplicateIDs.txt"),
-			String.format(genericPath, 7, "7_DuplicateParamsError.txt"),
-			String.format(genericPath, 8, "8_DuplicateClassMemberError.txt"),
-			String.format(genericPath, 9, "9_TYPE_CHECK_RETURN_TYPE.txt"),
-			String.format(genericPath, 10, "10_VariableDefinitionError.txt"),
-			String.format(genericPath, 11, "11_ArrayIndiceError.txt"),
-			//String.format(genericPath, 12, "12_combinedSemanticErrors.txt"),
-			String.format(genericPath, 12, "12_UndefinedID.txt"),
-			String.format(genericPath, 13, "13_FunctionCall.txt"),
-			String.format(genericPath, 14, "14_FunctionInvocationError.txt"),
-			String.format(genericPath, 15, "15_StatementError.txt"),
-			String.format(genericPath, 16, "16_TypeChecking.txt"),
-			//String.format(genericPath, 17, "17_ValidTestCase.txt"),
-			String.format(genericPath, 17, "17_workingSample.txt"),
-			String.format(genericPath, 18, "18_ValidTestCase1.txt"),
-			String.format(genericPath, 19, "19_WrongFunctionCall.txt")
+			String.format(genericPath, 1, "1_AirthExpression.txt"),
+			String.format(genericPath, 2, "2_Expression.txt"), 
+			String.format(genericPath, 3, "3_Fibonacci.txt"),
+			String.format(genericPath, 4, "4_ARRAY_Test_1.txt"), 
+			String.format(genericPath, 5, "5_ARRAY_Test_2.txt"),
+			String.format(genericPath, 6, "6_ARRAY_Test_3.txt"),
+			String.format(genericPath, 7, "7_Class_Array_Test.txt"),
+			String.format(genericPath, 8, "8_FOR_IF_Test.txt"),
+			String.format(genericPath, 9, "9_FOR_Test.txt"),
+			String.format(genericPath, 10, "10_IF_TEST.txt"),
+			String.format(genericPath, 11, "11_Inheritence.txt"),
+			String.format(genericPath, 12, "12_Math_Test.txt"),
+			String.format(genericPath, 13, "13_Class_Test.txt"),
+			String.format(genericPath, 14, "14_Nested_LOOP.txt")
 
 	};
 
@@ -72,6 +65,7 @@ public class CodeGenerationDriver extends baseDriver {
 	 */
 	public static void main(String[] args) throws IOException {
 
+		sementicActionApporch =false;
 		CodeGenerationDriver codeGenerationDriver = new CodeGenerationDriver();
 		codeGenerationDriver.execute();
 
@@ -99,9 +93,9 @@ public class CodeGenerationDriver extends baseDriver {
 	private void saveErrorCollections(ArrayList<Errors> errorList, String allerrorsLogPath, String errorsLogPath, String errorContent)
 	{
 		//Saving errors		
-		fileStorage.saveTxtFile(errorsLogPath, errorContent);
-		System.out.println("\r\n");
-		LOGGER.info(Enums.ModuleType.SEMANTIC.toString()+" Errors are save to: "+errorsLogPath);
+		//fileStorage.saveTxtFile(errorsLogPath, errorContent);
+		//System.out.println("\r\n");
+		//LOGGER.info(Enums.ModuleType.SEMANTIC.toString()+" Errors are save to: "+errorsLogPath);
 		
 		//Sorting Errors by line number
 		Collections.sort(errorList, new Comparator<Errors>() {
@@ -124,47 +118,6 @@ public class CodeGenerationDriver extends baseDriver {
 		LOGGER.info("..........................Executing Test Case " + (++index) + " ..........................");
 		LOGGER.info("testCases file path: " + path);
 
-		ProgNode prog = new ProgNode();
-		
-		lexicalAnalyzer = new LexicalAnalyzer(path);			
-		String errorsLogPath = path.replaceFirst("[^\\\\]*$", Enums.ModuleType.SEMANTIC_ACTION.toString() + "_Errors.txt");
-		String allerrorsLogPath = path.replaceFirst("[^\\\\]*$", Enums.ModuleType.SEMANTIC_ACTION.toString() + "_AllErrors.txt");
-		String symbolTablePath = path.replaceFirst("[^\\\\]*$", Enums.ModuleType.SEMANTIC_ACTION.toString() + "_SymbolTable.txt");
-		String symbolTableHtmlPath = path.replaceFirst("[^\\\\]*$", Enums.ModuleType.SEMANTIC_ACTION.toString() + "_SymbolTable.html");
-		String moonCodePath = path.replaceFirst("[^\\\\]*$", Enums.ModuleType.SEMANTIC_ACTION.toString() + "_Code.m");
-		
-		// 1st order parsing
-		SyntacticAnalyzerRoughUpdate2 sParser = new SyntacticAnalyzerRoughUpdate2(lexicalAnalyzer);
-		sParser.parse(prog);			
-		SymbolTable firstTable = sParser.semantics.mainTable.clone();
-		PrintUtil.isLog = true;
-					
-		// 2nd order parsing
-		lexicalAnalyzer = new LexicalAnalyzer(path);
-		sParser = new SyntacticAnalyzerRoughUpdate2(lexicalAnalyzer);
-		prog = new ProgNode();
-		sParser.parse(prog, firstTable);
-		//sParser.semantics.printSymbolTable();
-		ArrayList<String> symTblStr = sParser.semantics.symbolTableToString();
-		
-		//Saving Simple SymbolTable		
-		fileStorage.saveTxtFile(symbolTablePath, symTblStr.get(0));
-		LOGGER.info("Simple Symbol Table save to: "+symbolTablePath);
-		
-		//Saving HTML SymbolTable		
-		fileStorage.saveTxtFile(symbolTableHtmlPath, symTblStr.get(1));
-		LOGGER.info("HTML Symbol Table save to: "+symbolTableHtmlPath);
-		
-		//Saving Moon Code		
-		fileStorage.saveTxtFile(moonCodePath, String.format("%s \r\n %s", sParser.semantics.dataToString(), sParser.semantics.codeToString()));
-		LOGGER.info("Moon Code save to: "+moonCodePath);
-				
-		//Collecting errors
-		errorList.addAll(lexicalAnalyzer.getErrorList());
-		errorList.addAll(sParser.getErrorList());
-		errorList.addAll(sParser.semantics.getErrorList());
-		saveErrorCollections(errorList, allerrorsLogPath, errorsLogPath, sParser.semantics.getErrorsLog());
-		
 		// AST Implementation
 		String abstractSyntaxTreePath = path.replaceFirst("[^\\\\]*$", "Ast.txt");
 		String astSymbolTablePath = path.replaceFirst("[^\\\\]*$", "SymbolTable.txt");
@@ -173,41 +126,100 @@ public class CodeGenerationDriver extends baseDriver {
 		String astMemSizetblPath = path.replaceFirst("[^\\\\]*$", "MemorySize.txt");
 		String astTagMoonCodePath = path.replaceFirst("[^\\\\]*$", "TagMoonCode.m");
 		String astMoonCodePath = path.replaceFirst("[^\\\\]*$", "MoonCode.m");
-		String astStackMoonCodePath = path.replaceFirst("[^\\\\]*$", "StackMoonCode.m");
+		//String astStackMoonCodePath = path.replaceFirst("[^\\\\]*$", "StackMoonCode.m");
 		
-		MoonCodeGenerator moonCodeGenerator= new MoonCodeGenerator();
-		moonCodeGenerator.starVisiting(prog);
+		ProgNode prog = new ProgNode();
+		lexicalAnalyzer = new LexicalAnalyzer(path);
+		sParser = new SyntacticAnalyzerRoughUpdate2(lexicalAnalyzer);
+		sParser.parse(prog);
 		
 		//Saving AST or Table
-		fileStorage.saveTxtFile(abstractSyntaxTreePath, moonCodeGenerator.getAstAfterTCandCSPVisitor());
-		LOGGER.info("Abstract Syntax Tree (After Programing Reconstruction and Type Checking) is save to: "+abstractSyntaxTreePath);
+		fileStorage.saveTxtFile(abstractSyntaxTreePath, prog.toString());
+		LOGGER.info("Abstract Syntax Tree is save to: "+abstractSyntaxTreePath);
 		
-		//Saving AST Symbol Table  		
-		fileStorage.saveTxtFile(astSymbolTablePath, moonCodeGenerator.getSymbolTableStr());
-		LOGGER.info("Symbol table is save to: "+astSymbolTablePath);
 		
-		//Saving Memory Size table
-		fileStorage.saveTxtFile(astMemSizetblPath, moonCodeGenerator.getComputeMemSizeStr());
-		LOGGER.info("Memory Size table is save to: "+astMemSizetblPath);
-				
-		//Saving Moon Code Tag Implementation
-		fileStorage.saveTxtFile(astTagMoonCodePath, moonCodeGenerator.getTagBaseCode());
-		LOGGER.info("Moon Code Tag Implementation is save to: "+astTagMoonCodePath);
+		try
+		{			
+			MoonCodeGenerator moonCodeGenerator= new MoonCodeGenerator();
+			moonCodeGenerator.starVisiting(prog);
+			
+			//Saving AST or Table
+			fileStorage.saveTxtFile(abstractSyntaxTreePath, moonCodeGenerator.getAstAfterTCandCSPVisitor());
+			LOGGER.info("Abstract Syntax Tree (After Programing Reconstruction and Type Checking) is save to: "+abstractSyntaxTreePath);
+			
+			//Saving AST Symbol Table  		
+			fileStorage.saveTxtFile(astSymbolTablePath, moonCodeGenerator.getSymbolTableStr());
+			LOGGER.info("Symbol table is save to: "+astSymbolTablePath);
+			
+			//Saving Memory Size table
+			fileStorage.saveTxtFile(astMemSizetblPath, moonCodeGenerator.getComputeMemSizeStr());
+			LOGGER.info("Memory Size table is save to: "+astMemSizetblPath);
+					
+			//Saving Moon Code Tag Implementation
+			fileStorage.saveTxtFile(astTagMoonCodePath, moonCodeGenerator.getTagBaseCode());
+			LOGGER.info("Moon Code Tag Implementation is save to: "+astTagMoonCodePath);
+			
+			//Saving Moon Code Stack Implementation
+			//fileStorage.saveTxtFile(astStackMoonCodePath, moonCodeGenerator.getStackBaseCode());
+			//LOGGER.info("Moon Code Stack Implementation is save to: "+astStackMoonCodePath);
+			
+			//Saving Moon Code
+			fileStorage.saveTxtFile(astMoonCodePath, moonCodeGenerator.getStackBaseCode());
+			LOGGER.info("Moon Code is save to: "+astMoonCodePath);
+			
+			//Collecting errors
+			errorList= new ArrayList<Errors>();
+			errorList.addAll(lexicalAnalyzer.getErrorList());
+			errorList.addAll(sParser.getErrorList());
+			errorList.addAll(moonCodeGenerator.getErrorList());
+			saveErrorCollections(errorList, astAllerrorsLogPath, astErrorsLogPath, moonCodeGenerator.getErrorsLog());
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+		}
 		
-		//Saving Moon Code Stack Implementation
-		fileStorage.saveTxtFile(astStackMoonCodePath, moonCodeGenerator.getStackBaseCode());
-		LOGGER.info("Moon Code Stack Implementation is save to: "+astStackMoonCodePath);
 		
-		//Saving Moon Code
-		fileStorage.saveTxtFile(astMoonCodePath, moonCodeGenerator.getStackBaseCode());
-		LOGGER.info("Moon Code is save to: "+astMoonCodePath);
 		
-		//Collecting errors
-		errorList= new ArrayList<Errors>();
-		errorList.addAll(lexicalAnalyzer.getErrorList());
-		errorList.addAll(sParser.getErrorList());
-		errorList.addAll(moonCodeGenerator.getErrorList());
-		saveErrorCollections(errorList, astAllerrorsLogPath, astErrorsLogPath, moonCodeGenerator.getErrorsLog());
+		if(sementicActionApporch)
+		{
+						
+			String errorsLogPath = path.replaceFirst("[^\\\\]*$", "Errors.txt");
+			String allerrorsLogPath = path.replaceFirst("[^\\\\]*$", "AllErrors.txt");
+			String symbolTablePath = path.replaceFirst("[^\\\\]*$", "SymbolTable.txt");
+			String symbolTableHtmlPath = path.replaceFirst("[^\\\\]*$", "SymbolTable.html");
+			String moonCodePath = path.replaceFirst("[^\\\\]*$", "MoonCode.m");
+			
+			// 1st order parsing						
+			SymbolTable firstTable = sParser.semantics.mainTable.clone();
+			PrintUtil.isLog = true;
+						
+			// 2nd order parsing
+			lexicalAnalyzer = new LexicalAnalyzer(path);
+			sParser = new SyntacticAnalyzerRoughUpdate2(lexicalAnalyzer);
+			prog = new ProgNode();
+			sParser.parse(prog, firstTable);
+			//sParser.semantics.printSymbolTable();
+			ArrayList<String> symTblStr = sParser.semantics.symbolTableToString();
+			
+			//Saving Simple SymbolTable		
+			fileStorage.saveTxtFile(symbolTablePath, symTblStr.get(0));
+			LOGGER.info("Simple Symbol Table save to: "+symbolTablePath);
+			
+			//Saving HTML SymbolTable		
+			fileStorage.saveTxtFile(symbolTableHtmlPath, symTblStr.get(1));
+			LOGGER.info("HTML Symbol Table save to: "+symbolTableHtmlPath);
+			
+			//Saving Moon Code		
+			fileStorage.saveTxtFile(moonCodePath, String.format("%s \r\n %s", sParser.semantics.dataToString(), sParser.semantics.codeToString()));
+			LOGGER.info("Moon Code save to: "+moonCodePath);
+					
+			//Collecting errors
+			errorList.addAll(lexicalAnalyzer.getErrorList());
+			errorList.addAll(sParser.getErrorList());
+			errorList.addAll(sParser.semantics.getErrorList());
+			saveErrorCollections(errorList, allerrorsLogPath, errorsLogPath, sParser.semantics.getErrorsLog());
+			
+		}		
 		
 	}
 	

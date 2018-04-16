@@ -1,0 +1,68 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | program{  FOO1f1;  a=  =  put();}
+  AST.ClassListNode       |                      |              | 
+    AST.ClassNode         |                      |              | class FOO1{      }
+      AST.IdNode          | FOO1                 |              | FOO1
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | int a[5][5];
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | a                    | int          | a
+          AST.DimListNode |                      |              | [5][5]
+            AST.NumNode   | 5                    | int          | 5
+            AST.NumNode   | 5                    | int          | 5
+      AST.FuncDeclListNod |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.ProgramBlockNode    |                      |              | program{  FOO1f1;  a=  =  put();}
+    AST.VarDeclNode       |                      |              | FOO1f1;
+      AST.IdNode          | FOO1                 |              | FOO1
+      AST.IdNode          | f1                   | FOO1         | f1
+      AST.DimListNode     |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | a=
+      AST.VarNode         |                      | Undefined    | a
+        AST.IdNode        | a                    | Undefined    | a
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 1                    | int          | 1
+    AST.AssignStatNode    | =                    | typeerror    | =
+      AST.VarElementNode  |                      | FOO1         | 
+        AST.DataMemberNod |                      | FOO1         | f1
+          AST.IdNode      | f1                   | FOO1         | f1
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | Undefined    | a[][]
+          AST.IdNode      | a                    | Undefined    | a
+          AST.IndexListNo |                      |              | [][]
+            AST.ArithExpr |                      |              | 
+              AST.NumNode | 2                    | int          | 2
+            AST.ArithExpr |                      |              | 
+              AST.NumNode | 2                    | int          | 2
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 1                    | int          | 1
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.AddOpNode   | +                    | FOO1         | +
+            AST.VarElemen |                      | FOO1         | 
+              AST.DataMem |                      | FOO1         | f1
+                AST.IdNod | f1                   | FOO1         | f1
+                AST.Index |                      |              | 
+              AST.DataMem |                      | Undefined    | a[][]
+                AST.IdNod | a                    | Undefined    | a
+                AST.Index |                      |              | [][]
+                  AST.Ari |                      |              | 
+                    AST.N | 1                    | int          | 1
+                  AST.Ari |                      |              | 
+                    AST.N | 1                    | int          | 1
+            AST.VarElemen |                      | FOO1         | 
+              AST.DataMem |                      | FOO1         | f1
+                AST.IdNod | f1                   | FOO1         | f1
+                AST.Index |                      |              | 
+              AST.DataMem |                      | Undefined    | a[][]
+                AST.IdNod | a                    | Undefined    | a
+                AST.Index |                      |              | [][]
+                  AST.Ari |                      |              | 
+                    AST.N | 2                    | int          | 2
+                  AST.Ari |                      |              | 
+                    AST.N | 2                    | int          | 2
+=================================================================================================

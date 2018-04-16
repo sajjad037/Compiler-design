@@ -7,12 +7,12 @@ import com.project.compiler.Semantic.Errors;
 import com.project.compiler.SymbolTable.SymTabCreationVisitor;
 import com.project.compiler.Visitor.ASTPrinterVisitor;
 import com.project.compiler.Visitor.ReconstructSourceProgramVisitor;
-import com.project.compiler.Visitor.TypeChecking;
+import com.project.compiler.Visitor.TypeCheckingVisitor;
 
 public class MoonCodeGenerator {
 
 	private ArrayList<Errors> errorList = new ArrayList<Errors>();
-	private StringBuilder errorsLog = new StringBuilder();
+	private String errorsLog = new String();
 	private String astAfterTCandCSPVisitor = new String();
 	private String symbolTableStr = new String();
 	private String computeMemSizeStr = new String();
@@ -23,14 +23,18 @@ public class MoonCodeGenerator {
 		
 		ASTPrinterVisitor astPrinterVisitor = new ASTPrinterVisitor();
 		ReconstructSourceProgramVisitor reconstructSourceProgramVisitor = new ReconstructSourceProgramVisitor();
-		TypeChecking typeCheckingVisitor = new TypeChecking();
+		TypeCheckingVisitor typeCheckingVisitor = new TypeCheckingVisitor();
 		SymTabCreationVisitor symTabCreationVisitor = new SymTabCreationVisitor();
 		ComputeMemSizeVisitor computeMemSizeVisitor = new ComputeMemSizeVisitor();
 		TagsBasedCodeGenerationVisitor tagsBasedCodeGenerationVisitor = new TagsBasedCodeGenerationVisitor();
 		StackBasedCodeGenerationVisitor stackBasedCodeGenerationVisitor = new StackBasedCodeGenerationVisitor();
 
 		prog.accept(reconstructSourceProgramVisitor);
-		prog.accept(typeCheckingVisitor);
+		
+		prog.accept(typeCheckingVisitor);		
+		setErrorsLog(typeCheckingVisitor.getErrors());
+		setErrorList(typeCheckingVisitor.getErrorList());
+		
 		prog.accept(astPrinterVisitor);
 		setAstAfterTCandCSPVisitor(astPrinterVisitor.getOutPutString());
 
@@ -121,6 +125,23 @@ public class MoonCodeGenerator {
 	private void setStackBaseCode(String stackBaseCode) {
 		this.stackBaseCode = stackBaseCode;
 	}
+	
+	
+	
+
+	/**
+	 * @param errorList the errorList to set
+	 */
+	public void setErrorList(ArrayList<Errors> errorList) {
+		this.errorList = errorList;
+	}
+
+	/**
+	 * @param errorsLog the errorsLog to set
+	 */
+	public void setErrorsLog(String errorsLog) {
+		this.errorsLog = errorsLog;
+	}
 
 	/**
 	 * Get Errors Log
@@ -128,7 +149,7 @@ public class MoonCodeGenerator {
 	 */
 	public String getErrorsLog()
 	{
-		return errorsLog.toString();
+		return errorsLog;
 	}
 
 	/**

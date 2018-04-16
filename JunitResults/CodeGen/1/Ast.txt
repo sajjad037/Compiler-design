@@ -1,0 +1,79 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | program{  int value;  put();  value=*+/  put();  value=  put();}
+  AST.ClassListNode       |                      |              | 
+    AST.ClassNode         |                      |              | class FOO{      }
+      AST.IdNode          | FOO                  |              | FOO
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | int i;
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | i                    | int          | i
+          AST.DimListNode |                      |              | 
+      AST.FuncDeclListNod |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.ProgramBlockNode    |                      |              | program{  int value;  put();  value=*+/  put();  value=  put();}
+    AST.VarDeclNode       |                      |              | int value;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | value                | int          | value
+      AST.DimListNode     |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 10                   | int          | 10
+    AST.AssignStatNode    | =                    | int          | value=*+/
+      AST.DataMemberNode  |                      | int          | value
+        AST.IdNode        | value                | int          | value
+        AST.IndexListNode |                      |              | 
+      AST.MultOpNode      | *                    | int          | *+/
+        AST.FactorNode    |                      | int          | 
+          AST.NumNode     | 100                  | int          | 100
+        AST.AddOpNode     | +                    | int          | +/
+          AST.TermNode    |                      | int          | 
+            AST.NumNode   | 2                    | int          | 2
+          AST.MultOpNode  | /                    | int          | /
+            AST.FactorNod |                      | int          | 
+              AST.NumNode | 22                   | int          | 22
+            AST.FactorNod |                      | int          | 
+              AST.NumNode | 8                    | int          | 8
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | value
+            AST.IdNode    | value                | int          | value
+            AST.IndexList |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | value=
+      AST.DataMemberNode  |                      | int          | value
+        AST.IdNode        | value                | int          | value
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.AddOpNode     | +                    | int          | *-+
+          AST.AddOpNode   | -                    | int          | *-
+            AST.MultOpNod | *                    | int          | *
+              AST.FactorN |                      | int          | 
+                AST.NumNo | 2                    | int          | 2
+              AST.FactorN |                      | int          | 
+                AST.NumNo | 5                    | int          | 5
+            AST.TermNode  |                      | int          | 
+              AST.NumNode | 3                    | int          | 3
+          AST.TermNode    |                      | int          | 
+            AST.NumNode   | 7                    | int          | 7
+        AST.AddOpNode     | +                    | int          | +*-
+          AST.TermNode    |                      | int          | 
+            AST.NumNode   | 1                    | int          | 1
+          AST.AddOpNode   | -                    | int          | *-
+            AST.MultOpNod | *                    | int          | *
+              AST.FactorN |                      | int          | 
+                AST.NumNo | 2                    | int          | 2
+              AST.FactorN |                      | int          | 
+                AST.NumNo | 5                    | int          | 5
+            AST.TermNode  |                      | int          | 
+              AST.NumNode | 3                    | int          | 3
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | value
+            AST.IdNode    | value                | int          | value
+            AST.IndexList |                      |              | 
+=================================================================================================

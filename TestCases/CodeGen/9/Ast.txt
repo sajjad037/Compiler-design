@@ -1,0 +1,112 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | program{  int num;  num=      }
+  AST.ClassListNode       |                      |              | 
+    AST.ClassNode         |                      |              | class Foo{      }
+      AST.IdNode          | Foo                  |              | Foo
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+      AST.FuncDeclListNod |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.ProgramBlockNode    |                      |              | program{  int num;  num=      }
+    AST.VarDeclNode       |                      |              | int num;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | num                  | int          | num
+      AST.DimListNode     |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | num=
+      AST.VarNode         |                      | int          | num
+        AST.IdNode        | num                  | int          | num
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 10                   | int          | 10
+    AST.ForStatNode       | for                  |              | 
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | i                    |              | i
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 0                    | int          | 0
+      AST.RelExprNode     | <                    |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | Undefined    | i
+            AST.IdNode    | i                    | Undefined    | i
+            AST.IndexList |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | num
+            AST.IdNode    | num                  | int          | num
+            AST.IndexList |                      |              | 
+      AST.AssignStatNode  | =                    | typeerror    | i=i+
+        AST.DataMemberNod |                      | Undefined    | i
+          AST.IdNode      | i                    | Undefined    | i
+          AST.IndexListNo |                      |              | 
+        AST.AddOpNode     | +                    | typeerror    | i+
+          AST.DataMemberN |                      | Undefined    | i
+            AST.IdNode    | i                    | Undefined    | i
+            AST.IndexList |                      |              | 
+          AST.TermNode    |                      | int          | 
+            AST.NumNode   | 1                    | int          | 1
+      AST.StatBlockNode   |                      |              | {  put();}
+        AST.PutStatNode   | put                  |              | put();
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.DataMem |                      | Undefined    | i
+                AST.IdNod | i                    | Undefined    | i
+                AST.Index |                      |              | 
+    AST.ForStatNode       | for                  |              | 
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | j                    |              | j
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 0                    | int          | 0
+      AST.RelExprNode     | <                    |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | Undefined    | j
+            AST.IdNode    | j                    | Undefined    | j
+            AST.IndexList |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | num
+            AST.IdNode    | num                  | int          | num
+            AST.IndexList |                      |              | 
+      AST.AssignStatNode  | =                    | typeerror    | j=j+
+        AST.DataMemberNod |                      | Undefined    | j
+          AST.IdNode      | j                    | Undefined    | j
+          AST.IndexListNo |                      |              | 
+        AST.AddOpNode     | +                    | typeerror    | j+
+          AST.DataMemberN |                      | Undefined    | j
+            AST.IdNode    | j                    | Undefined    | j
+            AST.IndexList |                      |              | 
+          AST.TermNode    |                      | int          | 
+            AST.NumNode   | 1                    | int          | 1
+      AST.StatBlockNode   |                      |              | {}
+    AST.ForStatNode       | for                  |              | 
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | k                    |              | k
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.NumNode     | 0                    | int          | 0
+      AST.RelExprNode     | <                    |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | Undefined    | k
+            AST.IdNode    | k                    | Undefined    | k
+            AST.IndexList |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | num
+            AST.IdNode    | num                  | int          | num
+            AST.IndexList |                      |              | 
+      AST.AssignStatNode  | =                    | typeerror    | k=k+
+        AST.DataMemberNod |                      | Undefined    | k
+          AST.IdNode      | k                    | Undefined    | k
+          AST.IndexListNo |                      |              | 
+        AST.AddOpNode     | +                    | typeerror    | k+
+          AST.DataMemberN |                      | Undefined    | k
+            AST.IdNode    | k                    | Undefined    | k
+            AST.IndexList |                      |              | 
+          AST.TermNode    |                      | int          | 
+            AST.NumNode   | 2                    | int          | 2
+      AST.StatBlockNode   |                      |              | {  put();}
+        AST.PutStatNode   | put                  |              | put();
+          AST.ExprNode    |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.DataMem |                      | Undefined    | k
+                AST.IdNod | k                    | Undefined    | k
+                AST.Index |                      |              | 
+=================================================================================================

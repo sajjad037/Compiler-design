@@ -1,0 +1,16 @@
+[ERROR]	SEMANTIC	Line # :    18	AssignStatNode type error: null(int) and (null)
+	
+[ERROR]	SEMANTIC	Line # :    19	AssignStatNode type error: null(int) and (null)
+	
+[ERROR]	SEMANTIC	Line # :    20	AssignStatNode type error: null(int) and (null)
+	
+[ERROR]	SEMANTIC	Line # :    21	AssignStatNode type error: null(int) and (null)
+	
+[ERROR]	SEMANTIC	Line # :    23	AssignStatNode type error: null(int) and (null)
+	
+[ERROR]	SEMANTIC	Line # :    24	AssignStatNode type error: null(int) and (null)
+	
+[ERROR]	SEMANTIC	Line # :    25	AssignStatNode type error: null(int) and (null)
+	
+[ERROR]	SEMANTIC	Line # :    26	AssignStatNode type error: null(int) and (null)
+	

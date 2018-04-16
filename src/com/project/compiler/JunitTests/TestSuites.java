@@ -9,7 +9,8 @@ import org.junit.runners.Suite;
 	TestCasesLex.class,
 	TestCasesLexFileMatch.class,
 	TestCasesSyntaxFileMatch.class,
-	TestCasesSemanticFileMatch.class
+	TestCasesSemanticFileMatch.class,
+	TestCasesCodeGenFileMatch.class
 })
 
 public class TestSuites {   

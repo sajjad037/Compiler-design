@@ -1,0 +1,61 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | program{  Foof;  Foo1f1;  a=}
+  AST.ClassListNode       |                      |              | 
+    AST.ClassNode         |                      |              | class Foo1{      }
+      AST.IdNode          | Foo1                 |              | Foo1
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | int i[10][10];
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | i                    | int          | i
+          AST.DimListNode |                      |              | [10][10]
+            AST.NumNode   | 10                   | int          | 10
+            AST.NumNode   | 10                   | int          | 10
+        AST.VarDeclNode   |                      |              | int a;
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | a                    | int          | a
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | int lol[100];
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | lol                  | int          | lol
+          AST.DimListNode |                      |              | [100]
+            AST.NumNode   | 100                  | int          | 100
+      AST.FuncDeclListNod |                      |              | 
+    AST.ClassNode         |                      |              | class Foo{      }
+      AST.IdNode          | Foo                  |              | Foo
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | int i[10][10];
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | i                    | int          | i
+          AST.DimListNode |                      |              | [10][10]
+            AST.NumNode   | 10                   | int          | 10
+            AST.NumNode   | 10                   | int          | 10
+        AST.VarDeclNode   |                      |              | int a;
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | a                    | int          | a
+          AST.DimListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | int lol[100];
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | lol                  | int          | lol
+          AST.DimListNode |                      |              | [100]
+            AST.NumNode   | 100                  | int          | 100
+      AST.FuncDeclListNod |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.ProgramBlockNode    |                      |              | program{  Foof;  Foo1f1;  a=}
+    AST.VarDeclNode       |                      |              | Foof;
+      AST.IdNode          | Foo                  |              | Foo
+      AST.IdNode          | f                    | Foo          | f
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | Foo1f1;
+      AST.IdNode          | Foo1                 |              | Foo1
+      AST.IdNode          | f1                   | Foo1         | f1
+      AST.DimListNode     |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | a=
+      AST.VarNode         |                      | Undefined    | a
+        AST.IdNode        | a                    | Undefined    | a
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 100                  | int          | 100
+=================================================================================================

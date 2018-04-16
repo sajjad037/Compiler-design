@@ -1,11 +1,8 @@
 package com.project.compiler.SymbolTable;
 
-import java.io.File;
-import java.io.PrintWriter;
 import java.util.Vector;
 
 import com.project.compiler.Ast.*;
-import com.project.compiler.SymbolTable.*;
 import com.project.compiler.Visitor.VisitorBase;
 
 /**
@@ -173,8 +170,32 @@ public class SymTabCreationVisitor extends VisitorBase {
 		Vector<Integer> dimlist = new Vector<Integer>();
 		for (AstNode dim : p_node.getChildren().get(1).getChildren()) {
 			// parameter dimension
-			Integer dimval = Integer.parseInt(dim.getData());
-			dimlist.add(dimval);
+			if ((dim instanceof NumNode)) {
+				Integer dimval = Integer.parseInt(dim.getData());
+				dimlist.add(dimval);
+			}			
+//			else if ((dim instanceof IdNode && dim.getType()!= null && (dim.getType().equals("int") || dim.getType().equals("float")))) {
+//				Integer dimval = Integer.parseInt(dim.getData());
+//				dimlist.add(dimval);
+//			}
+			else if(dim.getChildren().size() > 0)
+			{
+				if ((dim.getChildren().get(0) instanceof NumNode)) {
+					Integer dimval = Integer.parseInt(dim.getChildren().get(0).getData());
+					dimlist.add(dimval);
+				}
+//				else if ((dim.getChildren().get(0) instanceof IdNode)) {
+//					AstNode node = dim.getChildren().get(0);
+//					if(node.getType()!= null && (node.getType().equals("int") || node.getType().equals("float")))
+//					{
+//						Integer dimval = Integer.parseInt(node.getData());
+//						dimlist.add(dimval);
+//					}
+//					
+//				}
+			}
+			
+			
 		}
 		p_node.symtabentry = new VarEntry("tempvar", vartype, p_node.moonVarName, dimlist);
 		p_node.symtab.addEntry(p_node.symtabentry);

@@ -1,0 +1,401 @@
+=================================================================================================
+Node type                 | data                 | type         | subtreestring 
+=================================================================================================
+AST.ProgNode              |                      |              | program{  FOO1f1;  int x;  int y;  int i5;  int j10;  int ind;  x=  y=  i5=  j10=+      =+  put();  put();  ind=x+y*j10/i5+j10-x*i5-y  put();  =ind  put();  =x+y*j10/i5+j10-x*i5-y  put();}
+  AST.ClassListNode       |                      |              | 
+    AST.ClassNode         |                      |              | class FOO1{      }
+      AST.IdNode          | FOO1                 |              | FOO1
+      AST.InherList       |                      |              | 
+      AST.VarDeclListNode |                      |              | 
+        AST.VarDeclNode   |                      |              | int a[5][5];
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | a                    | int          | a
+          AST.DimListNode |                      |              | [5][5]
+            AST.NumNode   | 5                    | int          | 5
+            AST.NumNode   | 5                    | int          | 5
+        AST.VarDeclNode   |                      |              | int iE[500];
+          AST.TypeNode    | int                  |              | int 
+          AST.IdNode      | iE                   | int          | iE
+          AST.DimListNode |                      |              | [500]
+            AST.NumNode   | 500                  | int          | 500
+      AST.FuncDeclListNod |                      |              | 
+  AST.FuncDefListNode     |                      |              | 
+  AST.ProgramBlockNode    |                      |              | program{  FOO1f1;  int x;  int y;  int i5;  int j10;  int ind;  x=  y=  i5=  j10=+      =+  put();  put();  ind=x+y*j10/i5+j10-x*i5-y  put();  =ind  put();  =x+y*j10/i5+j10-x*i5-y  put();}
+    AST.VarDeclNode       |                      |              | FOO1f1;
+      AST.IdNode          | FOO1                 |              | FOO1
+      AST.IdNode          | f1                   | FOO1         | f1
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int x;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | x                    | int          | x
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int y;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | y                    | int          | y
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int i5;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | i5                   | int          | i5
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int j10;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | j10                  | int          | j10
+      AST.DimListNode     |                      |              | 
+    AST.VarDeclNode       |                      |              | int ind;
+      AST.TypeNode        | int                  |              | int 
+      AST.IdNode          | ind                  | int          | ind
+      AST.DimListNode     |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | x=
+      AST.VarNode         |                      | int          | x
+        AST.IdNode        | x                    | int          | x
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 1                    | int          | 1
+    AST.AssignStatNode    | =                    | typeerror    | y=
+      AST.DataMemberNode  |                      | int          | y
+        AST.IdNode        | y                    | int          | y
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 2                    | int          | 2
+    AST.AssignStatNode    | =                    | typeerror    | i5=
+      AST.DataMemberNode  |                      | int          | i5
+        AST.IdNode        | i5                   | int          | i5
+        AST.IndexListNode |                      |              | 
+      AST.ArithExprNode   |                      |              | 
+        AST.NumNode       | 5                    | int          | 5
+    AST.AssignStatNode    | =                    | int          | j10=+
+      AST.DataMemberNode  |                      | int          | j10
+        AST.IdNode        | j10                  | int          | j10
+        AST.IndexListNode |                      |              | 
+      AST.AddOpNode       | +                    | int          | +
+        AST.TermNode      |                      | int          | 
+          AST.NumNode     | 5                    | int          | 5
+        AST.TermNode      |                      | int          | 
+          AST.NumNode     | 5                    | int          | 5
+    AST.GetStatNode       | get                  |              | 
+      AST.VarNode         |                      |              | null
+        AST.VarElementNod |                      | FOO1         | 
+          AST.DataMemberN |                      | FOO1         | f1
+            AST.IdNode    | f1                   | FOO1         | f1
+            AST.IndexList |                      |              | 
+          AST.DataMemberN |                      | Undefined    | a[][]
+            AST.IdNode    | a                    | Undefined    | a
+            AST.IndexList |                      |              | [][]
+              AST.ArithEx |                      |              | 
+                AST.DataM |                      | int          | x
+                  AST.IdN | x                    | int          | x
+                  AST.Ind |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.DataM |                      | int          | x
+                  AST.IdN | x                    | int          | x
+                  AST.Ind |                      |              | 
+    AST.GetStatNode       | get                  |              | 
+      AST.VarNode         |                      |              | null
+        AST.VarElementNod |                      | FOO1         | 
+          AST.DataMemberN |                      | FOO1         | f1
+            AST.IdNode    | f1                   | FOO1         | f1
+            AST.IndexList |                      |              | 
+          AST.DataMemberN |                      | Undefined    | a[][]
+            AST.IdNode    | a                    | Undefined    | a
+            AST.IndexList |                      |              | [][]
+              AST.ArithEx |                      |              | 
+                AST.DataM |                      | int          | y
+                  AST.IdN | y                    | int          | y
+                  AST.Ind |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.DataM |                      | int          | y
+                  AST.IdN | y                    | int          | y
+                  AST.Ind |                      |              | 
+    AST.AssignStatNode    | =                    | FOO1         | =+
+      AST.VarElementNode  |                      | FOO1         | 
+        AST.DataMemberNod |                      | FOO1         | f1
+          AST.IdNode      | f1                   | FOO1         | f1
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | Undefined    | a[][]
+          AST.IdNode      | a                    | Undefined    | a
+          AST.IndexListNo |                      |              | [][]
+            AST.ArithExpr |                      |              | 
+              AST.AddOpNo | +                    | int          | x+y
+                AST.DataM |                      | int          | x
+                  AST.IdN | x                    | int          | x
+                  AST.Ind |                      |              | 
+                AST.DataM |                      | int          | y
+                  AST.IdN | y                    | int          | y
+                  AST.Ind |                      |              | 
+            AST.ArithExpr |                      |              | 
+              AST.AddOpNo | +                    | int          | x+y
+                AST.DataM |                      | int          | x
+                  AST.IdN | x                    | int          | x
+                  AST.Ind |                      |              | 
+                AST.DataM |                      | int          | y
+                  AST.IdN | y                    | int          | y
+                  AST.Ind |                      |              | 
+      AST.AddOpNode       | +                    | FOO1         | +
+        AST.VarElementNod |                      | FOO1         | 
+          AST.DataMemberN |                      | FOO1         | f1
+            AST.IdNode    | f1                   | FOO1         | f1
+            AST.IndexList |                      |              | 
+          AST.DataMemberN |                      | Undefined    | a[][]
+            AST.IdNode    | a                    | Undefined    | a
+            AST.IndexList |                      |              | [][]
+              AST.ArithEx |                      |              | 
+                AST.NumNo | 1                    | int          | 1
+              AST.ArithEx |                      |              | 
+                AST.NumNo | 1                    | int          | 1
+        AST.VarElementNod |                      | FOO1         | 
+          AST.DataMemberN |                      | FOO1         | f1
+            AST.IdNode    | f1                   | FOO1         | f1
+            AST.IndexList |                      |              | 
+          AST.DataMemberN |                      | Undefined    | a[][]
+            AST.IdNode    | a                    | Undefined    | a
+            AST.IndexList |                      |              | [][]
+              AST.ArithEx |                      |              | 
+                AST.NumNo | 2                    | int          | 2
+              AST.ArithEx |                      |              | 
+                AST.NumNo | 2                    | int          | 2
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.VarElementN |                      | FOO1         | 
+            AST.DataMembe |                      | FOO1         | f1
+              AST.IdNode  | f1                   | FOO1         | f1
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | Undefined    | a[][]
+              AST.IdNode  | a                    | Undefined    | a
+              AST.IndexLi |                      |              | [][]
+                AST.Arith |                      |              | 
+                  AST.Add | +                    | int          | x+y
+                    AST.D |                      | int          | x
+                      AST | x                    | int          | x
+                      AST |                      |              | 
+                    AST.D |                      | int          | y
+                      AST | y                    | int          | y
+                      AST |                      |              | 
+                AST.Arith |                      |              | 
+                  AST.Add | +                    | int          | x+y
+                    AST.D |                      | int          | x
+                      AST | x                    | int          | x
+                      AST |                      |              | 
+                    AST.D |                      | int          | y
+                      AST | y                    | int          | y
+                      AST |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.ArithExprNo |                      |              | 
+            AST.AddOpNode | +                    | int          | x+y*j10/i5+j10-x*i5-y
+              AST.MultOpN | *                    | int          | x+y*j10/i5
+                AST.AddOp | +                    | int          | x+y
+                  AST.Dat |                      | int          | x
+                    AST.I | x                    | int          | x
+                    AST.I |                      |              | 
+                  AST.Dat |                      | int          | y
+                    AST.I | y                    | int          | y
+                    AST.I |                      |              | 
+                AST.MultO | /                    | int          | j10/i5
+                  AST.Dat |                      | int          | j10
+                    AST.I | j10                  | int          | j10
+                    AST.I |                      |              | 
+                  AST.Dat |                      | int          | i5
+                    AST.I | i5                   | int          | i5
+                    AST.I |                      |              | 
+              AST.MultOpN | *                    | int          | j10-x*i5-y
+                AST.AddOp | -                    | int          | j10-x
+                  AST.Dat |                      | int          | j10
+                    AST.I | j10                  | int          | j10
+                    AST.I |                      |              | 
+                  AST.Dat |                      | int          | x
+                    AST.I | x                    | int          | x
+                    AST.I |                      |              | 
+                AST.AddOp | -                    | int          | i5-y
+                  AST.Dat |                      | int          | i5
+                    AST.I | i5                   | int          | i5
+                    AST.I |                      |              | 
+                  AST.Dat |                      | int          | y
+                    AST.I | y                    | int          | y
+                    AST.I |                      |              | 
+    AST.AssignStatNode    | =                    | int          | ind=x+y*j10/i5+j10-x*i5-y
+      AST.DataMemberNode  |                      | int          | ind
+        AST.IdNode        | ind                  | int          | ind
+        AST.IndexListNode |                      |              | 
+      AST.AddOpNode       | +                    | int          | x+y*j10/i5+j10-x*i5-y
+        AST.MultOpNode    | *                    | int          | x+y*j10/i5
+          AST.AddOpNode   | +                    | int          | x+y
+            AST.DataMembe |                      | int          | x
+              AST.IdNode  | x                    | int          | x
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | int          | y
+              AST.IdNode  | y                    | int          | y
+              AST.IndexLi |                      |              | 
+          AST.MultOpNode  | /                    | int          | j10/i5
+            AST.DataMembe |                      | int          | j10
+              AST.IdNode  | j10                  | int          | j10
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | int          | i5
+              AST.IdNode  | i5                   | int          | i5
+              AST.IndexLi |                      |              | 
+        AST.MultOpNode    | *                    | int          | j10-x*i5-y
+          AST.AddOpNode   | -                    | int          | j10-x
+            AST.DataMembe |                      | int          | j10
+              AST.IdNode  | j10                  | int          | j10
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | int          | x
+              AST.IdNode  | x                    | int          | x
+              AST.IndexLi |                      |              | 
+          AST.AddOpNode   | -                    | int          | i5-y
+            AST.DataMembe |                      | int          | i5
+              AST.IdNode  | i5                   | int          | i5
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | int          | y
+              AST.IdNode  | y                    | int          | y
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.DataMemberN |                      | int          | ind
+            AST.IdNode    | ind                  | int          | ind
+            AST.IndexList |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | =ind
+      AST.VarElementNode  |                      | FOO1         | 
+        AST.DataMemberNod |                      | FOO1         | f1
+          AST.IdNode      | f1                   | FOO1         | f1
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | Undefined    | iE[]
+          AST.IdNode      | iE                   | Undefined    | iE
+          AST.IndexListNo |                      |              | []
+            AST.ArithExpr |                      |              | 
+              AST.DataMem |                      | int          | ind
+                AST.IdNod | ind                  | int          | ind
+                AST.Index |                      |              | 
+      AST.DataMemberNode  |                      | int          | ind
+        AST.IdNode        | ind                  | int          | ind
+        AST.IndexListNode |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.VarElementN |                      | FOO1         | 
+            AST.DataMembe |                      | FOO1         | f1
+              AST.IdNode  | f1                   | FOO1         | f1
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | Undefined    | iE[]
+              AST.IdNode  | iE                   | Undefined    | iE
+              AST.IndexLi |                      |              | []
+                AST.Arith |                      |              | 
+                  AST.Dat |                      | int          | ind
+                    AST.I | ind                  | int          | ind
+                    AST.I |                      |              | 
+    AST.AssignStatNode    | =                    | typeerror    | =x+y*j10/i5+j10-x*i5-y
+      AST.VarElementNode  |                      | FOO1         | 
+        AST.DataMemberNod |                      | FOO1         | f1
+          AST.IdNode      | f1                   | FOO1         | f1
+          AST.IndexListNo |                      |              | 
+        AST.DataMemberNod |                      | Undefined    | iE[]
+          AST.IdNode      | iE                   | Undefined    | iE
+          AST.IndexListNo |                      |              | []
+            AST.ArithExpr |                      |              | 
+              AST.ArithEx |                      |              | 
+                AST.AddOp | +                    | int          | x+y*j10/i5+j10-x*i5-y
+                  AST.Mul | *                    | int          | x+y*j10/i5
+                    AST.A | +                    | int          | x+y
+                      AST |                      | int          | x
+                        A | x                    | int          | x
+                        A |                      |              | 
+                      AST |                      | int          | y
+                        A | y                    | int          | y
+                        A |                      |              | 
+                    AST.M | /                    | int          | j10/i5
+                      AST |                      | int          | j10
+                        A | j10                  | int          | j10
+                        A |                      |              | 
+                      AST |                      | int          | i5
+                        A | i5                   | int          | i5
+                        A |                      |              | 
+                  AST.Mul | *                    | int          | j10-x*i5-y
+                    AST.A | -                    | int          | j10-x
+                      AST |                      | int          | j10
+                        A | j10                  | int          | j10
+                        A |                      |              | 
+                      AST |                      | int          | x
+                        A | x                    | int          | x
+                        A |                      |              | 
+                    AST.A | -                    | int          | i5-y
+                      AST |                      | int          | i5
+                        A | i5                   | int          | i5
+                        A |                      |              | 
+                      AST |                      | int          | y
+                        A | y                    | int          | y
+                        A |                      |              | 
+      AST.AddOpNode       | +                    | int          | x+y*j10/i5+j10-x*i5-y
+        AST.MultOpNode    | *                    | int          | x+y*j10/i5
+          AST.AddOpNode   | +                    | int          | x+y
+            AST.DataMembe |                      | int          | x
+              AST.IdNode  | x                    | int          | x
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | int          | y
+              AST.IdNode  | y                    | int          | y
+              AST.IndexLi |                      |              | 
+          AST.MultOpNode  | /                    | int          | j10/i5
+            AST.DataMembe |                      | int          | j10
+              AST.IdNode  | j10                  | int          | j10
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | int          | i5
+              AST.IdNode  | i5                   | int          | i5
+              AST.IndexLi |                      |              | 
+        AST.MultOpNode    | *                    | int          | j10-x*i5-y
+          AST.AddOpNode   | -                    | int          | j10-x
+            AST.DataMembe |                      | int          | j10
+              AST.IdNode  | j10                  | int          | j10
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | int          | x
+              AST.IdNode  | x                    | int          | x
+              AST.IndexLi |                      |              | 
+          AST.AddOpNode   | -                    | int          | i5-y
+            AST.DataMembe |                      | int          | i5
+              AST.IdNode  | i5                   | int          | i5
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | int          | y
+              AST.IdNode  | y                    | int          | y
+              AST.IndexLi |                      |              | 
+    AST.PutStatNode       | put                  |              | put();
+      AST.ExprNode        |                      |              | 
+        AST.ArithExprNode |                      |              | 
+          AST.VarElementN |                      | FOO1         | 
+            AST.DataMembe |                      | FOO1         | f1
+              AST.IdNode  | f1                   | FOO1         | f1
+              AST.IndexLi |                      |              | 
+            AST.DataMembe |                      | Undefined    | iE[]
+              AST.IdNode  | iE                   | Undefined    | iE
+              AST.IndexLi |                      |              | []
+                AST.Arith |                      |              | 
+                  AST.Ari |                      |              | 
+                    AST.A | +                    | int          | x+y*j10/i5+j10-x*i5-y
+                      AST | *                    | int          | x+y*j10/i5
+                        A | +                    | int          | x+y
+                          A |                      | int          | x
+                            A | x                    | int          | x
+                            A |                      |              | 
+                          A |                      | int          | y
+                            A | y                    | int          | y
+                            A |                      |              | 
+                        A | /                    | int          | j10/i5
+                          A |                      | int          | j10
+                            A | j10                  | int          | j10
+                            A |                      |              | 
+                          A |                      | int          | i5
+                            A | i5                   | int          | i5
+                            A |                      |              | 
+                      AST | *                    | int          | j10-x*i5-y
+                        A | -                    | int          | j10-x
+                          A |                      | int          | j10
+                            A | j10                  | int          | j10
+                            A |                      |              | 
+                          A |                      | int          | x
+                            A | x                    | int          | x
+                            A |                      |              | 
+                        A | -                    | int          | i5-y
+                          A |                      | int          | i5
+                            A | i5                   | int          | i5
+                            A |                      |              | 
+                          A |                      | int          | y
+                            A | y                    | int          | y
+                            A |                      |              | 
+=================================================================================================

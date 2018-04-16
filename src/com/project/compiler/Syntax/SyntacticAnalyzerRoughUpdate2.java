@@ -116,7 +116,7 @@ public class SyntacticAnalyzerRoughUpdate2 {
 		errorsLog.append(String.format("[%s] %s: %s \r\n", SYNTAX, tag, msg));
 		//String description = String.format("%s", msg);
 		errorList.add(new Errors(lineNumber, msg, tag, ModuleType.SYNTAX));
-		System.out.println("ERROR: "+msg);
+		//System.out.println("ERROR: "+msg);
 	}
 	
 	/**
@@ -155,7 +155,7 @@ public class SyntacticAnalyzerRoughUpdate2 {
 		prevToken = token;
 		try {
 			token = lexer.getNextAvialableToken();
-			System.out.println(token.toString());
+			//System.out.println(token.toString());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
